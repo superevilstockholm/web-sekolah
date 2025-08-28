@@ -97,30 +97,30 @@
                 <h3>SPH by the <span class="text-primary">Numbers</span></h3>
             </div>
 
-            <div class="row text-center g-4">
-                <!-- Baris 1 -->
-                <div class="col-6 col-lg-3">
+            <!-- Baris 1 -->
+            <div class="row text-center g-4 gy-5">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-people fs-1 text-primary"></i>
                         <h4 class="mt-3">2,400+</h4>
                         <p class="small mb-0">Students</p>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-mortarboard fs-1 text-primary"></i>
                         <h4 class="mt-3">3,000+</h4>
                         <p class="small mb-0">Alumni</p>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-star fs-1 text-primary"></i>
                         <h4 class="mt-3">30+</h4>
                         <p class="small mb-0">Years of Excellence</p>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-globe fs-1 text-primary"></i>
                         <h4 class="mt-3">35</h4>
@@ -130,15 +130,15 @@
             </div>
 
             <!-- Baris 2 -->
-            <div class="row text-center g-4 justify-content-center mt-5">
-                <div class="col-6 col-lg-3">
+            <div class="row text-center g-4 gy-5 justify-content-center mt-5">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-trophy fs-1 text-primary"></i>
                         <h4 class="mt-3">1<sup>st</sup></h4>
                         <p class="small mb-0">Christian IB Continuum School in Indonesia</p>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-person-badge fs-1 text-primary"></i>
                         <h4 class="mt-3">52%</h4>
@@ -148,6 +148,7 @@
             </div>
         </div>
     </section>
+
 
 
     <section id="our-legacy" class="py-5 bg-light">
@@ -199,67 +200,221 @@
         </div>
     </section>
 
-<section>
-  <div class="container position-relative">
-    <div class="row">
-      <h2 class="fw-bold mb-4">
-        <span>Embracing Technological Innovation and Global Perspectives</span>
-      </h2>
-      <p>
-        As education evolves in the 21st century, SPH remains at the forefront by integrating
-        technology and global perspectives into the classroom. We have embraced innovative learning
-        tools, including state-of-the-art digital platforms and interactive teaching methods,
-        ensuring that students are equipped with the skills necessary to thrive in a technology-driven
-        world.
-      </p>
-    </div>
+    <section>
+        <div class="container position-relative">
+            <div class="row">
+                <h2 class="fw-bold mb-4">
+                    <span>Embracing Technological Innovation and Global Perspectives</span>
+                </h2>
+                <p>
+                    As education evolves in the 21st century, SPH remains at the forefront by integrating technology and
+                    global perspectives into the classroom. We have embraced innovative learning tools, including
+                    state-of-the-art digital platforms and interactive teaching methods, ensuring that students are equipped
+                    with the skills necessary to thrive in a technology-driven world. Our students benefit from a balanced
+                    curriculum that incorporates both traditional academic rigor and the latest technological advancements.
 
-    <div class="my-5"></div>
-
-    <div class="row">
-      <h2 class="fw-bold mb-4">
-        <span>Another Title Section Here</span>
-      </h2>
-      <p>
-        Additionally, SPH offers numerous opportunities for students to participate in international
-        events and competitions, allowing them to broaden their horizons and gain global exposure.
-      </p>
-    </div>
-  </div>
-
-</section>
+                    Additionally, SPH offers numerous opportunities for students to participate in international events and
+                    competitions, allowing them to broaden their horizons and gain global exposure. These experiences help
+                    shape culturally aware, adaptable individuals ready to contribute on the world stage.
 
 
+                </p>
+            </div>
 
+            <div class="my-5"></div>
+
+            <div class="row">
+                <h2 class="fw-bold mb-4">
+                    <span>A Community Committed to Lifelong Learning</span>
+                </h2>
+                <p>
+                    At SPH, we believe that education is more than just academic achievement; it is about shaping the hearts
+                    and minds of the next generation. We foster a vibrant community of learners where students, teachers,
+                    and parents work together to build strong foundations for the future. Our commitment to continuous
+                    improvement is reflected in our curriculum, extracurricular activities, and the partnerships we
+                    cultivate both locally and internationally.
+                    For more than three decades, we have stayed true to our mission: proclaiming the pre-eminence of Christ
+                    and engaging in the redemptive restoration of all things in Him through holistic education. This mission
+                    equips us to nurture leaders of character who are equipped to make a difference in the world. We invite
+                    you to be part of this journey at SPH, where faith and education come together to create a lasting
+                    impact on the lives of our students and the broader community.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section terakhir: Full Image -->
+    <section id="full-image" class="p-0 m-0"> <img src="{{ asset('images/importData-1.png') }}" alt="Full Width Image"
+            class="img-fluid rounded w-100" style="display:block; object-fit:cover;">
+        </section>
 
     <style>
-        #hero {
-            height: 100vh;
-            overflow: hidden;
+        /* Default (HP) */
+        #sph-numbers i {
+            font-size: 3rem;
         }
 
-        #hero .carousel-item img {
-            height: 100vh;
-            object-fit: cover;
-            filter: brightness(0.7);
+        #sph-numbers h4 {
+            font-size: 1.75rem;
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            #sph-numbers i {
+                font-size: 4rem;
+            }
+
+            #sph-numbers h4 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 992px) {
+            #sph-numbers i {
+                font-size: 5rem;
+            }
+
+            #sph-numbers h4 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Jarak vertikal antar kolom HP */
+        @media (max-width: 767px) {
+            #sph-numbers .row.gy-5>[class*="col-"] {
+                margin-bottom: 1rem;
+            }
+        }
+
+        #hero {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
         }
 
         #hero .carousel-caption {
             bottom: 20%;
-            left: 0;
-            right: 0;
-            text-align: left;
+            /* lebih rendah, beri jarak aman */
+            left: 50%;
+            transform: translateX(-50%);
+            /* center horizontal */
+            width: 90%;
+            /* agar tidak terlalu melebar */
+            text-align: center;
+            padding: 0 15px;
         }
 
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            #hero .carousel-caption {
+                bottom: 25%;
+                /* beri jarak lebih ke atas dari tombol scroll */
+                padding: 0 10px;
+            }
+
+            #hero .carousel-caption h2 {
+                font-size: 1.8rem;
+            }
+
+            #hero .carousel-caption p {
+                font-size: 1rem;
+            }
+        }
+
+        #hero .carousel-caption h2,
+        #hero .carousel-caption p {
+            white-space: normal;
+            /* wrap teks */
+            word-break: break-word;
+            /* pecah kata panjang */
+        }
+
+        .carousel-inner {
+            overflow: visible;
+        }
+
+        /* Carousel */
+        #hero .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+
+
+        #hero .carousel-item {
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Caption responsif */
         #hero .carousel-caption h2 {
-            font-size: 3rem;
-            font-weight: 700;
+            font-size: 2rem;
+            /* default kecil untuk HP */
         }
 
         #hero .carousel-caption p {
-            font-size: 1.25rem;
-            margin-bottom: 1.5rem;
+            font-size: 1rem;
         }
+
+        @media (max-width: 767px) {
+            #hero .carousel-caption h2 {
+                font-size: 1.8rem;
+            }
+
+            #hero .carousel-caption p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            #hero .carousel-caption h2 {
+                font-size: 2.5rem;
+            }
+
+            #hero .carousel-caption p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #hero .carousel-caption h2 {
+                font-size: 3rem;
+            }
+
+            #hero .carousel-caption p {
+                font-size: 1.25rem;
+            }
+        }
+
+        /* Section Legacy: gambar kanan jadi responsif */
+        #our-legacy .col-lg-6.position-relative img {
+            position: relative !important;
+            /* hilangkan absolute di HP */
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 992px) {
+            #our-legacy .col-lg-6.position-relative img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                /* biar tidak memaksa penuh */
+                max-height: 600px;
+                /* sesuaikan dengan tinggi konten kiri */
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+
 
         /* Animasi muncul dari bawah */
         .animate-caption {
