@@ -294,6 +294,9 @@
             position: relative;
             width: 100%;
             overflow: hidden;
+            margin-top: 0;
+            object-fit: cover;
+            background-size: cover; /* bikin selalu nutup layar */
         }
 
         #hero .carousel-caption {
@@ -354,12 +357,14 @@
             height: 100%;
             object-fit: cover;
             filter: brightness(0.7);
+
         }
 
 
         #hero .carousel-item {
-            height: 100vh;
+            height: 100vh ;
             position: relative;
+
         }
 
         /* Caption responsif */

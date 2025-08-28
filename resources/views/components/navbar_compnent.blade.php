@@ -1,4 +1,4 @@
-<div class="sticky-top navbar-container">
+<div class="fixed-top navbar-container">
     <header class="pt-2" style="font-size: 0.9rem;">
         <div class="container">
             <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3"
