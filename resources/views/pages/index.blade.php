@@ -1,22 +1,23 @@
 @extends('App')
 
 @section('content')
-    <!-- Hero Section with Carousel -->
+    <!-- Hero Section dengan Carousel -->
     <section id="hero">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-inner">
 
                 <!-- Slide 1 -->
                 <div class="carousel-item active position-relative">
-                    <img src="{{ asset('images/importData-1.png') }}" class="d-block w-100" alt="Slide 1">
+                    <img src="{{ asset('images/sph-3.png') }}" class="d-block w-100" alt="Slide 1">
                     <div class="carousel-caption text-start animate-caption">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
-                                    <h2>Beyond Education</h2>
-                                    <p>Going beyond curriculum through a faith-based holistic model that guides the growth
-                                        and development of each child.</p>
-                                    <a href="#" class="btn btn-lg btn-warning">Learn More</a>
+                                    <h2>Melebihi Pendidikan</h2>
+                                    <p class="mb-4">Melebihi kurikulum melalui model holistik berbasis iman yang
+                                        membimbing pertumbuhan
+                                        dan perkembangan setiap anak.</p>
+                                    <a href="#" class="btn btn-lg btn-warning rounded-pill">Pelajari Lebih Lanjut</a>
                                 </div>
                             </div>
                         </div>
@@ -25,15 +26,15 @@
 
                 <!-- Slide 2 -->
                 <div class="carousel-item position-relative">
-                    <img src="{{ asset('images/importData-2.png') }}" class="d-block w-100" alt="Slide 2">
+                    <img src="{{ asset('images/sph-4.png') }}" class="d-block w-100" alt="Slide 2">
                     <div class="carousel-caption text-start animate-caption">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
-                                    <h2>Empowering Students</h2>
-                                    <p>Helping students reach their full potential academically, socially, and spiritually.
-                                    </p>
-                                    <a href="#" class="btn btn-lg btn-warning">Learn More</a>
+                                    <h2>Memberdayakan Siswa</h2>
+                                    <p class="mb-4">Membantu siswa mencapai potensi penuh mereka secara akademik, sosial,
+                                        dan spiritual.</p>
+                                    <a href="#" class="btn btn-lg btn-warning rounded-pill">Pelajari Lebih Lanjut</a>
                                 </div>
                             </div>
                         </div>
@@ -42,15 +43,15 @@
 
                 <!-- Slide 3 -->
                 <div class="carousel-item position-relative">
-                    <img src="{{ asset('images/importData-3.png') }}" class="d-block w-100" alt="Slide 3">
+                    <img src="{{ asset('images/sph-5.png') }}" class="d-block w-100" alt="Slide 3">
                     <div class="carousel-caption text-start animate-caption">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
-                                    <h2>Global Perspective</h2>
-                                    <p>Preparing students to be future leaders with a strong moral foundation and global
-                                        mindset.</p>
-                                    <a href="#" class="btn btn-lg btn-warning">Learn More</a>
+                                    <h2>Pandangan Global</h2>
+                                    <p class="mb-4">Mempersiapkan siswa menjadi pemimpin masa depan dengan fondasi moral
+                                        yang kuat dan wawasan global.</p>
+                                    <a href="#" class="btn btn-lg btn-warning rounded-pill ">Pelajari Lebih Lanjut</a>
                                 </div>
                             </div>
                         </div>
@@ -59,194 +60,196 @@
 
             </div>
 
-            <!-- Tombol Scroll to Explore -->
+            <!-- Tombol Scroll untuk Menjelajahi -->
             <a href="#core-identity" class="scroll-btn">
-                <span>Scroll to Explore</span>
+                <span>Gulir untuk Menjelajahi</span>
                 <i class="bi bi-arrow-down"></i>
             </a>
         </div>
     </section>
 
-    <!-- Section 2: Core Identity -->
-    <section id="core-identity" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <p class="text-muted small mb-4">◊ Our Core Identity</p>
-                    <h2 class="fw-bold">
-                        <span class="text-primary">Leading Christian</span> International <br>
-                        Schools in Indonesia
-                    </h2>
-                </div>
-                <div class="col-lg-6">
-                    <p class="p-2 mb-0 mt-5">
-                        We exist to bless every family who chooses SPH as their second home with an
-                        established Christian international education, whose graduates are equipped and
-                        inspired to lead and serve wherever God will place them. At the core of who we are,
-                        we are called to serve, and with that, we are devoted to the growth of our students’ faith journey.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section 3: Numbers -->
-    <section id="sph-numbers" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h3>SPH by the <span class="text-primary">Numbers</span></h3>
-            </div>
-
-            <!-- Baris 1 -->
-            <div class="row text-center g-4 gy-5">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div>
-                        <i class="bi bi-people fs-1 text-primary"></i>
-                        <h4 class="mt-3">2,400+</h4>
-                        <p class="small mb-0">Students</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div>
-                        <i class="bi bi-mortarboard fs-1 text-primary"></i>
-                        <h4 class="mt-3">3,000+</h4>
-                        <p class="small mb-0">Alumni</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div>
-                        <i class="bi bi-star fs-1 text-primary"></i>
-                        <h4 class="mt-3">30+</h4>
-                        <p class="small mb-0">Years of Excellence</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div>
-                        <i class="bi bi-globe fs-1 text-primary"></i>
-                        <h4 class="mt-3">35</h4>
-                        <p class="small mb-0">Nationalities</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Baris 2 -->
-            <div class="row text-center g-4 gy-5 justify-content-center mt-5">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div>
-                        <i class="bi bi-trophy fs-1 text-primary"></i>
-                        <h4 class="mt-3">1<sup>st</sup></h4>
-                        <p class="small mb-0">Christian IB Continuum School in Indonesia</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div>
-                        <i class="bi bi-person-badge fs-1 text-primary"></i>
-                        <h4 class="mt-3">52%</h4>
-                        <p class="small mb-0">Expatriate Teachers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="our-legacy" class="py-5 bg-light">
-        <div class="container position-relative">
-            <div class="row">
-                <!-- Kiri: gabungan blok teks -->
-                <div class="col-lg-6">
-                    <!-- Blok pertama -->
-                    <p class="text-muted small mb-4">◊ Our Legacy</p>
-                    <h2 class="fw-bold mb-4">
-                        <span>Transforming Lives through Christian Education for</span> <br>
-                        <span class="text-primary">Over 30 years</span>
-                    </h2>
-                    <p>
-                        At Sekolah Pelita Harapan (SPH), we are dedicated to blessing every family that chooses us as their
-                        second home. Our mission is to provide an exceptional Christian international education that equips
-                        and inspires students to lead and serve in every aspect of their lives, wherever God may call them.
-                        Central to our identity is the calling to serve, and we are committed to nurturing the spiritual
-                        growth of each student as they embark on their unique faith journey.
-                    </p>
-
-                    <!-- Spacer biar ada jarak -->
-                    <div class="my-5"></div>
-
-                    <!-- Blok kedua -->
-                    <h2 class="fw-bold mb-4">
-                        <span>A Legacy of Excellence in <br> International Education</span>
-                    </h2>
-                    <p>
-                        With over 30 years of experience, SPH has earned a distinguished reputation as one of Indonesia’s
-                        premier international schools. As a pioneer in education, SPH became the first Christian
-                        international school in Indonesia to offer all three International Baccalaureate (IB) programs.
-                    </p>
-                    <p>
-                        Our network of schools spans five key locations across Jakarta and its surrounding cities,
-                        providing families with access to world-class education in a nurturing Christian environment.
-                        Our commitment to holistic development ensures that students are empowered academically,
-                        spiritually, and socially, preparing them for success in an ever-changing global landscape.
-                    </p>
-                </div>
-
-                <!-- Kanan: gambar sepanjang tinggi dua judul -->
-                <div class="col-lg-6 position-relative">
-                    <img src="{{ asset('images/importData-1.png') }}" alt="Legacy Image"
-                        class="img-fluid position-absolute top-0  start-0 w-100"
-                        style="object-fit: cover; border-radius: 8px;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container position-relative">
-            <div class="row">
-                <h2 class="fw-bold mb-4">
-                    <span>Embracing Technological Innovation and Global Perspectives</span>
+<!-- Section 2: Identitas Inti -->
+<section id="core-identity" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <p class="text-muted small mb-4">◊ Identitas Inti Kami</p>
+                <h2 class="fw-bold">
+                    <span class="text-primary">Sekolah Kristen Terdepan</span> Internasional <br>
+                    di Indonesia
                 </h2>
-                <p>
-                    As education evolves in the 21st century, SPH remains at the forefront by integrating technology and
-                    global perspectives into the classroom. We have embraced innovative learning tools, including
-                    state-of-the-art digital platforms and interactive teaching methods, ensuring that students are equipped
-                    with the skills necessary to thrive in a technology-driven world. Our students benefit from a balanced
-                    curriculum that incorporates both traditional academic rigor and the latest technological advancements.
-
-                    Additionally, SPH offers numerous opportunities for students to participate in international events and
-                    competitions, allowing them to broaden their horizons and gain global exposure. These experiences help
-                    shape culturally aware, adaptable individuals ready to contribute on the world stage.
-
-
-                </p>
             </div>
-
-            <div class="my-5"></div>
-
-            <div class="row">
-                <h2 class="fw-bold mb-4">
-                    <span>A Community Committed to Lifelong Learning</span>
-                </h2>
-                <p>
-                    At SPH, we believe that education is more than just academic achievement; it is about shaping the hearts
-                    and minds of the next generation. We foster a vibrant community of learners where students, teachers,
-                    and parents work together to build strong foundations for the future. Our commitment to continuous
-                    improvement is reflected in our curriculum, extracurricular activities, and the partnerships we
-                    cultivate both locally and internationally.
-                    For more than three decades, we have stayed true to our mission: proclaiming the pre-eminence of Christ
-                    and engaging in the redemptive restoration of all things in Him through holistic education. This mission
-                    equips us to nurture leaders of character who are equipped to make a difference in the world. We invite
-                    you to be part of this journey at SPH, where faith and education come together to create a lasting
-                    impact on the lives of our students and the broader community.
+            <div class="col-lg-6">
+                <p class="p-2 mb-0 mt-5">
+                    Kami hadir untuk memberkati setiap keluarga yang memilih SPH sebagai rumah kedua mereka dengan pendidikan internasional Kristen yang terpercaya. Lulusan kami dibekali dan diilhami untuk memimpin dan melayani di mana pun Tuhan menempatkan mereka.
+                    Pada inti siapa kami, kami dipanggil untuk melayani, dan dengan itu, kami berdedikasi pada pertumbuhan perjalanan iman setiap siswa.
                 </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+<!-- Section 3: Angka SPH -->
+<section id="sph-numbers" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h3>Fakta Singkat <span class="text-primary">Tentang SPH</span></h3>
+        </div>
+
+        <!-- Baris 1 -->
+        <div class="row text-center g-4 gy-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="bi bi-people fs-1 text-primary"></i>
+                    <h4 class="mt-3">2,400+</h4>
+                    <p class="small mb-0">Siswa</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="bi bi-mortarboard fs-1 text-primary"></i>
+                    <h4 class="mt-3">3,000+</h4>
+                    <p class="small mb-0">Alumni</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="bi bi-star fs-1 text-primary"></i>
+                    <h4 class="mt-3">30+</h4>
+                    <p class="small mb-0">Tahun Keunggulan</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="bi bi-globe fs-1 text-primary"></i>
+                    <h4 class="mt-3">35</h4>
+                    <p class="small mb-0">Kebangsaan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baris 2 -->
+        <div class="row text-center g-4 gy-5 justify-content-center mt-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="bi bi-trophy fs-1 text-primary"></i>
+                    <h4 class="mt-3">1<sup>st</sup></h4>
+                    <p class="small mb-0">Sekolah Kristen IB Continuum Pertama di Indonesia</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div>
+                    <i class="bi bi-person-badge fs-1 text-primary"></i>
+                    <h4 class="mt-3">52%</h4>
+                    <p class="small mb-0">Guru Ekspatriat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="our-legacy" class="py-5 bg-light">
+    <div class="container position-relative">
+        <div class="row">
+            <!-- Kiri: gabungan blok teks -->
+            <div class="col-lg-6">
+                <!-- Blok pertama -->
+                <p class="text-muted small mb-4">◊ Warisan Kami</p>
+                <h2 class="fw-bold mb-4">
+                    <span>Mentransformasi Kehidupan melalui Pendidikan Kristen untuk</span> <br>
+                    <span class="text-primary">Lebih dari 30 Tahun</span>
+                </h2>
+                <p>
+                    Di Sekolah Pelita Harapan (SPH), kami berkomitmen memberkati setiap keluarga yang memilih SPH sebagai
+                    rumah kedua mereka. Misi kami adalah menyediakan pendidikan internasional Kristen yang luar biasa, yang
+                    membekali dan menginspirasi siswa untuk memimpin dan melayani dalam setiap aspek kehidupan mereka,
+                    di mana pun Tuhan memanggil mereka. Inti dari siapa kami adalah panggilan untuk melayani, dan kami
+                    berdedikasi untuk mendukung pertumbuhan iman setiap siswa dalam perjalanan iman mereka.
+                </p>
+
+                <!-- Spacer biar ada jarak -->
+                <div class="my-5"></div>
+
+                <!-- Blok kedua -->
+                <h2 class="fw-bold mb-4">
+                    <span>Warisan Keunggulan dalam <br> Pendidikan Internasional</span>
+                </h2>
+                <p>
+                    Dengan pengalaman lebih dari 30 tahun, SPH telah memperoleh reputasi sebagai salah satu sekolah
+                    internasional terkemuka di Indonesia. Sebagai pelopor pendidikan, SPH menjadi sekolah Kristen internasional
+                    pertama di Indonesia yang menawarkan ketiga program International Baccalaureate (IB).
+                </p>
+                <p>
+                    Jaringan sekolah kami tersebar di lima lokasi utama di Jakarta dan sekitarnya, memberikan keluarga
+                    akses ke pendidikan kelas dunia dalam lingkungan Kristen yang mendukung. Komitmen kami terhadap
+                    pengembangan holistik memastikan bahwa siswa diberdayakan secara akademik, spiritual, dan sosial,
+                    mempersiapkan mereka untuk sukses di dunia global yang selalu berubah.
+                </p>
+            </div>
+
+            <!-- Kanan: gambar sepanjang tinggi dua judul -->
+            <div class="col-lg-6 position-relative">
+                <img src="{{ asset('images/sph-1.jpg') }}" alt="Gambar Warisan"
+                    class="img-fluid position-absolute top-0 start-0 w-100"
+                    style="object-fit: cover; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid  px-4 px-lg-5  position-relative">
+        <div class="row">
+            <h2 class="fw-bold mb-4">
+                <span>Mengadopsi Inovasi Teknologi dan Perspektif Global</span>
+            </h2>
+            <p>
+                Seiring pendidikan berkembang di abad ke-21, SPH tetap berada di garis depan dengan mengintegrasikan
+                teknologi dan perspektif global ke dalam kelas. Kami telah mengadopsi berbagai alat pembelajaran inovatif,
+                termasuk platform digital mutakhir dan metode pengajaran interaktif, memastikan siswa dibekali keterampilan
+                yang dibutuhkan untuk berkembang di dunia yang didorong oleh teknologi. Siswa kami mendapatkan manfaat dari
+                kurikulum seimbang yang menggabungkan ketelitian akademik tradisional dan kemajuan teknologi terbaru.
+            </p>
+            <p>
+                Selain itu, SPH menyediakan banyak kesempatan bagi siswa untuk berpartisipasi dalam acara dan kompetisi
+                internasional, memungkinkan mereka memperluas wawasan dan mendapatkan pengalaman global. Pengalaman ini
+                membantu membentuk individu yang sadar budaya, adaptif, dan siap memberikan kontribusi di kancah dunia.
+            </p>
+        </div>
+
+        <div class="my-5"></div>
+
+        <div class="row">
+            <h2 class="fw-bold mb-4">
+                <span>Komunitas yang Berkomitmen pada Pembelajaran Sepanjang Hayat</span>
+            </h2>
+            <p>
+                Di SPH, kami percaya bahwa pendidikan lebih dari sekadar pencapaian akademik; pendidikan adalah tentang
+                membentuk hati dan pikiran generasi berikutnya. Kami membangun komunitas pembelajar yang dinamis, di mana
+                siswa, guru, dan orang tua bekerja sama untuk membangun fondasi yang kuat bagi masa depan. Komitmen kami
+                terhadap peningkatan berkelanjutan tercermin dalam kurikulum, kegiatan ekstrakurikuler, dan kemitraan yang
+                kami kembangkan baik secara lokal maupun internasional.
+            </p>
+            <p>
+                Selama lebih dari tiga dekade, kami tetap setia pada misi kami: memproklamasikan keunggulan Kristus dan
+                terlibat dalam pemulihan segala sesuatu melalui pendidikan holistik. Misi ini membekali kami untuk
+                membina pemimpin berkarakter yang siap membuat perbedaan di dunia. Kami mengundang Anda untuk menjadi bagian
+                dari perjalanan ini di SPH, di mana iman dan pendidikan bersatu untuk menciptakan dampak yang langgeng bagi
+                kehidupan siswa kami dan masyarakat luas.
+            </p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Section terakhir: Full Image -->
-    <section id="full-image"  class="p-0 mt-5 mb-5"> <img src="{{ asset('images/importData-1.png') }}" alt="Full Width Image"
-            class="img-fluid rounded w-100" style="display:block; object-fit:cover;">
-        </section>
+    <section id="full-image" class="p-0 mt-5 mb-5"> <img src="{{ asset('images/sph-2.png') }}"
+            alt="Full Width Image" class="img-fluid rounded w-100" style="display:block; object-fit:cover;">
+    </section>
 
     <style>
         /* Default (HP) */
@@ -294,7 +297,7 @@
         }
 
         #hero .carousel-caption {
-            bottom: 20%;
+            bottom: 25%;
             /* lebih rendah, beri jarak aman */
             left: 50%;
             transform: translateX(-50%);
@@ -304,6 +307,16 @@
             text-align: center;
             padding: 0 15px;
         }
+
+        #hero .carousel-caption .btn {
+            border-radius: 30px;
+            /* tombol bulat */
+            font-size: 0.9rem;
+            /* teks lebih kecil */
+            padding: 0.6rem 1.5rem;
+            /* jarak dalam tombol */
+        }
+
 
 
         /* Mobile */
@@ -452,8 +465,6 @@
         .scroll-btn i {
             font-size: 1.2rem;
         }
-
-
     </style>
 
     <script>
