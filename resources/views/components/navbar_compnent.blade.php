@@ -235,6 +235,35 @@
     .dropdown-menu.show .dropdown-item:nth-child(5) {
         animation-delay: 0.25s;
     }
+
+    /* Navbar default */
+.navbar-container {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+}
+
+.navbar-container .nav-link,
+.navbar-container .navbar-brand,
+.navbar-container .btn {
+    color: #fff; /* Teks putih sebelum scroll */
+    transition: color 0.3s ease;
+}
+
+/* Navbar saat di scroll */
+.navbar-container.scrolled {
+    background-color: #fff !important;
+}
+
+.navbar-container.scrolled .nav-link,
+.navbar-container.scrolled .navbar-brand {
+    color: #000 !important; /* Teks hitam setelah scroll */
+}
+
+/* Tombol Tanya Sekarang saat scroll */
+.navbar-container.scrolled .btn-primary {
+    color: #fff;           /* tetap putih meski navbar putih */
+    background-color: #0d6efd; /* atau bisa diganti warna lain jika mau */
+}
 </style>
 <script>
     if (window.innerWidth >= 992) {
@@ -259,4 +288,13 @@
             navbar.classList.remove("scrolled");
         }
     });
+    document.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar-container");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
 </script>
