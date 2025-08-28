@@ -12,10 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     {{-- Bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     {{-- CSS bawaan --}}
     <link rel="stylesheet" href="https://static.hsappstatic.net/foundations-theming-base/ex/live/hubspot-theme.stable.css">
     <link rel="stylesheet" href="https://static.hsappstatic.net/conversations-visitor-ui/static-1.26169/sass/visitor.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
     {{-- Global --}}
     <style>
         * {
