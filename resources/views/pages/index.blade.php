@@ -241,11 +241,10 @@
                 </p>
             </div>
         </div>
-
     </section>
 
     <!-- Section terakhir: Full Image -->
-    <section id="full-image" class="p-0 m-0"> <img src="{{ asset('images/importData-1.png') }}" alt="Full Width Image"
+    <section id="full-image"  class="p-0 mt-5 mb-5"> <img src="{{ asset('images/importData-1.png') }}" alt="Full Width Image"
             class="img-fluid rounded w-100" style="display:block; object-fit:cover;">
         </section>
 
@@ -453,6 +452,8 @@
         .scroll-btn i {
             font-size: 1.2rem;
         }
+
+
     </style>
 
     <script>
