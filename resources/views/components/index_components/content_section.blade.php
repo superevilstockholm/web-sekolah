@@ -2,14 +2,12 @@
     <div class="container">
         <div class="row mb-2">
             <div class="col-auto mx-auto">
-                <!-- Tabs -->
                 <ul class="nav nav-tabs flex-nowrap overflow-x-auto overflow-y-hidden border-0" id="campusTabs"
                     role="tablist" style="white-space: nowrap; -webkit-overflow-scrolling: touch;">
                 </ul>
             </div>
         </div>
         <div class="row mb-1">
-            <!-- Content -->
             <div class="tab-content mt-4" id="campusTabsContent"></div>
         </div>
         <div class="row mb-4">
@@ -55,7 +53,6 @@
             </div>
         </div>
         <div class="row mb-4">
-            <!-- Kiri -->
             <div class="col-md-6 mb-4 mb-md-0">
                 <div class="parent position-relative w-100 rounded-4 overflow-hidden"
                     style="aspect-ratio:1/1; background:url('https://sph.edu/wp-content/uploads/2023/06/overlay-banner01.jpg') center/cover;">
@@ -96,10 +93,10 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-4">
+        <div class="row my-5">
             <div class="col-12">
                 <div class="d-flex flex-column align-items-center">
-                    <h2 class="text-center">Frequently Asked Question<br>Pelita Harapan</h2>
+                    <h2 class="text-center">Frequently Asked Question<br>Sekolah Pelita Harapan</h2>
                     <h3 class="text-primary text-center d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                         <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Pertanyaan Yang Sering Diajukan
@@ -222,19 +219,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-primary">
+    <div class="container-fluid bg-primary overflow-hidden">
         <div class="container py-4">
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <!-- Item 1 -->
                     <div class="carousel-item active">
                         <div class="row flex-md-row-reverse align-items-center text-white rounded-4 p-4">
-                            <!-- Kolom Gambar -->
                             <div class="col-md-6 text-center mb-3 mb-md-0">
                                 <img src="https://sph.edu/wp-content/uploads/2021/08/sph-Testimonial-6.jpg"
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
-                            <!-- Kolom Konten -->
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                                     <img height="15"
@@ -259,15 +253,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 2 -->
                     <div class="carousel-item">
                         <div class="row flex-md-row-reverse align-items-center text-white rounded-4 p-4">
-                            <!-- Kolom Gambar -->
                             <div class="col-md-6 text-center mb-3 mb-md-0">
                                 <img src="https://sph.edu/wp-content/uploads/2021/08/sph-Testimonial-4.jpg"
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
-                            <!-- Kolom Konten -->
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                                     <img height="15"
@@ -291,15 +282,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 3 -->
                     <div class="carousel-item">
                         <div class="row flex-md-row-reverse align-items-center text-white rounded-4 p-4">
-                            <!-- Kolom Gambar -->
                             <div class="col-md-6 text-center mb-3 mb-md-0">
                                 <img src="https://sph.edu/wp-content/uploads/2021/08/sph-Testimonial-3.jpg"
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
-                            <!-- Kolom Konten -->
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                                     <img height="15"
@@ -323,15 +311,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Item 4 -->
                     <div class="carousel-item">
                         <div class="row flex-md-row-reverse align-items-center text-white rounded-4 p-4">
-                            <!-- Kolom Gambar -->
                             <div class="col-md-6 text-center mb-3 mb-md-0">
                                 <img src="https://sph.edu/wp-content/uploads/2021/08/sph-Testimonial-5.jpg"
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
-                            <!-- Kolom Konten -->
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                                     <img height="15"
@@ -356,15 +341,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- Kontrol Carousel -->
-                <div class="d-flex justify-content-start gap-4 fs-2">
+                <div class="d-flex justify-content-center justify-content-md-start gap-4 fs-2">
                     <div class="text-light bg-transparent border-0" type="button"
                         data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                         <i class="bi bi-chevron-left"></i>
                     </div>
-                    <!-- Carousel sudah ada seperti yang kamu tulis -->
                     <div class="text-center mt-3 text-light" id="carouselIndicator">
-                        <!-- JS nanti akan isi sini -->
                     </div>
                     <div class="text-light bg-transparent border-0" type="button"
                         data-bs-target="#testimonialCarousel" data-bs-slide="next">
@@ -389,8 +371,11 @@
                             alt=""> Anda Memiliki Pertanyaan?
                     </h5>
                     <h3 class="fs-2 fw-normal">Baca Pertanyaan yang Sering Diajukan oleh Orang Tua</h3>
-                    <p>Untuk melayani Anda dengan lebih baik, kami telah menyusun daftar pertanyaan umum lengkap dengan informasi khusus tentang masing-masing kampus. Jika pertanyaan Anda masih belum terjawab, jangan ragu untuk menghubungi kami. Kami akan melakukan yang terbaik untuk membantu Anda.</p>
-                    <button class="btn btn-sm btn-warning text-white btn-custom px-4 mt-2">Temukan Lebih Banyak</button>
+                    <p>Untuk melayani Anda dengan lebih baik, kami telah menyusun daftar pertanyaan umum lengkap dengan
+                        informasi khusus tentang masing-masing kampus. Jika pertanyaan Anda masih belum terjawab, jangan
+                        ragu untuk menghubungi kami. Kami akan melakukan yang terbaik untuk membantu Anda.</p>
+                    <button class="btn btn-sm btn-warning text-white btn-custom px-4 mt-2">Temukan Lebih
+                        Banyak</button>
                 </div>
             </div>
         </div>
@@ -433,25 +418,20 @@
             image: "https://sph.edu/wp-content/uploads/2023/06/tabs-img-pluit-village.jpg"
         }
     ];
-
     const tabList = document.getElementById("campusTabs");
     const tabContent = document.getElementById("campusTabsContent");
-
     campuses.forEach((campus, index) => {
-        // Buat tab button
         tabList.innerHTML += `
-      <li class="nav-item" role="presentation">
-        <button class="nav-link fw-medium ${index === 0 ? "active" : ""}"
-                id="${campus.id}-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#${campus.id}"
-                type="button" role="tab">
-          ${campus.name}
-        </button>
-      </li>
-    `;
-
-        // Buat tab content
+        <li class="nav-item" role="presentation">
+            <button class="nav-link fw-medium ${index === 0 ? "active" : ""}"
+                    id="${campus.id}-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#${campus.id}"
+                    type="button" role="tab">
+                ${campus.name}
+            </button>
+        </li>
+        `;
         tabContent.innerHTML += `
       <div class="tab-pane fade ${index === 0 ? "show active" : ""}" id="${campus.id}" role="tabpanel">
         <div class="row align-items-center">
@@ -487,8 +467,8 @@
             const img = targetPane.querySelector('.tab-image');
             if (img) {
                 img.style.animation = 'none';
-                img.offsetHeight; // trigger reflow
-                img.style.animation = null; // re-apply animasi
+                img.offsetHeight;
+                img.style.animation = null;
             }
         });
     });
@@ -511,18 +491,14 @@
     .nav-tabs .nav-link.active {
         border: none !important;
         border-bottom: 4px solid var(--bs-primary) !important;
-        /* lebih tebal biar jelas */
         margin-bottom: -2px;
-        /* biar garis nempel ke nav */
         background-color: transparent;
-        /* hapus bg aktif */
         font-weight: 600;
         color: #000;
     }
 
     .nav-tabs {
         gap: 1rem;
-        /* kasih jarak antar tab */
     }
 
     @media (min-width: 768px) {
@@ -566,9 +542,7 @@
 
     .title-box {
         width: fit-content;
-        /* otomatis sesuai panjang teks */
         max-width: 90%;
-        /* biar gak kepanjangan */
         padding: 8px 12px;
         color: #fff;
         text-align: center;
@@ -591,7 +565,6 @@
 
     .parent:hover .overlay {
         width: 100% !important;
-        /* full background */
         height: 100% !important;
     }
 
@@ -611,7 +584,6 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const parents = document.querySelectorAll(".parent");
-
         parents.forEach(parent => {
             const overlay = parent.querySelector(".overlay");
             overlay.classList.add("rounded-rt-4");
@@ -626,46 +598,36 @@
             window.addEventListener("resize", syncSize);
         });
     });
-
     document.addEventListener('DOMContentLoaded', function() {
         const carousel = document.querySelector('#testimonialCarousel');
         const indicatorsContainer = document.querySelector('#carouselIndicator');
         const items = carousel.querySelectorAll('.carousel-item');
-
-        // Buat indikator
         items.forEach((item, index) => {
             const span = document.createElement('span');
             span.textContent = ' _ ';
             span.dataset.index = index;
             span.style.cursor = 'pointer';
-            span.classList.add('fs-2'); // ukuran besar
-            span.classList.add('text-light'); // warna terang
-            span.style.opacity = '0.5'; // default nonaktif
+            span.classList.add('fs-2');
+            span.classList.add('text-light');
+            span.style.opacity = '0.5';
             indicatorsContainer.appendChild(span);
         });
 
-        // Update indikator
         function updateIndicator(activeIndex) {
             indicatorsContainer.querySelectorAll('span').forEach((span, i) => {
                 if (i === activeIndex) {
-                    span.classList.add('fw-bold'); // aktif bold
-                    span.style.opacity = '1'; // opacity penuh
+                    span.classList.add('fw-bold');
+                    span.style.opacity = '1';
                 } else {
                     span.classList.remove('fw-bold');
-                    span.style.opacity = '0.5'; // lebih transparan
+                    span.style.opacity = '0.5';
                 }
             });
         }
-
-        // Set awal
         updateIndicator(0);
-
-        // Event carousel slide
         carousel.addEventListener('slide.bs.carousel', function(e) {
             updateIndicator(e.to);
         });
-
-        // Klik indikator
         indicatorsContainer.querySelectorAll('span').forEach(span => {
             span.addEventListener('click', function() {
                 const index = parseInt(this.dataset.index);
