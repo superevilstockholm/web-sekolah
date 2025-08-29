@@ -41,7 +41,7 @@
     <nav class="navbar navbar-expand-lg pt-0">
         <div class="container">
             <a class="navbar-brand fw-medium" href="#"><img style="height: 42px;"
-                    src="{{ asset('static/img/logo.png') }}" alt=""></a>
+                    src="{{ asset('static/img/logo-terbaru1.png') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
