@@ -69,14 +69,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Learning
+                            Pembelajaran
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Artikel</a></li>
+                            <li><a class="dropdown-item" href="#">Jalur Pembelajaran</a></li>
+                            <li><a class="dropdown-item" href="#">Program</a></li>
                             <li><a class="dropdown-item" href="#">Kurikulum</a></li>
-                            <li><a class="dropdown-item" href="#">E-Learning</a></li>
-                            <li><a class="dropdown-item" href="#">E-Books</a></li>
-                            <li><a class="dropdown-item" href="#">Dukungan Belajar</a></li>
+                            <li><a class="dropdown-item" href="#">Dukungan Pembelajaran</a></li>
+                            <li><a class="dropdown-item" href="#">Pembelajaran Pelayanan</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
