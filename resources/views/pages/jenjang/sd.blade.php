@@ -119,7 +119,7 @@
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas1.png" class="card-img-top" alt="Masjid">
+                        <img src="/images/sd.png" class="card-img-top" alt="Masjid">
                         <div class="card-body text-center">
                             <h6 class="fw-bold">Masjid Sekolah</h6>
                         </div>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas2.png" class="card-img-top" alt="Lab Komputer">
+                        <img src="/images/sd-1.png" class="card-img-top" alt="Lab Komputer">
                         <div class="card-body text-center">
                             <h6 class="fw-bold">Laboratorium Komputer</h6>
                         </div>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas3.png" class="card-img-top" alt="Perpustakaan">
+                        <img src="/images/sd.png" class="card-img-top" alt="Perpustakaan">
                         <div class="card-body text-center">
                             <h6 class="fw-bold">Perpustakaan Islami</h6>
                         </div>
@@ -143,7 +143,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas4.png" class="card-img-top" alt="Lapangan">
+                        <img src="/images/sd-1.png" class="card-img-top" alt="Lapangan">
                         <div class="card-body text-center">
                             <h6 class="fw-bold">Lapangan Olahraga</h6>
                         </div>
@@ -165,21 +165,21 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/prestasi1.png" class="mx-auto mb-3" width="80" alt="">
+                        <img src="/images/sd.png" class="mx-auto mb-3" width="100%" alt="">
                         <h6 class="fw-bold">Juara Olimpiade Matematika</h6>
                         <p class="text-muted small">Tingkat Kota 2024</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/prestasi2.png" class="mx-auto mb-3" width="80" alt="">
+                        <img src="/images/sd-1.png" class="mx-auto mb-3" width="100%" alt="">
                         <h6 class="fw-bold">Hafidz Qur’an</h6>
                         <p class="text-muted small">30 Juz di usia SD</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/prestasi3.png" class="mx-auto mb-3" width="80" alt="">
+                        <img src="/images/sd.png" class="mx-auto mb-3" width="100%" alt="">
                         <h6 class="fw-bold">Juara Futsal</h6>
                         <p class="text-muted small">Tingkat Provinsi 2024</p>
                     </div>
@@ -198,10 +198,10 @@
                 </div>
             </div>
             <div class="row g-3">
-                <div class="col-md-3"><img src="/images/galeri1.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/galeri2.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/galeri3.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/galeri4.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/sd.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/sd-1.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/sd.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/sd-1.png" class="img-fluid rounded shadow-sm" alt=""></div>
             </div>
         </div>
     </section>
