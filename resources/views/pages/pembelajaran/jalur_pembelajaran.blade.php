@@ -1,6 +1,7 @@
 @extends('App')
 @section('title', 'Jalur Pembelajaran')
 @section('content')
+    {{-- Breadcrumb --}}
     <div class="container">
         <div class="row">
             <div class="col">

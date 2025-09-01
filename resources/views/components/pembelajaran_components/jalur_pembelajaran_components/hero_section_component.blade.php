@@ -1,6 +1,6 @@
 <section class="mt-3">
     <div class="container">
-        <h1 class="text-center mb-5 text-muted">Jalur Pembelajaran Sekolah Internasional</h1>
+        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Jalur Pembelajaran Sekolah Internasional</h1>
         <div class="row align-items-center">
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-5 mb-4 mb-md-0">

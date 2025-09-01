@@ -65,3 +65,17 @@
         }
     })
 </script>
+<style>
+    .owl-carousel .item .card img {
+        transition: transform 0.4s ease;
+    }
+    .owl-carousel .item:hover .card img {
+        transform: scale(1.1);
+    }
+    .card-img-overlay {
+        transition: background 0.4s ease;
+    }
+    .owl-carousel .item:hover .card-img-overlay {
+        background: linear-gradient(to top, rgba(0,0,0,0.75), transparent) !important;
+    }
+</style>
