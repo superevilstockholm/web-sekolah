@@ -41,7 +41,7 @@
     <nav class="navbar navbar-expand-lg pt-0">
         <div class="container">
             <a class="navbar-brand fw-medium" href="#"><img style="height: 42px;"
-                    src="{{ asset('static/img/logo-terbaru1.png') }}" alt=""></a>
+                    src="{{ asset('static/img/logo-terbaru1-removebg.png') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -107,10 +107,10 @@
                             Jenjang
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">TK</a></li>
-                            <li><a class="dropdown-item" href="#">SD</a></li>
-                            <li><a class="dropdown-item" href="#">SMP</a></li>
-                            <li><a class="dropdown-item" href="#">SMA</a></li>
+                            <li><a class="dropdown-item" href="{{ route('tk') }}">TK</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sd') }}">SD</a></li>
+                            <li><a class="dropdown-item" href="{{ route('smp') }}">SMP</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sma') }}">SMA</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -155,21 +155,21 @@
 </div>
 {{-- Modal --}}
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-top">
-    <div class="modal-content border-0 shadow-lg rounded-3">
-      <div class="modal-header">
-        <h5 class="modal-title" id="searchModalLabel">Cari</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input type="text" class="form-control form-control-lg" placeholder="Ketik kata kunci...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-        <button type="button" class="btn btn-primary">Cari</button>
-      </div>
+    <div class="modal-dialog modal-dialog-top">
+        <div class="modal-content border-0 shadow-lg rounded-3">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Cari</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control form-control-lg" placeholder="Ketik kata kunci...">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary">Cari</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <style>
     .navbar-container {
@@ -237,33 +237,37 @@
     }
 
     /* Navbar default */
-.navbar-container {
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: transparent;
-}
+    .navbar-container {
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        background-color: transparent;
+    }
 
-.navbar-container .nav-link,
-.navbar-container .navbar-brand,
-.navbar-container .btn {
-    color: #fff; /* Teks putih sebelum scroll */
-    transition: color 0.3s ease;
-}
+    .navbar-container .nav-link,
+    .navbar-container .navbar-brand,
+    .navbar-container .btn {
+        color: #fff;
+        /* Teks putih sebelum scroll */
+        transition: color 0.3s ease;
+    }
 
-/* Navbar saat di scroll */
-.navbar-container.scrolled {
-    background-color: #fff !important;
-}
+    /* Navbar saat di scroll */
+    .navbar-container.scrolled {
+        background-color: #fff !important;
+    }
 
-.navbar-container.scrolled .nav-link,
-.navbar-container.scrolled .navbar-brand {
-    color: #000 !important; /* Teks hitam setelah scroll */
-}
+    .navbar-container.scrolled .nav-link,
+    .navbar-container.scrolled .navbar-brand {
+        color: #000 !important;
+        /* Teks hitam setelah scroll */
+    }
 
-/* Tombol Tanya Sekarang saat scroll */
-.navbar-container.scrolled .btn-primary {
-    color: #fff;           /* tetap putih meski navbar putih */
-    background-color: #0d6efd; /* atau bisa diganti warna lain jika mau */
-}
+    /* Tombol Tanya Sekarang saat scroll */
+    .navbar-container.scrolled .btn-primary {
+        color: #fff;
+        /* tetap putih meski navbar putih */
+        background-color: #0d6efd;
+        /* atau bisa diganti warna lain jika mau */
+    }
 </style>
 <script>
     if (window.innerWidth >= 992) {
@@ -289,12 +293,11 @@
         }
     });
     document.addEventListener("scroll", function() {
-    let navbar = document.querySelector(".navbar-container");
-    if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
-});
-
+        let navbar = document.querySelector(".navbar-container");
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
 </script>

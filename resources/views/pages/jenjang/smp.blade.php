@@ -1,5 +1,5 @@
 @extends('App')
-@section('title', 'Sekolah Dasar (SD) - SDIT Insan Kamil')
+@section('title', 'Sekolah Menengah Pertama (SMP) - SMPIT Insan Kamil')
 
 @section('content')
     {{-- Banner / Hero Section --}}
@@ -11,11 +11,11 @@
                         <div class="carousel-inner rounded shadow">
                             {{-- Slide 1 --}}
                             <div class="carousel-item active position-relative">
-                                <img src="/images/sd.png" class="d-block w-100 img-fluid" alt="Banner 1">
+                                <img src="/images/smp.png" class="d-block w-100 img-fluid" alt="Banner 1">
                             </div>
                             {{-- Slide 2 --}}
                             <div class="carousel-item position-relative">
-                                <img src="/images/sd-1.png" class="d-block w-100 img-fluid" alt="Banner 2">
+                                <img src="/images/smp-1.png" class="d-block w-100 img-fluid" alt="Banner 2">
                             </div>
                         </div>
 
@@ -49,9 +49,9 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-8 mx-auto">
-                    <h2 class="fw-bold text-success mb-3">Selamat Datang di SD Islam Terpadu Insan Kamil</h2>
+                    <h2 class="fw-bold text-success mb-3">Selamat Datang di SMP Islam Terpadu Insan Kamil</h2>
                     <p class="lead text-muted">
-                        Tempat belajar yang Islami, menyenangkan, dan mendidik generasi unggul berakhlak mulia.
+                        Menyiapkan generasi remaja muslim yang berakhlak, cerdas, mandiri, dan siap menghadapi tantangan masa depan.
                     </p>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 {{-- Card 1: PPDB --}}
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 rounded-3">
-                        <img src="/images/tk-3.png" class="card-img-top rounded-top" alt="PPDB">
+                        <img src="/images/smp-ppdb.png" class="card-img-top rounded-top" alt="PPDB">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Penerimaan Peserta Didik Baru (PPDB)</h5>
                             <p class="card-text text-muted">
@@ -79,25 +79,25 @@
                 {{-- Card 2: Tahfidz --}}
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 rounded-3">
-                        <img src="/images/tk-4.png" class="card-img-top rounded-top" alt="Tahfidz">
+                        <img src="/images/smp-tahfidz.png" class="card-img-top rounded-top" alt="Tahfidz">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Program Tahfidz</h5>
                             <p class="card-text text-muted">
-                                Membina siswa untuk mencintai dan menghafal Al-Qur’an dengan metode yang menyenangkan.
+                                Pembinaan intensif untuk memperkuat hafalan Al-Qur’an di usia remaja.
                             </p>
                             <a href="#" class="btn btn-success btn-sm">Lihat Program</a>
                         </div>
                     </div>
                 </div>
 
-                {{-- Card 3: Festival / Kegiatan --}}
+                {{-- Card 3: Ekstrakurikuler --}}
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 rounded-3">
-                        <img src="/images/tk-5.png" class="card-img-top rounded-top" alt="Festival">
+                        <img src="/images/smp-ekskul.png" class="card-img-top rounded-top" alt="Ekskul">
                         <div class="card-body text-center">
-                            <h5 class="card-title fw-bold">Festival & Kegiatan Sekolah</h5>
+                            <h5 class="card-title fw-bold">Ekstrakurikuler & Kegiatan</h5>
                             <p class="card-text text-muted">
-                                Berbagai kegiatan seru untuk mengembangkan bakat, minat, dan kreativitas siswa.
+                                Pilihan kegiatan seperti futsal, sains club, pramuka, dan seni islami.
                             </p>
                             <a href="#" class="btn btn-success btn-sm">Jelajahi Kegiatan</a>
                         </div>
@@ -107,19 +107,19 @@
         </div>
     </section>
 
-        {{-- Fasilitas --}}
+    {{-- Fasilitas --}}
     <section class="py-5">
         <div class="container">
             <div class="row text-center mb-4">
                 <div class="col">
                     <h2 class="fw-bold text-success">Fasilitas Unggulan</h2>
-                    <p class="text-muted">Mendukung proses belajar yang nyaman dan Islami</p>
+                    <p class="text-muted">Mendukung proses belajar dan pengembangan potensi siswa</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas1.png" class="card-img-top" alt="Masjid">
+                        <img src="/images/smp-fasilitas1.png" class="card-img-top" alt="Masjid">
                         <div class="card-body text-center">
                             <h6 class="fw-bold">Masjid Sekolah</h6>
                         </div>
@@ -127,25 +127,25 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas2.png" class="card-img-top" alt="Lab Komputer">
+                        <img src="/images/smp-fasilitas2.png" class="card-img-top" alt="Lab IPA">
                         <div class="card-body text-center">
-                            <h6 class="fw-bold">Laboratorium Komputer</h6>
+                            <h6 class="fw-bold">Laboratorium IPA</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas3.png" class="card-img-top" alt="Perpustakaan">
+                        <img src="/images/smp-fasilitas3.png" class="card-img-top" alt="Perpustakaan">
                         <div class="card-body text-center">
-                            <h6 class="fw-bold">Perpustakaan Islami</h6>
+                            <h6 class="fw-bold">Perpustakaan Digital</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-fasilitas4.png" class="card-img-top" alt="Lapangan">
+                        <img src="/images/smp-fasilitas4.png" class="card-img-top" alt="Lapangan">
                         <div class="card-body text-center">
-                            <h6 class="fw-bold">Lapangan Olahraga</h6>
+                            <h6 class="fw-bold">Lapangan Multifungsi</h6>
                         </div>
                     </div>
                 </div>
@@ -159,28 +159,28 @@
             <div class="row text-center mb-4">
                 <div class="col">
                     <h2 class="fw-bold text-success">Prestasi Siswa</h2>
-                    <p class="text-muted">Mencetak generasi berprestasi di bidang akademik & non-akademik</p>
+                    <p class="text-muted">Membuktikan keunggulan dalam akademik & non-akademik</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/prestasi1.png" class="mx-auto mb-3" width="80" alt="">
-                        <h6 class="fw-bold">Juara Olimpiade Matematika</h6>
-                        <p class="text-muted small">Tingkat Kota 2024</p>
+                        <img src="/images/prestasi-smp1.png" class="mx-auto mb-3" width="80" alt="">
+                        <h6 class="fw-bold">Juara Olimpiade IPA</h6>
+                        <p class="text-muted small">Tingkat Nasional 2024</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/prestasi2.png" class="mx-auto mb-3" width="80" alt="">
+                        <img src="/images/prestasi-smp2.png" class="mx-auto mb-3" width="80" alt="">
                         <h6 class="fw-bold">Hafidz Qur’an</h6>
-                        <p class="text-muted small">30 Juz di usia SD</p>
+                        <p class="text-muted small">30 Juz di usia SMP</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/prestasi3.png" class="mx-auto mb-3" width="80" alt="">
-                        <h6 class="fw-bold">Juara Futsal</h6>
+                        <img src="/images/prestasi-smp3.png" class="mx-auto mb-3" width="80" alt="">
+                        <h6 class="fw-bold">Juara Basket</h6>
                         <p class="text-muted small">Tingkat Provinsi 2024</p>
                     </div>
                 </div>
@@ -194,14 +194,14 @@
             <div class="row text-center mb-4">
                 <div class="col">
                     <h2 class="fw-bold text-success">Galeri Kegiatan</h2>
-                    <p class="text-muted">Potret aktivitas siswa SD IT Insan Kamil</p>
+                    <p class="text-muted">Potret aktivitas siswa SMP IT Insan Kamil</p>
                 </div>
             </div>
             <div class="row g-3">
-                <div class="col-md-3"><img src="/images/galeri1.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/galeri2.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/galeri3.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/galeri4.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/smp-galeri1.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/smp-galeri2.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/smp-galeri3.png" class="img-fluid rounded shadow-sm" alt=""></div>
+                <div class="col-md-3"><img src="/images/smp-galeri4.png" class="img-fluid rounded shadow-sm" alt=""></div>
             </div>
         </div>
     </section>
