@@ -22,17 +22,17 @@
         </div>
     </div>
     {{-- Hero Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.hero_section')
+    @include('components.pembelajaran_components.kurikulum_components.hero_section_component')
     {{-- Studi Alkitab Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.studi_alkitab_section')
+    @include('components.pembelajaran_components.kurikulum_components.studi_alkitab_section_component')
     {{-- Bahasa Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.bahasa_section')
+    @include('components.pembelajaran_components.kurikulum_components.bahasa_section_component')
     {{-- Matematika Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.matematika_section')
+    @include('components.pembelajaran_components.kurikulum_components.matematika_section_component')
     {{-- Sains Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.sains_section')
+    @include('components.pembelajaran_components.kurikulum_components.sains_section_component')
     {{-- Musik dan Seni Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.musik_dan_seni_section')
+    @include('components.pembelajaran_components.kurikulum_components.musik_dan_seni_section_component')
     {{-- Olahraga Section --}}
     @include('components.pembelajaran_components.kurikulum_components.olahraga_section')
     {{-- Parenting Quesstion Component --}}
