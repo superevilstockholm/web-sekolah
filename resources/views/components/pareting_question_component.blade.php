@@ -1,4 +1,4 @@
-<section class="position-relative text-white" style="height: 550px;">
+<section class="position-relative text-white" style="height: 600px;">
     <div class="w-100 h-100 p-0 m-0">
         <img class="img-fluid w-100 h-100 object-fit-cover" style="object-position: center;"
             src="https://sph.edu/wp-content/uploads/2023/06/LEO_7341_2.jpg" alt="">
