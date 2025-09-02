@@ -1,6 +1,9 @@
+
 <div class="{{ request()->is('/') ? 'fixed-top': 'sticky-top' }} navbar-container">
+
+<div class="fixed-top navbar-container" >
     <header class="pt-2" style="font-size: 0.9rem;">
-        <div class="container">
+        <div class="container" style="max-width: 1500px !important;">
             <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3"
                 style="font-family: 'Roboto', sans-serif !important;">
                 <li class="nav-item dropdown">
@@ -39,8 +42,12 @@
         </div>
     </header>
     <nav class="navbar navbar-expand-lg pt-0">
+
         <div class="container">
             <a class="navbar-brand fw-medium" href="/"><img style="height: 42px;"
+
+        <div class="container" style="max-width: 1300px !important;">
+            <a class="navbar-brand fw-medium" href="#"><img style="height: 72px;"
                     src="{{ asset('static/img/logo.png') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,10 +117,10 @@
                             Jenjang
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">TK</a></li>
-                            <li><a class="dropdown-item" href="#">SD</a></li>
-                            <li><a class="dropdown-item" href="#">SMP</a></li>
-                            <li><a class="dropdown-item" href="#">SMA</a></li>
+                            <li><a class="dropdown-item" href="{{ route('tk') }}">TK</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sd') }}">SD</a></li>
+                            <li><a class="dropdown-item" href="{{ route('smp') }}">SMP</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sma') }}">SMA</a></li>
                         </ul>
                     </li>
                 </ul>

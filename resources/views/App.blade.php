@@ -23,6 +23,11 @@
     <link rel="stylesheet"
         href="https://static.hsappstatic.net/conversations-visitor-ui/static-1.26169/sass/visitor.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     {{-- Global --}}
     <style>
         * {
