@@ -22,4 +22,14 @@ Route::group(['prefix' => 'jenjang'], function () {
     Route::get('/sma', function () {
         return view('pages.jenjang.sma');
     })->name('sma');
+
+    Route::get('/sd2', function () {
+        return view('pages.jenjang.sd2');
+    })->name('sd2');
+
+    Route::get('/smp2', function () {
+        return view('pages.jenjang.smp2');
+    })->name('smp2');
+
+
 });
