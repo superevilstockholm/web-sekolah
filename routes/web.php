@@ -54,6 +54,15 @@ Route::group(['prefix' => 'jenjang'], function () {
     Route::get('/smp2', function () {
         return view('pages.jenjang.smp2');
     })->name('smp2');
+});
 
+Route::group(['prefix' => 'lembaga'], function () {
 
+    Route::get('/sma-islam', function () {
+        return view('pages.lembaga.sma');
+    })->name('sma_islam');
+
+    Route::get('/madrasah-ibtidaiyah', function () {
+        return view('pages.lembaga.madrasah_ibtidaiyah');
+    })->name('madrasah_ibtidaiyah');
 });
