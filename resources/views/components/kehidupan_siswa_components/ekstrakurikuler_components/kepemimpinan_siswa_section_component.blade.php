@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mb-5">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 mb-3">

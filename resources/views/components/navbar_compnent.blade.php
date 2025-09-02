@@ -99,9 +99,10 @@
                             Kehidupan Siswa
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Ekstrakurikuler</a></li>
-                            <li><a class="dropdown-item" href="#">Keagamaan</a></li>
-                            <li><a class="dropdown-item" href="#">Layanan Siswa</a></li>
+                            <li><a class="dropdown-item" href="{{ route('ekstreakurikuler') }}">Ekstrakurikuler</a></li>
+                            <li><a class="dropdown-item" href="{{ route('kehidupan_rohani') }}">Kehidupan Rohani</a></li>
+                            <li><a class="dropdown-item" href="{{ route('layanan_siswa') }}">Layanan Siswa</a></li>
+                            <li><a class="dropdown-item" href="{{ route('asrama_phh') }}">Asrama PHH</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
