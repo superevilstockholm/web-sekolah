@@ -34,7 +34,7 @@
     {{-- Musik dan Seni Section --}}
     @include('components.pembelajaran_components.kurikulum_components.musik_dan_seni_section_component')
     {{-- Olahraga Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.olahraga_section')
+    @include('components.pembelajaran_components.kurikulum_components.olahraga_section_component')
     {{-- Parenting Quesstion Component --}}
     @include('components.pareting_question_component')
     {{-- Custom NavBar --}}
