@@ -1,4 +1,4 @@
-<section class="mb-4 mb-md-5" id="sains">
+<section class="mb-4 mb-md-5" id="olahraga">
     <div class="container">
         <div class="row mb-4">
             <div class="col">

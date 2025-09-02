@@ -22,7 +22,7 @@
                                 <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt="">
                                 Matematika
                             </a>
-                            <a href="#" class="d-flex align-items-center gap-1 text-primary fw-medium" style="text-decoration: none;">
+                            <a href="#musik-dan-seni" class="d-flex align-items-center gap-1 text-primary fw-medium" style="text-decoration: none;">
                                 <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt="">
                                 Musik dan Seni
                             </a>
@@ -38,7 +38,7 @@
                                 <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt="">
                                 Sains
                             </a>
-                            <a href="#" class="d-flex align-items-center gap-1 text-primary fw-medium" style="text-decoration: none;">
+                            <a href="#olahraga" class="d-flex align-items-center gap-1 text-primary fw-medium" style="text-decoration: none;">
                                 <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt="">
                                 Olahraga
                             </a>
