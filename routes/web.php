@@ -28,3 +28,10 @@ Route::prefix('pembelajaran')->group(function() {
         return view('pages.pembelajaran.pembelajaran_pelayanan');
     })->name('pembelajaran_pelayanan');
 })->name('pembelajaran');
+
+Route::prefix('kehidupan-siswa')->group(function () {
+    // Ekstrakurikuler
+    Route::get('ekstreakurikuler', function () {
+        return view('pages.kehidupan_siswa.ekstreakurikuler');
+    })->name('ekstreakurikuler');
+})->name('kehidupan_siswa');
