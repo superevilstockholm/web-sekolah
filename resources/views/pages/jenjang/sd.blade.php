@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div id="bannerCarouselSD" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner rounded shadow">
                             {{-- Slide 1 --}}
                             <div class="carousel-item active position-relative">
@@ -20,12 +20,12 @@
                         </div>
 
                         {{-- Control Prev/Next --}}
-                        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarouselSD"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Sebelumnya</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel"
+                        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarouselSD"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Selanjutnya</span>
@@ -33,9 +33,9 @@
 
                         {{-- Indicator --}}
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
+                            <button type="button" data-bs-target="#bannerCarouselSD" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"
+                            <button type="button" data-bs-target="#bannerCarouselSD" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                         </div>
                     </div>
@@ -45,61 +45,85 @@
     </section>
 
     {{-- Sambutan --}}
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="fw-bold text-success">Selamat Datang di SDIT Insan Kamil</h2>
+        </div>
+    </div>
+
     <section class="py-5">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="fw-bold text-success mb-3">Selamat Datang di SD Islam Terpadu Insan Kamil</h2>
-                    <p class="lead text-muted">
-                        Tempat belajar yang Islami, menyenangkan, dan mendidik generasi unggul berakhlak mulia.
+            <div class="row align-items-stretch">
+                {{-- Teks --}}
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <p class="mb-3">
+                        SDIT Insan Kamil hadir untuk membentuk generasi muslim yang unggul dalam ilmu pengetahuan dan teknologi,
+                        serta memiliki akhlak mulia. Dengan pengalaman lebih dari satu dekade, SDIT Insan Kamil menjadi sekolah
+                        dasar pilihan bagi orang tua di wilayah Tangerang Selatan dan sekitarnya.
+                    </p>
+                    <p>
+                        Visi SDIT Insan Kamil adalah
+                        <strong>"Menjadi Sekolah Dasar Islam Unggulan yang Mencetak Generasi Qur’ani, Cerdas, Kreatif, dan Mandiri"</strong>.
                     </p>
                 </div>
+
+                {{-- Gambar --}}
+                <div class="col-lg-5 text-center mb-lg-5">
+                    {{-- versi desktop --}}
+                    <img src="/images/tk-2.png" class="img-fluid rounded shadow d-none d-lg-block w-100 h-100"
+                        style="max-width: 100%; height: 100%; object-fit: cover;" alt="Foto Sambutan">
+
+                    {{-- versi mobile --}}
+                    <img src="/images/tk-2.png" class="img-fluid rounded shadow d-block d-lg-none w-100"
+                        style="max-height: 300px; object-fit: cover;" alt="Foto Sambutan">
+                </div>
             </div>
         </div>
     </section>
 
-    {{-- Program / Informasi --}}
+    {{-- Berita Terkini --}}
     <section class="py-5 bg-light">
         <div class="container">
+            <h3 class="fw-bold text-center mb-5 text-success">Berita Terkini</h3>
             <div class="row g-4">
-                {{-- Card 1: PPDB --}}
+                {{-- Berita 1 --}}
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-3">
-                        <img src="/images/tk-3.png" class="card-img-top rounded-top" alt="PPDB">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-bold">Penerimaan Peserta Didik Baru (PPDB)</h5>
-                            <p class="card-text text-muted">
-                                Informasi lengkap mengenai pendaftaran siswa baru tahun ajaran 2025/2026.
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/images/sd-1.png" class="card-img-top rounded-top" alt="Berita 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2">Pendaftaran PPDB SDIT Insan Kamil</h5>
+                            <p class="card-text flex-grow-1">
+                                Bergabunglah bersama kami dalam penerimaan siswa baru tahun ajaran 2025 - 2026.
                             </p>
-                            <a href="#" class="btn btn-success btn-sm">Lihat Selengkapnya</a>
+                            <a href="#" class="btn btn-success btn-sm mt-auto align-self-start">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
 
-                {{-- Card 2: Tahfidz --}}
+                {{-- Berita 2 --}}
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-3">
-                        <img src="/images/tk-4.png" class="card-img-top rounded-top" alt="Tahfidz">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-bold">Program Tahfidz</h5>
-                            <p class="card-text text-muted">
-                                Membina siswa untuk mencintai dan menghafal Al-Qur’an dengan metode yang menyenangkan.
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/images/sd-1.png" class="card-img-top rounded-top" alt="Berita 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2">Kegiatan Ekstrakurikuler</h5>
+                            <p class="card-text flex-grow-1">
+                                Temukan berbagai kegiatan pengembangan diri siswa di SDIT Insan Kamil.
                             </p>
-                            <a href="#" class="btn btn-success btn-sm">Lihat Program</a>
+                            <a href="#" class="btn btn-success btn-sm mt-auto align-self-start">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
 
-                {{-- Card 3: Festival / Kegiatan --}}
+                {{-- Berita 3 --}}
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-3">
-                        <img src="/images/tk-5.png" class="card-img-top rounded-top" alt="Festival">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-bold">Festival & Kegiatan Sekolah</h5>
-                            <p class="card-text text-muted">
-                                Berbagai kegiatan seru untuk mengembangkan bakat, minat, dan kreativitas siswa.
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="/images/sd-1.png" class="card-img-top rounded-top" alt="Berita 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2">Prestasi Siswa</h5>
+                            <p class="card-text flex-grow-1">
+                                Berbagai prestasi akademik dan non-akademik telah diraih siswa SDIT Insan Kamil.
                             </p>
-                            <a href="#" class="btn btn-success btn-sm">Jelajahi Kegiatan</a>
+                            <a href="#" class="btn btn-success btn-sm mt-auto align-self-start">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -107,114 +131,16 @@
         </div>
     </section>
 
-        {{-- Fasilitas --}}
+    {{-- Lokasi / Maps --}}
     <section class="py-5">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
-                    <h2 class="fw-bold text-success">Fasilitas Unggulan</h2>
-                    <p class="text-muted">Mendukung proses belajar yang nyaman dan Islami</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd.png" class="card-img-top" alt="Masjid">
-                        <div class="card-body text-center">
-                            <h6 class="fw-bold">Masjid Sekolah</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-1.png" class="card-img-top" alt="Lab Komputer">
-                        <div class="card-body text-center">
-                            <h6 class="fw-bold">Laboratorium Komputer</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd.png" class="card-img-top" alt="Perpustakaan">
-                        <div class="card-body text-center">
-                            <h6 class="fw-bold">Perpustakaan Islami</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 shadow-sm border-0">
-                        <img src="/images/sd-1.png" class="card-img-top" alt="Lapangan">
-                        <div class="card-body text-center">
-                            <h6 class="fw-bold">Lapangan Olahraga</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Prestasi --}}
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
-                    <h2 class="fw-bold text-success">Prestasi Siswa</h2>
-                    <p class="text-muted">Mencetak generasi berprestasi di bidang akademik & non-akademik</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/sd.png" class="mx-auto mb-3" width="100%" alt="">
-                        <h6 class="fw-bold">Juara Olimpiade Matematika</h6>
-                        <p class="text-muted small">Tingkat Kota 2024</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/sd-1.png" class="mx-auto mb-3" width="100%" alt="">
-                        <h6 class="fw-bold">Hafidz Qur’an</h6>
-                        <p class="text-muted small">30 Juz di usia SD</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 text-center p-4">
-                        <img src="/images/sd.png" class="mx-auto mb-3" width="100%" alt="">
-                        <h6 class="fw-bold">Juara Futsal</h6>
-                        <p class="text-muted small">Tingkat Provinsi 2024</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Galeri --}}
-    <section class="py-5">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
-                    <h2 class="fw-bold text-success">Galeri Kegiatan</h2>
-                    <p class="text-muted">Potret aktivitas siswa SD IT Insan Kamil</p>
-                </div>
-            </div>
-            <div class="row g-3">
-                <div class="col-md-3"><img src="/images/sd.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/sd-1.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/sd.png" class="img-fluid rounded shadow-sm" alt=""></div>
-                <div class="col-md-3"><img src="/images/sd-1.png" class="img-fluid rounded shadow-sm" alt=""></div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Lokasi --}}
-    <section class="py-5 bg-light">
         <div class="container">
             <h3 class="fw-bold text-center mb-4 text-success">Lokasi Kami</h3>
-            <div class="row">
-                <div class="col">
-                  <div class="ratio ratio-21x9">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="ratio ratio-21x9">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.334437246126!2d106.5931052740963!3d-6.219554460914241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9211034996f%3A0xfca2c1608111540c!2sPT.%20Penukal%20Integritas%20Indonesia!5e0!3m2!1sid!2sid!4v1756449988997!5m2!1sid!2sid"
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.334437246126!2d106.5931052740963!3d-6.219554460914241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9211034996f%3A0xfca2c1608111540c!2sPT.%20Penukal%20Integritas%20Indonesia!5e0!3m2!1sid!2sid!4v1756449988997!5m2!1sid!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -224,4 +150,16 @@
         </div>
     </section>
 
+    {{-- Footer Info --}}
+    <section class="py-4 text-black text-5xl">
+        <div class="container text-start">
+            <p class="mb-1"><strong>Personal Info</strong></p>
+            <p class="mb-1">📞 Admin: 0812-xxxx-xxxx</p>
+            <p class="mb-1">📱 Instagram: @sditinsankamil</p>
+            <p class="mb-1">📺 YouTube: SDIT Insan Kamil Official</p>
+            <p class="mb-1">🌐 <a href="http://sd.insankamil.sch.id" target="_blank"
+                    class="text-black">sd.insankamil.sch.id</a></p>
+            <p class="mb-0">📍 Alamat lengkap SDIT Insan Kamil, Tangerang Selatan, Banten</p>
+        </div>
+    </section>
 @endsection
