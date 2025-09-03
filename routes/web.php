@@ -74,3 +74,14 @@ Route::prefix('kehidupan-siswa')->group(function () {
         return view('pages.kehidupan_siswa.asrama_phh');
     })->name('asrama_phh');
 })->name('kehidupan_siswa');
+
+Route::prefix('tentang')->group(function () {
+    // Sejarah
+    Route::get('sejarah', function () {
+        return view('pages.tentang.sejarah');
+    })->name('sejarah');
+    // Visi dan Misi
+    Route::get('visi-dan-misi', function () {
+        return view('pages.tentang.visi_dan_misi');
+    })->name('visi_dan_misi');
+})->name('tentang');

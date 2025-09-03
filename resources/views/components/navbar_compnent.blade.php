@@ -61,8 +61,8 @@
                             Tentang Kami
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Sejarah</a></li>
-                            <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sejarah') }}">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('visi_dan_misi') }}">Visi & Misi</a></li>
                             <li><a class="dropdown-item" href="#">FAQ</a></li>
                         </ul>
                     </li>
