@@ -119,10 +119,10 @@
                             Jenjang
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">TK</a></li>
-                            <li><a class="dropdown-item" href="#">SD</a></li>
-                            <li><a class="dropdown-item" href="#">SMP</a></li>
-                            <li><a class="dropdown-item" href="#">SMA</a></li>
+                            <li><a class="dropdown-item" href="{{ route('tk') }}">TK</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sd') }}">SD</a></li>
+                            <li><a class="dropdown-item" href="{{ route('smp') }}">SMP</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sma') }}">SMA</a></li>
                         </ul>
                     </li>
                 </ul>
