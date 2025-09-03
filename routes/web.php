@@ -54,6 +54,31 @@ Route::group(['prefix' => 'jenjang'], function () {
     Route::get('/smp2', function () {
         return view('pages.jenjang.smp2');
     })->name('smp2');
+
+});
+
+Route::group(['prefix' => 'lembaga'], function () {
+
+    Route::get('/sma-islam', function () {
+        return view('pages.lembaga.sma');
+    })->name('sma_islam');
+
+    Route::get('/madrasah-ibtidaiyah', function () {
+        return view('pages.lembaga.madrasah_ibtidaiyah');
+    })->name('madrasah_ibtidaiyah');
+
+    Route::get('/madrasah-tsanawiyah', function () {
+        return view('pages.lembaga.madrasah_tsanawiyah');
+    })->name('madrasah_tsanawiyah');
+
+    Route::get('/rauhatul-athfal', function () {
+        return view('pages.lembaga.rauhatul_athfal');
+    })->name('rauhatul_athfal');
+
+    Route::get('/pondok-tahfidz', function () {
+        return view('pages.lembaga.pondok_tahfiz');
+    })->name('pondok_tahfidz');
+
 });
 
 Route::prefix('kehidupan-siswa')->group(function () {
