@@ -26,7 +26,7 @@
                 <div
                     class="d-flex flex-column align-items-md-start align-items-center text-md-start text-center gap-4 px-md-2 px-lg-4">
                     <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                        <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Kurikulum Kami
                     </h5>
                     <h3 class="d-flex align-items-center gap-2 fs-3">
@@ -98,7 +98,7 @@
                 <div class="d-flex flex-column align-items-center">
                     <h2 class="text-center">Frequently Asked Question<br>Sekolah Pelita Harapan</h2>
                     <h3 class="text-primary text-center d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                        <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Pertanyaan Yang Sering Diajukan
                     </h3>
                 </div>
@@ -231,7 +231,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                                    <img height="15"
+                                    <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
@@ -261,7 +261,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                                    <img height="15"
+                                    <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
@@ -290,7 +290,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                                    <img height="15"
+                                    <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
@@ -319,7 +319,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                                    <img height="15"
+                                    <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
@@ -414,7 +414,7 @@
           <div class="col-md-6 mb-4 mb-md-0">
             <div class="d-flex flex-column align-items-md-end align-items-center text-md-end text-center gap-4 px-md-2 px-lg-4">
                 <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                  <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt=""> ${campus.location}
+                  <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt=""> ${campus.location}
                 </h5>
                 <h3 class="d-flex align-items-center gap-2 fs-3">
                   <span class="text-primary">${campus.name.split(" ")[0]}</span> ${campus.name.split(" ").slice(1).join(" ")}

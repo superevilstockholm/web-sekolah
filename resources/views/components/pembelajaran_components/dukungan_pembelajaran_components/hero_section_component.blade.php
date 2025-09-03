@@ -34,7 +34,7 @@
         <div class="row py-3 mb-4">
             <div class="col-12">
                 <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                    <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                    <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Dukungan Pembelajaran
                 </h5>
             </div>
@@ -62,7 +62,7 @@
             <div class="col-md-6 col-12">
                 <div class="d-flex flex-column gap-4">
                     <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                        <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt="">Dukungan Pembelajaran
                     </h5>
                     <h1 class="fw-normal p-0 m-0 ">Bahasa Inggris sebagai <span class="text-primary">Bahasa

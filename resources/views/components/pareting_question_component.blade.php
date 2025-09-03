@@ -8,7 +8,7 @@
             <div class="row align-items-center h-100">
                 <div class="col col-md-6 col-lg-4">
                     <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                        <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Anda Memiliki Pertanyaan?
                     </h5>
                     <h3 class="fs-2 fw-normal">Baca Pertanyaan yang Sering Diajukan oleh Orang Tua</h3>

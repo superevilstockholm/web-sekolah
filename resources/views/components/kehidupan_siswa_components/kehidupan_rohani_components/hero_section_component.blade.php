@@ -9,7 +9,7 @@
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
                 <h5 class="fw-normal">Baik di dalam dan di luar kelas, SPH memupuk iman siswa dari TK hingga SMA.</h5>
-                <p class="fw-normal mb-4 text-muted">Di dalam kelas, kami mengajarkan dan menanamkan nilai-nilai
+                <p class="fw-normal text-muted">Di dalam kelas, kami mengajarkan dan menanamkan nilai-nilai
                     Ketuhanan melalui mata pelajaran Studi Alkitab yang terintegrasi dengan seluruh kurikulum. Di luar
                     kelas, siswa juga memupuk iman mereka untuk lebih dekat dengan Tuhan melalui kegiatan pembinaan
                     rohani seperti kebaktian dan retret spiritual.</p>
