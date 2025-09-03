@@ -288,8 +288,11 @@
         color: rgba(255, 255, 255, 0.75);
     }
 
-    .navbar-container header .nav-link:hover {
-        color: #fff;
+    .navbar-container header .nav-link:hover,
+    .navbar-container header .nav-link:focus,
+    .navbar-container.scrolled header .nav-link:hover,
+    .navbar-container.scrolled header .nav-link:focus {
+        color: #fff !important;
     }
 </style>
 <script>

@@ -154,10 +154,13 @@
         </div>
     </section>
     <style>
-        .navbar-container .nav-link,
-        .navbar-container .navbar-brand {
-            color: #000 !important;
+        .navbar-container nav .nav-link,
+        .navbar-container nav .navbar-brand {
+            color: rgba(0, 0, 0, 0.75) !important;
             /* Teks hitam setelah scroll */
+        }
+        .navbar-container nav .nav-link:hover {
+            color: rgba(0, 0, 0, 1) !important;
         }
     </style>
 @endsection
