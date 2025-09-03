@@ -1,5 +1,5 @@
 @extends('App')
-@section('title', 'Madrasah Ibtidaiyah')
+@section('title', 'Madrasah tsanawiyah')
 @section('content')
     {{-- Breadcrumb --}}
     <div class="container">
@@ -22,16 +22,15 @@
         </div>
     </div>
 
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.hero_section_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.keunggulan_section_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.carousel_section_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.rumah_kedua_section_component')
+    @include('components.lembaga_components.madrasah_tsanawiyah_components.hero_section_component')
+    @include('components.lembaga_components.madrasah_tsanawiyah_components.keunggulan_section_component')
+    @include('components.lembaga_components.madrasah_tsanawiyah_components.carousel_section_component')
+    @include('components.lembaga_components.madrasah_tsanawiyah_components.komunitas_section_component')
+    @include('components.lembaga_components.madrasah_tsanawiyah_components.faq_section_component')
     @include('components.lembaga_components.madrasah_ibtidaiyah_components.carousel_youtube_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.faq_section_component')
-
     @include('components.pareting_question_component')
 
-    <style>
+        <style>
         .navbar-container .nav-link,
         .navbar-container .navbar-brand {
             color: #000 !important;

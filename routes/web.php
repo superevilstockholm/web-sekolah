@@ -65,4 +65,17 @@ Route::group(['prefix' => 'lembaga'], function () {
     Route::get('/madrasah-ibtidaiyah', function () {
         return view('pages.lembaga.madrasah_ibtidaiyah');
     })->name('madrasah_ibtidaiyah');
+
+    Route::get('/madrasah-tsanawiyah', function () {
+        return view('pages.lembaga.madrasah_tsanawiyah');
+    })->name('madrasah_tsanawiyah');
+
+    Route::get('/rauhatul-athfal', function () {
+        return view('pages.lembaga.rauhatul_athfal');
+    })->name('rauhatul_athfal');
+
+    Route::get('/pondok-tahfidz', function () {
+        return view('pages.lembaga.pondok_tahfiz');
+    })->name('pondok_tahfidz');
+
 });

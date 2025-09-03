@@ -89,11 +89,11 @@
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
 
-                            <li><a class="dropdown-item" href="#">Rauhatul Athfal</a></li>
+                            <li><a class="dropdown-item" href="{{ route('rauhatul_athfal') }}">Rauhatul Athfal</a></li>
                             <li><a class="dropdown-item" href="{{ route('madrasah_ibtidaiyah') }}">Madrasah Ibtidaiyah</a></li>
-                            <li><a class="dropdown-item" href="#">Madrasah Tsanawiyah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('madrasah_tsanawiyah') }}">Madrasah Tsanawiyah</a></li>
                             <li><a class="dropdown-item" href="{{ route('sma_islam') }}">Sekolah Menengah Atas Islam</a></li>
-                            <li><a class="dropdown-item" href="#">Pondok Tahfidz Bayt Al-Qur’an</a></li>
+                            <li><a class="dropdown-item" href="{{ route('pondok_tahfidz') }}">Pondok Tahfidz Bayt Al-Qur’an</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

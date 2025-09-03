@@ -1,5 +1,5 @@
 @extends('App')
-@section('title', 'Madrasah Ibtidaiyah')
+@section('title', 'Rauhatul Athfal')
 @section('content')
     {{-- Breadcrumb --}}
     <div class="container">
@@ -14,7 +14,7 @@
                             <a href="/lembaga">Lembaga</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Madrasah Ibtidaiyah
+                            Rauhatul Atfhal
                         </li>
                     </ol>
                 </nav>
@@ -22,20 +22,18 @@
         </div>
     </div>
 
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.hero_section_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.keunggulan_section_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.carousel_section_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.rumah_kedua_section_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.carousel_youtube_component')
-    @include('components.lembaga_components.madrasah_ibtidaiyah_components.faq_section_component')
-
+    @include('components.lembaga_components.rauhatul_athfal_components.hero_section_component')
+    @include('components.lembaga_components.rauhatul_athfal_components.keunggulan_section_component')
+    @include('components.lembaga_components.rauhatul_athfal_components.komunitas_section_component')
+    @include('components.lembaga_components.rauhatul_athfal_components.carousel_section_component')
+    @include('components.lembaga_components.rauhatul_athfal_components.faq_section_component')
     @include('components.pareting_question_component')
 
-    <style>
+        <style>
         .navbar-container .nav-link,
         .navbar-container .navbar-brand {
             color: #000 !important;
             /* Teks hitam setelah scroll */
         }
     </style>
-@endsection
+    @endsection
