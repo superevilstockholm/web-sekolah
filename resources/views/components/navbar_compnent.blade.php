@@ -1,5 +1,5 @@
 <div class="{{ request()->is('/') ? 'fixed-top' : 'sticky-top' }} navbar-container">
-    <header class="bg-primary py-0 my-0" style="font-size: 0.9rem;">
+    <header class="{{ request()->is('/') ? '' : 'bg-primary' }} py-0 my-0" style="font-size: 0.9rem;">
         <div class="container my-0">
             <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3 py-md-2"
                 style="font-family: 'Roboto', sans-serif !important;">
@@ -293,6 +293,10 @@
     .navbar-container.scrolled header .nav-link:hover,
     .navbar-container.scrolled header .nav-link:focus {
         color: #fff !important;
+    }
+
+    .navbar-container.scrolled header {
+        background-color: var(--bs-primary) !important;
     }
 </style>
 <script>
