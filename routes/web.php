@@ -54,6 +54,23 @@ Route::group(['prefix' => 'jenjang'], function () {
     Route::get('/smp2', function () {
         return view('pages.jenjang.smp2');
     })->name('smp2');
-
-
 });
+
+Route::prefix('kehidupan-siswa')->group(function () {
+    // Ekstrakurikuler
+    Route::get('ekstreakurikuler', function () {
+        return view('pages.kehidupan_siswa.ekstreakurikuler');
+    })->name('ekstreakurikuler');
+    // Kehidupan Rohani
+    Route::get('kehidupan-rohani', function () {
+        return view('pages.kehidupan_siswa.kehidupan_rohani');
+    })->name('kehidupan_rohani');
+    // Layanan Siswa
+    Route::get('layanan-siswa', function () {
+        return view('pages.kehidupan_siswa.layanan_siswa');
+    })->name('layanan_siswa');
+    // Asrama PHH
+    Route::get('asrama-phh', function () {
+        return view('pages.kehidupan_siswa.asrama_phh');
+    })->name('asrama_phh');
+})->name('kehidupan_siswa');

@@ -36,7 +36,7 @@
         <div class="row py-3 mb-4">
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
-                    <img height="15" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                    <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Olahraga
                 </h5>
                 <h1 class="fw-normal p-0 m-0 ">The <span class="text-primary">Eagles</span></h1>
