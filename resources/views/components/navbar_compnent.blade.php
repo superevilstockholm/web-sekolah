@@ -1,7 +1,7 @@
 <div class="{{ request()->is('/') ? 'fixed-top' : 'sticky-top' }} navbar-container">
-    <header class="pt-2" style="font-size: 0.9rem;">
-        <div class="container">
-            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3"
+    <header class="bg-primary py-0 my-0" style="font-size: 0.9rem;">
+        <div class="container my-0">
+            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3 py-md-2"
                 style="font-family: 'Roboto', sans-serif !important;">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -270,8 +270,8 @@
         background-color: #fff !important;
     }
 
-    .navbar-container.scrolled .nav-link,
-    .navbar-container.scrolled .navbar-brand {
+    .navbar-container.scrolled nav .nav-link,
+    .navbar-container.scrolled nav .navbar-brand {
         color: rgba(0, 0, 0, 0.75) !important;
         /* Teks hitam setelah scroll */
     }
@@ -282,6 +282,14 @@
         /* tetap putih meski navbar putih */
         background-color: #0d6efd;
         /* atau bisa diganti warna lain jika mau */
+    }
+
+    .navbar-container.scrolled header .nav-link {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .navbar-container header .nav-link:hover {
+        color: #fff;
     }
 </style>
 <script>
