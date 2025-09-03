@@ -1,8 +1,6 @@
 @extends('App')
 @section('title', 'Sekolah Menengah Pertama (SMP) - SMPIT Insan Kamil')
-
 @section('content')
-
     {{-- Hero Section (Carousel dengan Foto Kepala Sekolah di dalamnya) --}}
     <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -24,7 +22,6 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </section>
-
     {{-- 3 Card Section (Program Unggulan tanpa shadow) --}}
     <section class="py-5" style="background: url('/images/bg-program.jpg') center/cover no-repeat;">
         <div class="container">
@@ -60,13 +57,11 @@
             </div>
         </div>
     </section>
-
     {{-- 4 Card Berita & Kegiatan (fix, gambar berbeda, dengan hover zoom-in) --}}
     <section class="py-5 text-white" style="background: url('/images/sd-1.png') center/cover no-repeat;">
         <div class="container">
             <h3 class="fw-bold text-center mb-5">Berita & Kegiatan</h3>
             <div class="row g-4">
-
                 <div class="col-md-3">
                     <div class="card h-100 border-0 overflow-hidden">
                         <img src="/images/tk-3.png" class="card-img-top zoom-img" alt="Berita 1">
@@ -76,7 +71,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="card h-100 border-0 overflow-hidden">
                         <img src="/images/tk-4.png" class="card-img-top zoom-img" alt="Berita 2">
@@ -86,7 +80,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="card h-100 border-0 overflow-hidden">
                         <img src="/images/tk-5.png" class="card-img-top zoom-img" alt="Berita 3">
@@ -96,7 +89,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="card h-100 border-0 overflow-hidden">
                         <img src="/images/tk-3.png" class="card-img-top zoom-img" alt="Berita 4">
@@ -106,12 +98,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
-
     {{-- Visi Misi --}}
     <section class="py-5">
         <div class="container">
@@ -164,9 +153,6 @@
             </div>
         </div>
     </section>
-
-
-
     {{-- Lokasi / Maps --}}
     <section class="py-5 bg-light">
         <div class="container">
@@ -181,42 +167,41 @@
             </div>
         </div>
     </section>
-
-
-{{-- Quotes Carousel --}}
-<section class="py-5 text-white text-center" style="background:#c0392b;">
-    <div class="container">
-        <!-- Judul Quotes -->
-        <h4 id="quotesTitle" class="fw-bold text-center mb-4 fst-italic text-white animate__animated">
-            Quotes...
-        </h4>
-
-        <div id="quotesCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <p class="fs-5 animate__animated">"Orang yang berkata jujur akan mendapatkan 3 hal: Kepercayaan, Cinta, dan Rasa Hormat."</p>
-                    <small class="animate__animated">- Sayyidina Ali bin Abi Thalib</small>
+    {{-- Quotes Carousel --}}
+    <section class="py-5 text-white text-center" style="background:#c0392b;">
+        <div class="container">
+            <!-- Judul Quotes -->
+            <h4 id="quotesTitle" class="fw-bold text-center mb-4 fst-italic text-white animate__animated">
+                Quotes...
+            </h4>
+            <div id="quotesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="fs-5 animate__animated">"Orang yang berkata jujur akan mendapatkan 3 hal: Kepercayaan,
+                            Cinta, dan Rasa Hormat."</p>
+                        <small class="animate__animated">- Sayyidina Ali bin Abi Thalib</small>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="fs-5 animate__animated">"Pendidikan adalah senjata paling ampuh untuk mengubah dunia."
+                        </p>
+                        <small class="animate__animated">- Nelson Mandela</small>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="fs-5 animate__animated">"Barangsiapa bersungguh-sungguh, maka ia akan berhasil."</p>
+                        <small class="animate__animated">- HR. Muslim</small>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <p class="fs-5 animate__animated">"Pendidikan adalah senjata paling ampuh untuk mengubah dunia."</p>
-                    <small class="animate__animated">- Nelson Mandela</small>
-                </div>
-                <div class="carousel-item">
-                    <p class="fs-5 animate__animated">"Barangsiapa bersungguh-sungguh, maka ia akan berhasil."</p>
-                    <small class="animate__animated">- HR. Muslim</small>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#quotesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#quotesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#quotesCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#quotesCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
         </div>
-    </div>
-</section>
-
-
+    </section>
     {{-- Footer Info --}}
     <section class="py-4 text-black">
         <div class="container text-start">
@@ -229,45 +214,43 @@
             <p class="mb-0">📍 Alamat lengkap SMP Insan Kamil, Tangerang Selatan, Banten</p>
         </div>
     </section>
-
+    <style>
+        .navbar-container .nav-link,
+        .navbar-container .navbar-brand {
+            color: #000 !important;
+            /* Teks hitam setelah scroll */
+        }
+    </style>
 @endsection
-
-
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.getElementById('quotesCarousel');
-    const title = document.getElementById('quotesTitle');
-
-    // Animasi judul berulang (masuk kanan)
-    setInterval(() => {
-        title.classList.remove('animate__fadeInRight');
-        void title.offsetWidth; // reset animasi
-        title.classList.add('animate__fadeInRight');
-    }, 4000);
-
-    // Saat slide mau berpindah → keluar ke kiri
-    carousel.addEventListener('slide.bs.carousel', function (event) {
-        let currentItem = event.target.querySelector('.carousel-item.active');
-        let currentTexts = currentItem.querySelectorAll('.animate__animated');
-
-        currentTexts.forEach(el => {
-            el.classList.remove('animate__fadeInRight');
-            void el.offsetWidth;
-            el.classList.add('animate__fadeOutLeft');
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.getElementById('quotesCarousel');
+        const title = document.getElementById('quotesTitle');
+        // Animasi judul berulang (masuk kanan)
+        setInterval(() => {
+            title.classList.remove('animate__fadeInRight');
+            void title.offsetWidth; // reset animasi
+            title.classList.add('animate__fadeInRight');
+        }, 4000);
+        // Saat slide mau berpindah → keluar ke kiri
+        carousel.addEventListener('slide.bs.carousel', function(event) {
+            let currentItem = event.target.querySelector('.carousel-item.active');
+            let currentTexts = currentItem.querySelectorAll('.animate__animated');
+            currentTexts.forEach(el => {
+                el.classList.remove('animate__fadeInRight');
+                void el.offsetWidth;
+                el.classList.add('animate__fadeOutLeft');
+            });
+        });
+        // Saat slide sudah berpindah → masuk dari kanan
+        carousel.addEventListener('slid.bs.carousel', function(event) {
+            let nextItem = event.relatedTarget;
+            let texts = nextItem.querySelectorAll('.animate__animated');
+            texts.forEach(el => {
+                el.classList.remove('animate__fadeOutLeft');
+                void el.offsetWidth;
+                el.classList.add('animate__fadeInRight');
+            });
         });
     });
-
-    // Saat slide sudah berpindah → masuk dari kanan
-    carousel.addEventListener('slid.bs.carousel', function (event) {
-        let nextItem = event.relatedTarget;
-        let texts = nextItem.querySelectorAll('.animate__animated');
-
-        texts.forEach(el => {
-            el.classList.remove('animate__fadeOutLeft');
-            void el.offsetWidth;
-            el.classList.add('animate__fadeInRight');
-        });
-    });
-});
 </script>
-

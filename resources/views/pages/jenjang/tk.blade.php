@@ -1,6 +1,5 @@
 @extends('App')
 @section('title', 'Taman Kanak-Kanak (TK) - SDIT Insan Kamil')
-
 @section('content')
     {{-- Banner / Hero Section --}}
     <section class="bg-light py-4">
@@ -18,7 +17,6 @@
                                 <img src="/images/tk-1.png" class="d-block w-100 img-fluid" alt="Banner 2">
                             </div>
                         </div>
-
                         {{-- Control Prev/Next --}}
                         <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel"
                             data-bs-slide="prev">
@@ -30,7 +28,6 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Selanjutnya</span>
                         </button>
-
                         {{-- Indicator --}}
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"
@@ -43,13 +40,11 @@
             </div>
         </div>
     </section>
-
     <div class="container">
         <div class="row text-center">
             <h2 class="fw-bold text-success">Selamat Datang di TK Islam Al-Azhar BSD</h2>
         </div>
     </div>
-
     {{-- Sambutan --}}
     <section class="py-5">
         <div class="container">
@@ -74,24 +69,18 @@
                             Mandiri"</strong>.
                     </p>
                 </div>
-
                 {{-- Gambar --}}
                 <div class="col-lg-5 text-center mb-lg-5">
                     {{-- versi desktop --}}
                     <img src="/images/tk-2.png" class="img-fluid rounded shadow d-none d-lg-block w-100 h-100"
                         style="max-width: 100%; height: 100%; object-fit: cover;" alt="Foto Sambutan">
-
                     {{-- versi mobile --}}
                     <img src="/images/tk-2.png" class="img-fluid rounded shadow d-block d-lg-none w-100"
                         style="max-height: 300px; object-fit: cover;" alt="Foto Sambutan">
                 </div>
-
             </div>
         </div>
     </section>
-
-
-
     {{-- Berita Terkini --}}
     <section class="py-5 bg-light">
         <div class="container">
@@ -110,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-
                 {{-- Berita 2 --}}
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
@@ -124,7 +112,6 @@
                         </div>
                     </div>
                 </div>
-
                 {{-- Berita 3 --}}
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
@@ -141,8 +128,6 @@
             </div>
         </div>
     </section>
-
-
     {{-- Lokasi / Maps --}}
     <section class="py-5">
         <div class="container">
@@ -160,8 +145,6 @@
             </div>
         </div>
     </section>
-
-
     {{-- Footer Info --}}
     <section class="py-4  text-black text-5xl">
         <div class="container text-start">
@@ -174,6 +157,11 @@
             <p class="mb-0">📍 Jl. Puspita Raya No.2, Lengkong Gudang, Serpong, Tangerang Selatan, Banten</p>
         </div>
     </section>
-
-
+    <style>
+        .navbar-container .nav-link,
+        .navbar-container .navbar-brand {
+            color: #000 !important;
+            /* Teks hitam setelah scroll */
+        }
+    </style>
 @endsection

@@ -16,18 +16,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     {{-- Owl Carrousel --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     {{-- CSS bawaan --}}
     <link rel="stylesheet"
         href="https://static.hsappstatic.net/foundations-theming-base/ex/live/hubspot-theme.stable.css">
     <link rel="stylesheet"
         href="https://static.hsappstatic.net/conversations-visitor-ui/static-1.26169/sass/visitor.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     {{-- Global --}}
     <style>
         * {
@@ -40,6 +37,9 @@
         .navbar-container.scrolled {
             background: #fff !important;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 1300px !important;
         }
     </style>
 </head>

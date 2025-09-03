@@ -451,4 +451,15 @@
             }
         });
     </script>
+    <style>
+        /* Custom navbar style */
+        .navbar-container .nav-link:hover,
+        .navbar-container .nav-link:focus {
+            color: rgba(255, 255, 255, 1) !important;
+        }
+        .navbar-container.scrolled .nav-link:hover,
+        .navbar-container.scrolled .nav-link:focus {
+            color: rgba(0, 0, 0, 1) !important;
+        }
+    </style>
 @endsection

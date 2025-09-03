@@ -1,6 +1,5 @@
 @extends('App')
 @section('title', 'Sekolah Dasar (SD) - SDIT Insan Kamil')
-
 @section('content')
     {{-- Banner / Hero Section --}}
     <section class="bg-light py-4">
@@ -18,7 +17,6 @@
                                 <img src="/images/sd-1.png" class="d-block w-100 img-fluid" alt="Banner 2">
                             </div>
                         </div>
-
                         {{-- Control Prev/Next --}}
                         <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarouselSD"
                             data-bs-slide="prev">
@@ -30,7 +28,6 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Selanjutnya</span>
                         </button>
-
                         {{-- Indicator --}}
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#bannerCarouselSD" data-bs-slide-to="0" class="active"
@@ -43,36 +40,35 @@
             </div>
         </div>
     </section>
-
     {{-- Sambutan --}}
     <div class="container">
         <div class="row text-center">
             <h2 class="fw-bold text-success">Selamat Datang di SDIT Insan Kamil</h2>
         </div>
     </div>
-
     <section class="py-5">
         <div class="container">
             <div class="row align-items-stretch">
                 {{-- Teks --}}
                 <div class="col-lg-7 mb-4 mb-lg-0">
                     <p class="mb-3">
-                        SDIT Insan Kamil hadir untuk membentuk generasi muslim yang unggul dalam ilmu pengetahuan dan teknologi,
-                        serta memiliki akhlak mulia. Dengan pengalaman lebih dari satu dekade, SDIT Insan Kamil menjadi sekolah
+                        SDIT Insan Kamil hadir untuk membentuk generasi muslim yang unggul dalam ilmu pengetahuan dan
+                        teknologi,
+                        serta memiliki akhlak mulia. Dengan pengalaman lebih dari satu dekade, SDIT Insan Kamil menjadi
+                        sekolah
                         dasar pilihan bagi orang tua di wilayah Tangerang Selatan dan sekitarnya.
                     </p>
                     <p>
                         Visi SDIT Insan Kamil adalah
-                        <strong>"Menjadi Sekolah Dasar Islam Unggulan yang Mencetak Generasi Qur’ani, Cerdas, Kreatif, dan Mandiri"</strong>.
+                        <strong>"Menjadi Sekolah Dasar Islam Unggulan yang Mencetak Generasi Qur’ani, Cerdas, Kreatif, dan
+                            Mandiri"</strong>.
                     </p>
                 </div>
-
                 {{-- Gambar --}}
                 <div class="col-lg-5 text-center mb-lg-5">
                     {{-- versi desktop --}}
                     <img src="/images/tk-2.png" class="img-fluid rounded shadow d-none d-lg-block w-100 h-100"
                         style="max-width: 100%; height: 100%; object-fit: cover;" alt="Foto Sambutan">
-
                     {{-- versi mobile --}}
                     <img src="/images/tk-2.png" class="img-fluid rounded shadow d-block d-lg-none w-100"
                         style="max-height: 300px; object-fit: cover;" alt="Foto Sambutan">
@@ -80,7 +76,6 @@
             </div>
         </div>
     </section>
-
     {{-- Berita Terkini --}}
     <section class="py-5 bg-light">
         <div class="container">
@@ -99,7 +94,6 @@
                         </div>
                     </div>
                 </div>
-
                 {{-- Berita 2 --}}
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
@@ -113,7 +107,6 @@
                         </div>
                     </div>
                 </div>
-
                 {{-- Berita 3 --}}
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
@@ -130,7 +123,6 @@
             </div>
         </div>
     </section>
-
     {{-- Lokasi / Maps --}}
     <section class="py-5">
         <div class="container">
@@ -139,7 +131,7 @@
                 <div class="col-12">
                     <div class="ratio ratio-21x9">
                         <iframe
-                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.334437246126!2d106.5931052740963!3d-6.219554460914241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9211034996f%3A0xfca2c1608111540c!2sPT.%20Penukal%20Integritas%20Indonesia!5e0!3m2!1sid!2sid!4v1756449988997!5m2!1sid!2sid"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.334437246126!2d106.5931052740963!3d-6.219554460914241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9211034996f%3A0xfca2c1608111540c!2sPT.%20Penukal%20Integritas%20Indonesia!5e0!3m2!1sid!2sid!4v1756449988997!5m2!1sid!2sid"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
@@ -149,7 +141,6 @@
             </div>
         </div>
     </section>
-
     {{-- Footer Info --}}
     <section class="py-4 text-black text-5xl">
         <div class="container text-start">
@@ -162,4 +153,11 @@
             <p class="mb-0">📍 Alamat lengkap SDIT Insan Kamil, Tangerang Selatan, Banten</p>
         </div>
     </section>
+    <style>
+        .navbar-container .nav-link,
+        .navbar-container .navbar-brand {
+            color: #000 !important;
+            /* Teks hitam setelah scroll */
+        }
+    </style>
 @endsection
