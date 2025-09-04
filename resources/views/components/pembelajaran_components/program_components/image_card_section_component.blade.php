@@ -8,7 +8,7 @@
                         <img src="https://sph.edu/wp-content/uploads/2022/02/3H3A8368.jpg"
                              class="card-img" alt="Pendidikan Anak Usia Dini">
                         <div class="card-img-overlay d-flex align-items-end p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
-                            <h4 class="text-white m-0">International Baccalaureate</h4>
+                            <h4 class="text-white m-0">Kurikulum Nasional</h4>
                         </div>
                     </div>
                 </a>
@@ -20,7 +20,7 @@
                         <img src="https://sph.edu/wp-content/uploads/2022/02/carousel-sph-academic-programs-cambridge-v1.jpg"
                              class="card-img" alt="Sekolah Dasar">
                         <div class="card-img-overlay d-flex align-items-end p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
-                            <h4 class="text-white m-0">Cambridge International</h4>
+                            <h4 class="text-white m-0">Nilai-Nilai Qur’ani</h4>
                         </div>
                     </div>
                 </a>
