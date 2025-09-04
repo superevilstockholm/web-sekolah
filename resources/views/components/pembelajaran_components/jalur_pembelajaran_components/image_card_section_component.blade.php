@@ -8,7 +8,7 @@
                         <img src="https://sph.edu/wp-content/uploads/2022/03/sph-learningpathway-carousel-early-years.jpg"
                              class="card-img" alt="Pendidikan Anak Usia Dini">
                         <div class="card-img-overlay d-flex align-items-end p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
-                            <h6 class="text-white m-0">Pendidikan Anak Usia Dini</h6>
+                            <h6 class="text-white m-0">Madrasah Ibtidaiyah (MI)</h6>
                         </div>
                     </div>
                 </a>
@@ -20,7 +20,7 @@
                         <img src="https://sph.edu/wp-content/uploads/2022/03/sph-learningpathway-carousel-primary.jpg"
                              class="card-img" alt="Sekolah Dasar">
                         <div class="card-img-overlay d-flex align-items-end p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
-                            <h6 class="text-white m-0">Sekolah Dasar</h6>
+                            <h6 class="text-white m-0">Madrasah Tsanawiyah (MTs)</h6>
                         </div>
                     </div>
                 </a>
@@ -32,19 +32,7 @@
                         <img src="https://sph.edu/wp-content/uploads/2022/03/sph-learningpathway-carousel-middle.jpg"
                              class="card-img" alt="Sekolah Menengah">
                         <div class="card-img-overlay d-flex align-items-end p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
-                            <h6 class="text-white m-0">Sekolah Menengah</h6>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Card 4 -->
-            <div class="item">
-                <a href="#">
-                    <div class="card border-0 rounded-4 overflow-hidden shadow-sm">
-                        <img src="https://sph.edu/wp-content/uploads/2022/03/sph-learningpathway-carousel-ib-diploma.jpg"
-                             class="card-img" alt="IB Diploma">
-                        <div class="card-img-overlay d-flex align-items-end p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
-                            <h6 class="text-white m-0">IB Diploma</h6>
+                            <h6 class="text-white m-0">Sekolah Menengah Atas (SMA)</h6>
                         </div>
                     </div>
                 </a>
@@ -61,7 +49,7 @@
         responsive: {
             0: { items: 1 },     // HP
             768: { items: 2 },   // Tablet
-            992: { items: 4 }    // Laptop
+            992: { items: 3 }    // Laptop
         }
     })
 </script>
