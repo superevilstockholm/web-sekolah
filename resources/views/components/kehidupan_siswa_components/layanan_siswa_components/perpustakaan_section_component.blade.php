@@ -19,7 +19,7 @@
                 <p class="text-muted mb-2" style="line-height: 1.9 !important;">Setiap perpustakaan merupakan hub untuk
                     sumber daya belajar mengajar.</p>
                 <p class="text-muted mb-2" style="line-height: 1.9 !important;">Perpustakaan sekolah yang desain dengan
-                    baik memainkan peran penting dalam mendukung keseluruhan proses belajar mengajar. Perpustakaan SPH,
+                    baik memainkan peran penting dalam mendukung keseluruhan proses belajar mengajar. Perpustakaan Al-Layyinah,
                     yang dibangun sebagai pusat pembelajaran yang kondusif, mendukung siswa dan pengajar untuk
                     memperoleh pengetahuan, berkolaborasi dan menginspirasi pembelajaran.</p>
                 <button class="btn btn-sm btn-warning text-white btn-custom px-4 py-2 mt-2 rounded-pill">Kunjungi

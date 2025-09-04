@@ -15,9 +15,9 @@
                 </h5>
                 <h1 class="fw-normal p-0 m-0 mb-3">Pertolongan Medis dari <span class="text-primary">Profesional</span>
                 </h1>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Setiap kampus SPH dilengkapi dengan
-                    pusat kesehatan berkualitas dan berdedikasi. Pusat kesehatan kami dilengkapi dengan dokter jaga yang
-                    disediakan oleh Siloam Hospitals group.</p>
+                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Setiap kampus Al-Layyinah dilengkapi dengan
+                    pusat kesehatan berkualitas dan berdedikasi. Pusat kesehatan kami dilengkapi dengan tenaga medis
+                    profesional yang siap melayani siswa setiap hari.</p>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <img class="img-fluid w-100 h-100 object-fit-cover rounded" style="max-height: 600px;"

@@ -17,10 +17,10 @@
                 <h2 class="fw-normal p-0 m-0 mb-4"><span class="text-primary">Bimbingan</span> bagi Mereka yang
                     Membutuhkan
                 </h2>
-                <p class="text-muted mb-3">Konseling pribadi di SPH ditujukan untuk memenuhi kebutuhan emosional, sosial dan
+                <p class="text-muted mb-3">Konseling pribadi di Al-Layyinah ditujukan untuk memenuhi kebutuhan emosional, sosial dan
                     perilaku siswa.</p>
                 <p class="text-muted">Konselor pribadi menyediakan sesi konseling yang didasarkan pada prinsip-prinsip
-                    Kristiani bagi semua siswa.</p>
+                    Islam bagi semua siswa.</p>
             </div>
         </div>
     </div>

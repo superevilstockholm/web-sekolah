@@ -12,7 +12,7 @@
                 </h1>
             </div>
             <div class="col-md-6 col-12">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Program Konseling Karier SPH
+                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Program Konseling Karier Al-Layyinah
                     mempersiapkan dan membimbing siswa dari Kelas 9 untuk kehidupan universitas dengan:</p>
                 <ul class="list-unstyled d-flex flex-column gap-2 text-muted">
                     <li class="d-flex align-items-start gap-2">

@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-normal text-muted">Di SPH, kami menjadikan penyediaan dukungan sebagai salah satu cara kami melampaui
+                <p class="fw-normal text-muted">Di Al-Layyinah, kami menjadikan penyediaan dukungan sebagai salah satu cara kami melampaui
                     pendidikan. Kami menyediakan layanan pendukung bagi siswa yang mencakup area yang lebih luas. Area
                     dukungan kami meliputi layanan konseling, penyediaan fasilitas pendukung pembelajaran, serta
                     kesehatan dan kebugaran.</p>
