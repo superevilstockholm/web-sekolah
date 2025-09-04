@@ -24,13 +24,13 @@
     {{-- Hero Section --}}
     @include('components.kehidupan_siswa_components.kehidupan_rohani_components.hero_section_component')
     {{-- Kebaktian Section --}}
-    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.kebaktian_section_component')
+    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.shalat_berjamaah_section_component')
     {{-- Retret Rohani Section --}}
-    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.retreat_rohani_section_component')
+    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.pesantren_kilat_section_component')
     {{-- Pelayanan Pastoral Section --}}
-    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.pelayanan_pastoral_section_component')
+    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.bimbingan_rohani_section_component')
     {{-- Koordinator Rohani Section --}}
-    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.koordinator_rohani_section_component')
+    @include('components.kehidupan_siswa_components.kehidupan_rohani_components.koordinator_keagamaan_section_component')
     {{-- Parenting Quesstion Component --}}
     @include('components.pareting_question_component')
     {{-- Custom NavBar --}}

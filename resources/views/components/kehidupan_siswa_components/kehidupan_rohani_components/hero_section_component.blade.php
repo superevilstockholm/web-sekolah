@@ -8,11 +8,9 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <h5 class="fw-normal">Baik di dalam dan di luar kelas, SPH memupuk iman siswa dari TK hingga SMA.</h5>
-                <p class="fw-normal text-muted">Di dalam kelas, kami mengajarkan dan menanamkan nilai-nilai
-                    Ketuhanan melalui mata pelajaran Studi Alkitab yang terintegrasi dengan seluruh kurikulum. Di luar
-                    kelas, siswa juga memupuk iman mereka untuk lebih dekat dengan Tuhan melalui kegiatan pembinaan
-                    rohani seperti kebaktian dan retret spiritual.</p>
+                <h5 class="fw-normal">Di Al-Layyinah, pembinaan iman Islam dimulai sejak dini.</h5>
+                <p class="fw-normal text-muted">Dalam kelas, siswa dibimbing melalui pelajaran <b>Al-Qur’an dan Hadits</b> yang terintegrasi dengan seluruh kurikulum.
+                Di luar kelas, mereka menumbuhkan kedekatan kepada Allah SWT melalui kegiatan seperti shalat berjamaah, dzikir, dan kajian Islam.</p>
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
         </div>
