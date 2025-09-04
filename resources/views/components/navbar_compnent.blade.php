@@ -1,9 +1,7 @@
-
 <div class="{{ request()->is('/') ? 'fixed-top' : 'sticky-top' }} navbar-container">
-
-    <header class="pt-2" style="font-size: 0.9rem;">
-        <div class="container">
-            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3"
+    <header class="{{ request()->is('/') ? '' : 'bg-primary' }} py-0 my-0" style="font-size: 0.9rem;">
+        <div class="container my-0">
+            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3 py-md-2"
                 style="font-family: 'Roboto', sans-serif !important;">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -64,9 +62,9 @@
                             Tentang Kami
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Sejarah</a></li>
-                            <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
-                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sejarah') }}">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('visi_dan_misi') }}">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('faq') }}">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -276,8 +274,8 @@
         background-color: #fff !important;
     }
 
-    .navbar-container.scrolled .nav-link,
-    .navbar-container.scrolled .navbar-brand {
+    .navbar-container.scrolled nav .nav-link,
+    .navbar-container.scrolled nav .navbar-brand {
         color: rgba(0, 0, 0, 0.75) !important;
         /* Teks hitam setelah scroll */
     }
@@ -288,6 +286,21 @@
         /* tetap putih meski navbar putih */
         background-color: #0d6efd;
         /* atau bisa diganti warna lain jika mau */
+    }
+
+    .navbar-container.scrolled header .nav-link {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .navbar-container header .nav-link:hover,
+    .navbar-container header .nav-link:focus,
+    .navbar-container.scrolled header .nav-link:hover,
+    .navbar-container.scrolled header .nav-link:focus {
+        color: #fff !important;
+    }
+
+    .navbar-container.scrolled header {
+        background-color: var(--bs-primary) !important;
     }
 </style>
 <script>

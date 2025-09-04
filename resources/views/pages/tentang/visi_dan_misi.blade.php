@@ -1,5 +1,5 @@
 @extends('App')
-@section('title', 'Program')
+@section('title', 'Visi & Misi')
 @section('content')
     {{-- Breadcrumb --}}
     <div class="container">
@@ -11,10 +11,10 @@
                             <a href="/">Home</a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="/pembelajaran">Pembelajaran</a>
+                            <a href="/tentang">Tentang</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">
-                            Program
+                            Visi & Misi
                         </li>
                     </ol>
                 </nav>
@@ -22,11 +22,9 @@
         </div>
     </div>
     {{-- Hero Section --}}
-    @include('components.pembelajaran_components.program_components.hero_section_component')
-    {{-- Image Card Section --}}
-    @include('components.pembelajaran_components.program_components.image_card_section_component')
-    {{-- FAQ Section --}}
-    @include('components.pembelajaran_components.program_components.faq_component')
+    @include('components.tentang_components.visi_dan_misi_components.hero_section_component')
+    {{-- Tujuan Section --}}
+    @include('components.tentang_components.visi_dan_misi_components.tujuan_section_component')
     {{-- Parenting Quesstion Component --}}
     @include('components.pareting_question_component')
     {{-- Custom NavBar --}}
