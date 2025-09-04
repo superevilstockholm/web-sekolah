@@ -41,6 +41,10 @@
         .container {
             max-width: 1300px !important;
         }
+        :root {
+            --bs-primary: #3c98da;
+            --bs-primary-rgb: 60, 152, 218;
+        }
     </style>
 </head>
 <body>
