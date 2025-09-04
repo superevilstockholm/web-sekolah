@@ -11,14 +11,17 @@
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
                     <h1 class="fw-normal p-0 m-0"><span class="text-primary">Sains</span></h1>
-                    <p class="text-muted" style="line-height: 1.9 !important;">Dalam rangka mengakui ajaibnya dunia
-                        sains, siswa SPH diajarkan untuk mengembangkan rasa kagum, yang akan memotivasi mereka untuk
-                        mencari dan menemukan keajaiban di balik alam. SPH memahami bahwa sains bukan hana berbicara
-                        tentang konten atau fakta yang menjelaskan tentang alam. Kami menggunakan pengetahuan alam
-                        sebagai proses untuk menemukan pengetahuan baru. SPH mengadopsi metode pembelajaran experiential
-                        yang terlihat paling jelas dalam observasi ilmiah langsung dalam ruang laboratorium. Tujuan
-                        akhirnya adalah agar siswa dapat mengenal Tuhan sang Pencipta yang menciptakan dan merancang
-                        segala sesuatu dalam alam semesta.
+                    <p class="text-muted" style="line-height: 1.9 !important;">
+                        Di Al-Layyinah, pembelajaran sains diarahkan untuk menumbuhkan rasa kagum terhadap ciptaan Allah ﷻ,
+                        sehingga siswa termotivasi untuk meneliti, mengeksplorasi, dan menemukan hikmah di balik fenomena alam.
+                        Sains tidak hanya dipandang sebagai kumpulan fakta, tetapi juga sebagai sarana memahami tanda-tanda kebesaran Allah
+                        yang terdapat di alam semesta.
+                    </p>
+                    <p class="text-muted" style="line-height: 1.9 !important;">
+                        Metode pembelajaran yang digunakan menekankan pada pengalaman langsung (experiential learning),
+                        baik melalui observasi, eksperimen di laboratorium, maupun penelitian lapangan. Dengan demikian,
+                        siswa dapat mengaitkan pengetahuan ilmiah dengan nilai-nilai keimanan, sehingga terbentuklah generasi
+                        yang berilmu dan berakhlak mulia.
                     </p>
                 </div>
             </div>
@@ -33,16 +36,15 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Sains
                 </h5>
-                <h1 class="fw-normal p-0 m-0 ">DP Programme dan Sains di <span class="text-primary">SPH</span></h1>
+                <h1 class="fw-normal p-0 m-0 ">Program Sains di <span class="text-primary">Al-Layyinah</span></h1>
             </div>
             <div class="col-md-6 col-12">
-                <p class="text-muted" style="line-height: 1.9 !important;">Untuk membimbing semua siswa dalam
-                    mengeksplorasi alam, SPH menggunakan sains sebagai tema yang memayungi semua mata pelajaran Ilmu
-                    Pengetahuan Alam dalam DP, memungkinkan siswa untuk menghargai studi ilmiah dan kreativitas dan
-                    mengembangkan kemampuan untuk menganalisa, mengevaluasi dan mengumpulkan informasi ilmiah. Setelah
-                    menyelesaikan kelas sains DP, siswa juga akan memiliki bekal pendekatan holistik terhadap sains
-                    dengan mengembangkan keterampilan berpikir kritis dengan implikasi yang etis dalam menggunakan sains
-                    dan teknologi sebagai warga global.</p>
+                <p class="text-muted" style="line-height: 1.9 !important;">
+                    Untuk membimbing siswa dalam mengeksplorasi alam, Al-Layyinah menggunakan sains sebagai tema
+                    yang memayungi seluruh mata pelajaran Ilmu Pengetahuan Alam. Hal ini bertujuan agar siswa tidak hanya menguasai
+                    aspek pengetahuan dan keterampilan, tetapi juga memiliki kesadaran etis dalam penggunaan ilmu pengetahuan dan teknologi,
+                    sesuai dengan tuntunan Al-Qur’an dan Hadits.
+                </p>
             </div>
         </div>
         <div class="row mb-4">
@@ -62,10 +64,21 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Sains
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Applied</span> Science Academy (ASA)</h1>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Applied Science Academy (ASA) didirikan sebagai program tambahan di luar kelas siswa sehari-hari dan menjadi program pertama yang dibuat di bawah naungan Center of Excellence di SPH Lippo Village.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Program yang terbuka bagi siswa/i Kelas 10-12 ini menjadi wadah bagi siswa yang memiliki minat di bidang sains dan ingin melakukan penelitian ilmiah yang lebih terspesialisasi dan mendalam. Program ini memberdayakan calon ilmuwan muda dengan menawarkan pengalaman otentik akan lingkungan penelitian dan eksplorasi ilmiah.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">ASA bertujuan untuk menjadi yang terdepan dalam memberdayakan generasi muda dengan menyediakan lingkungan penelitian yang otentik dalam bidang yang diminati siswa. ASA dipimpin oleh Dr. Eden Steven, Ph.D. seorang ilmuwan Indonesia terkemuka, bermitra dengan beberapa profesor dan dosen Universitas Pelita Harapan yang menjadi mentor para siswa.</p>
+                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Applied</span> Science Program</h1>
+                <p class="text-muted mb-2" style="line-height: 1.9 !important;">
+                    Applied Science Program di Al-Layyinah dirancang sebagai kegiatan tambahan di luar pembelajaran utama,
+                    yang ditujukan bagi siswa dengan minat tinggi dalam bidang sains. Program ini memberikan kesempatan
+                    untuk melakukan penelitian ilmiah lebih mendalam, baik secara individu maupun kelompok.
+                </p>
+                <p class="text-muted mb-2" style="line-height: 1.9 !important;">
+                    Melalui program ini, siswa belajar langsung mengenai metode penelitian, eksperimen, dan analisa,
+                    sehingga terlatih dalam berpikir kritis serta memiliki rasa tanggung jawab ilmiah dengan berlandaskan iman dan akhlak.
+                </p>
+                <p class="text-muted mb-2" style="line-height: 1.9 !important;">
+                    Tujuan utama program ini adalah melahirkan generasi muda muslim yang tidak hanya unggul dalam sains,
+                    tetapi juga menjadikan ilmu pengetahuan sebagai jalan untuk semakin mendekatkan diri kepada Allah ﷻ
+                    dan memberi manfaat bagi umat manusia.
+                </p>
             </div>
         </div>
     </div>

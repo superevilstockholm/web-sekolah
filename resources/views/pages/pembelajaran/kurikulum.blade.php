@@ -23,8 +23,8 @@
     </div>
     {{-- Hero Section --}}
     @include('components.pembelajaran_components.kurikulum_components.hero_section_component')
-    {{-- Studi Alkitab Section --}}
-    @include('components.pembelajaran_components.kurikulum_components.studi_alkitab_section_component')
+    {{-- Studi Alquran Section --}}
+    @include('components.pembelajaran_components.kurikulum_components.studi_alquran_section_component')
     {{-- Bahasa Section --}}
     @include('components.pembelajaran_components.kurikulum_components.bahasa_section_component')
     {{-- Matematika Section --}}

@@ -10,21 +10,17 @@
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
                     <h1 class="fw-normal p-0 m-0"><span class="text-primary">Musik dan Seni</span></h1>
-                    <p class="text-muted" style="line-height: 1.9 !important;">Untuk menyeimbangkan pembelajaran
-                        akademik yang ketat, SPH menawarkan pelajaran musik dan seni, yang terdiri dari musik, seni
-                        visual, dan balet, yang merupakan bagian integral dari program kami. Hal ini memungkinkan siswa
-                        untuk mengekspresikan diri dan mengasah kemampuan artistik mereka dengan pemahaman bahwa semua
-                        bakat kreatif adalah karunia Tuhan dan perlu digunakan untuk kepentingan orang banyak. Beberapa
-                        kampus SPH menyebut jurusan musik sebagai departemen Ministering Arts.
+                    <p class="text-muted" style="line-height: 1.9 !important;">
+                        Untuk menyeimbangkan pembelajaran akademik yang ketat, Al-Layyinah menghadirkan pelajaran musik dan seni,
+                        yang meliputi musik, seni visual, hingga seni pertunjukan Islami. Program ini menjadi ruang bagi siswa untuk mengekspresikan diri
+                        serta mengembangkan bakat artistik dengan pemahaman bahwa setiap kreativitas adalah karunia Allah ﷻ yang harus dimanfaatkan
+                        untuk kemaslahatan umat.
                     </p>
-                    <p class="text-muted" style="line-height: 1.9 !important;">Di sisi lain, pelajaran seni rupa juga
-                        tersedia untuk siswa Junior hingga Senior School. Selain kreativitas dan imajinasi, proses
-                        pembuatan karya seni membutuhkan penelitian yang mendalam dan kemampuan untuk berpikir kritis,
-                        terutama dalam <a class="text-primary" style="text-decoration: none;" href="#">IB Diploma
-                            Programme</a> Visual Arts. Kelas seni visual kami memungkinkan siswa untuk
-                        menciptakan banyak karya seni yang mengandung makna konseptual, mulai dari kritik sosial yang
-                        menggugah hingga ekspresi diri. Di akhir tahun ajaran, kami mengadakan pameran seni untuk
-                        memamerkan karya siswa dan memberi kesempatan siswa untuk mengenal komunitas seni.
+                    <p class="text-muted" style="line-height: 1.9 !important;">
+                        Seni rupa juga diajarkan mulai dari jenjang dasar hingga menengah. Proses berkarya tidak hanya menuntut kreativitas dan imajinasi,
+                        tetapi juga penelitian serta pemikiran kritis. Di tingkat lanjutan, siswa berkesempatan menciptakan karya seni yang penuh makna,
+                        mulai dari kritik sosial yang membangun hingga ekspresi personal. Setiap akhir tahun, karya-karya tersebut dipamerkan dalam
+                        <em>Pameran Seni Al-Layyinah</em> sebagai ajang apresiasi dan pembelajaran.
                     </p>
                 </div>
             </div>
@@ -46,27 +42,35 @@
                 <ul class="list-unstyled d-flex flex-column gap-2">
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
-                        Vokal & Paduan Suara
+                        Vokal & Paduan Suara Islami
                     </li>
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
-                        Bands & Ensemble (Guitar, Strings and Handbells)
+                        Band & Ensemble (Gitar, Strings, dan Perkusi)
                     </li>
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
-                        Piano Klasik dan Jazz
+                        Piano Klasik & Modern
                     </li>
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
-                        Musik Tradisional Indonesia (Kolintang, Gamelan dan Angklung)
+                        Musik Tradisional Indonesia (Gamelan, Angklung, Kolintang)
                     </li>
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
-                        Drama & Seni Peran
+                        Marawis & Qasidah
                     </li>
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
-                        Seni Visual (Melukis, Digital Art dan Installations)
+                        Hadroh & Nasyid Islami
+                    </li>
+                    <li class="d-flex align-items-center gap-1 text-muted">
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
+                        Drama & Seni Peran Islami
+                    </li>
+                    <li class="d-flex align-items-center gap-1 text-muted">
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
+                        Seni Visual (Lukis, Digital Art, Instalasi)
                     </li>
                 </ul>
             </div>
