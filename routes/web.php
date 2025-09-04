@@ -84,4 +84,8 @@ Route::prefix('tentang')->group(function () {
     Route::get('visi-dan-misi', function () {
         return view('pages.tentang.visi_dan_misi');
     })->name('visi_dan_misi');
+    // FAQ
+    Route::get('faq', function () {
+        return view('pages.tentang.faq');
+    })->name('faq');
 })->name('tentang');

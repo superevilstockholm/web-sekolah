@@ -63,7 +63,7 @@
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
                             <li><a class="dropdown-item" href="{{ route('sejarah') }}">Sejarah</a></li>
                             <li><a class="dropdown-item" href="{{ route('visi_dan_misi') }}">Visi & Misi</a></li>
-                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="{{ route('faq') }}">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
