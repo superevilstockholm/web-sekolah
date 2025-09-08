@@ -114,3 +114,13 @@ Route::prefix('tentang')->group(function () {
         return view('pages.tentang.faq');
     })->name('faq');
 })->name('tentang');
+
+// PPDB
+Route::prefix('ppdb')->group(function () {
+    Route::get('pendaftaran', function () {
+        return view('pages.ppdb.pendaftaran');
+    })->name('pendaftaran');
+    Route::get('persyaratan', function () {
+        return view('pages.ppdb.persyaratan');
+    })->name('persyaratan');
+});

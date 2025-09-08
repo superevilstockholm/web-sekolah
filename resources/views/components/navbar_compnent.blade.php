@@ -90,11 +90,16 @@
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
 
-                            <li><a class="dropdown-item" href="{{ route('rauhatul_athfal') }}">Rauhatul Athfal</a></li>
-                            <li><a class="dropdown-item" href="{{ route('madrasah_ibtidaiyah') }}">Madrasah Ibtidaiyah</a></li>
-                            <li><a class="dropdown-item" href="{{ route('madrasah_tsanawiyah') }}">Madrasah Tsanawiyah</a></li>
-                            <li><a class="dropdown-item" href="{{ route('sma_islam') }}">Sekolah Menengah Atas Islam</a></li>
-                            <li><a class="dropdown-item" href="{{ route('pondok_tahfidz') }}">Pondok Tahfidz Bayt Al-Qur’an</a></li>
+                            <li><a class="dropdown-item" href="{{ route('rauhatul_athfal') }}">Rauhatul Athfal</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('madrasah_ibtidaiyah') }}">Madrasah
+                                    Ibtidaiyah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('madrasah_tsanawiyah') }}">Madrasah
+                                    Tsanawiyah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sma_islam') }}">Sekolah Menengah Atas
+                                    Islam</a></li>
+                            <li><a class="dropdown-item" href="{{ route('pondok_tahfidz') }}">Pondok Tahfidz Bayt
+                                    Al-Qur’an</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -121,6 +126,16 @@
                             <li><a class="dropdown-item" href="{{ route('sd') }}">SD</a></li>
                             <li><a class="dropdown-item" href="{{ route('smp') }}">SMP</a></li>
                             <li><a class="dropdown-item" href="{{ route('sma') }}">SMA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PPDB
+                        </a>
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                            <li><a class="dropdown-item" href="{{ route('pendaftaran') }}">Pendaftaran</a></li>
+                            <li><a class="dropdown-item" href="{{ route('persyaratan') }}">Persyaratan</a></li>
                         </ul>
                     </li>
                 </ul>
