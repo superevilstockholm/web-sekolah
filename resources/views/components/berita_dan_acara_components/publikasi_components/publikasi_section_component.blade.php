@@ -16,12 +16,28 @@
     .card-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
+        z-index: 1;
+    }
+    .card-overlay-0 {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 1;
     }
     .card:hover .card-overlay {
         opacity: 1;
+    }
+    .card-title {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
     }
 </style>
 <script>
@@ -67,23 +83,25 @@
         url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-40-1.pdf"
     }, ];
     const container = document.getElementById("publication-container");
+
     items.forEach(item => {
         const col = document.createElement("div");
         col.className = "col-md-4 col-12 mb-4";
+
         col.innerHTML = `
-      <a href="${item.url}" target="_blank" class="text-decoration-none">
-        <div class="card h-100 shadow-sm border-0 position-relative rounded-0 overflow-hidden">
-          <div class="ratio ratio-4x3">
-            <img src="${item.cover}" class="w-100 h-100 rounded-0" loading="lazy"
-                 style="object-fit: cover; object-position: center;"
-                 alt="${item.title}">
-          </div>
-          <div class="card-overlay d-flex align-items-end justify-content-center p-2">
-            <h4 class="card-title text-white mb-0 pb-4">${item.title}</h4>
-          </div>
-        </div>
-      </a>
-    `;
+        <a href="${item.url}" target="_blank" class="text-decoration-none">
+            <div class="card h-100 shadow-sm border-0 position-relative rounded overflow-hidden">
+                <div class="ratio ratio-4x3">
+                    <img src="${item.cover}" class="w-100 h-100 rounded"
+                        style="object-fit: cover; object-position: center;"
+                        alt="${item.title}">
+                </div>
+                <div class="card-overlay-0"></div>
+                <div class="card-overlay"></div>
+                <h4 class="card-title text-white text-center">${item.title}</h4>
+            </div>
+        </a>
+        `;
         container.appendChild(col);
     });
 </script>
