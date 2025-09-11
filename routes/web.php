@@ -124,3 +124,14 @@ Route::prefix('ppdb')->group(function () {
         return view('pages.ppdb.persyaratan');
     })->name('persyaratan');
 });
+
+// Berita dan Acara
+Route::get('berita', function () {
+    return view('pages.berita_dan_acara.berita');
+})->name('berita');
+Route::get('acara', function () {
+    return view('pages.berita_dan_acara.acara');
+})->name('acara');
+Route::get('berita-dan-acara/publikasi', function () {
+    return view('pages.berita_dan_acara.publication');
+})->name('publikasi');
