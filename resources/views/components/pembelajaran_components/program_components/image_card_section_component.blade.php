@@ -3,7 +3,7 @@
         <div class="owl-carousel owl-theme">
             <!-- Card 1 -->
             <div class="item">
-                <a href="#">
+                <a href="{{ route('kurikulum') }}">
                     <div class="card border-0 rounded-4 overflow-hidden shadow-sm">
                         <img src="https://sph.edu/wp-content/uploads/2022/02/3H3A8368.jpg"
                              class="card-img" alt="Pendidikan Anak Usia Dini">
@@ -15,7 +15,7 @@
             </div>
             <!-- Card 2 -->
             <div class="item">
-                <a href="#">
+                <a href="{{ route('kehidupan_rohani') }}">
                     <div class="card border-0 rounded-4 overflow-hidden shadow-sm">
                         <img src="https://sph.edu/wp-content/uploads/2022/02/carousel-sph-academic-programs-cambridge-v1.jpg"
                              class="card-img" alt="Sekolah Dasar">
