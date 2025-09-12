@@ -15,8 +15,8 @@
                     <p>Untuk melayani Anda dengan lebih baik, kami telah menyusun daftar pertanyaan umum lengkap dengan
                         informasi khusus tentang masing-masing kampus. Jika pertanyaan Anda masih belum terjawab, jangan
                         ragu untuk menghubungi kami. Kami akan melakukan yang terbaik untuk membantu Anda.</p>
-                    <button class="btn btn-sm btn-warning text-white btn-custom rounded-pill px-4 mt-2">Temukan Lebih
-                        Banyak</button>
+                    <a class="btn btn-sm btn-warning text-white btn-custom rounded-pill px-4 mt-2" href="{{ route('faq') }}">Temukan Lebih
+                        Banyak</a>
                 </div>
             </div>
         </div>
