@@ -12,6 +12,9 @@ use App\Http\Controllers\MasterData\PPDBController;
 // Auth
 Route::post('login', [AuthController::class, 'login']);
 
+// Public Routes
+Route::post('ppdb', [PPDBController::class, 'store']);
+
 // Protected Routes
 Route::middleware(['auth:sanctum'])->group(function () {
     // Master data
