@@ -21,7 +21,7 @@ class UserController extends Controller
         try {
             // Initialize
             $users = User::query();
-            // Search (harus sebelum get/paginate)
+            // Search
             $allowed = ['name', 'email'];
             if ($request->filled('type') && $request->filled('query') && in_array($request->type, $allowed)) {
                 $users->where($request->type, 'like', '%' . $request->query . '%');

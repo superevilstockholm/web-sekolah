@@ -19,7 +19,7 @@ class PPDBController extends Controller
         try {
             // Initialize
             $ppdb = PPDB::query();
-            // Search (harus sebelum get/paginate)
+            // Search
             $allowedFields = ['nama_peserta_didik', 'email', 'jenis_pendaftaran', 'jenjang'];
             if ($request->filled('type') && $request->filled('query') && in_array($request->type, $allowedFields)) {
                 $ppdb->where($request->type, 'like', '%' . $request->query . '%');

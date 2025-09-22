@@ -8,15 +8,19 @@ use App\Http\Controllers\AuthController;
 // Master Data
 use App\Http\Controllers\MasterData\UserController;
 use App\Http\Controllers\MasterData\PPDBController;
+use App\Http\Controllers\MasterData\NewsController;
 
 // Auth
 Route::post('login', [AuthController::class, 'login']);
 
 // Public Routes
+Route::apiResource('news', NewsController::class)->only(['index', 'show']);
 Route::post('ppdb', [PPDBController::class, 'store']);
 
 // Protected Routes
 Route::middleware(['auth:sanctum'])->group(function () {
+    // upload image for ckeditor
+    Route::post('news/upload-image', [NewsController::class, 'uploadImage']);
     // Master data
     Route::apiResource('users', UserController::class)->parameters([
         'users' => 'user'
@@ -24,4 +28,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::apiResource('ppdb', PPDBController::class)->parameters([
         'ppdb' => 'ppdb'
     ])->only(['index', 'show', 'update', 'destroy']);
+    Route::apiResource('news', NewsController::class)->parameters([
+        'news' => 'news'
+    ])->only(['store', 'update', 'destroy']);
 });
