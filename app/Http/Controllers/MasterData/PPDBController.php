@@ -3,15 +3,13 @@
 namespace App\Http\Controllers\MasterData;
 
 use App\Http\Controllers\Controller;
-
-use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
+use Exception;
 
-use App\Models\User;
+use App\Models\MasterData\PPDB;
 
-class UserController extends Controller
+class PPDBController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,24 +18,24 @@ class UserController extends Controller
     {
         try {
             // Initialize
-            $users = User::query();
+            $ppdb = PPDB::query();
             // Search (harus sebelum get/paginate)
-            $allowed = ['name', 'email'];
-            if ($request->filled('type') && $request->filled('query') && in_array($request->type, $allowed)) {
-                $users->where($request->type, 'like', '%' . $request->query . '%');
+            $allowedFields = ['nama_peserta_didik', 'email', 'jenis_pendaftaran', 'jenjang'];
+            if ($request->filled('type') && $request->filled('query') && in_array($request->type, $allowedFields)) {
+                $ppdb->where($request->type, 'like', '%' . $request->query . '%');
             }
             // Limit
             $limit = $request->query('limit', 10);
             if ($limit === 'all') {
-                $users = $users->get();
+                $ppdb = $ppdb->get();
             } else {
-                $users = $users->paginate((int) $limit);
+                $ppdb = $ppdb->paginate((int) $limit);
             }
             // Response
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-                'data' => $users
+                'data' => $ppdb
             ], 200);
         } catch (Exception $e) {
             return response()->json([
@@ -55,19 +53,24 @@ class UserController extends Controller
     {
         try {
             $validated = $request->validate([
-                'name' => 'required|max:255',
-                'email' => 'required|email|unique:users',
-                'password' => 'required|min:8'
+                'jenis_pendaftaran' => 'required|in:Peserta Didik Baru,Mutasi',
+                'jenjang' => 'required|in:TK,SD,SMP,SMA',
+                'nama_peserta_didik' => 'required|string|max:255',
+                'jenis_kelamin' => 'required|in:Laki-laki,Perempuan',
+                'tempat_lahir' => 'required|string|max:255',
+                'tanggal_lahir' => 'required|date',
+                'no_telp' => 'nullable|string|max:20',
+                'no_hp' => 'nullable|string|max:20',
+                'no_hp2' => 'nullable|string|max:20',
+                'email' => 'nullable|email|unique:ppdb,email'
             ]);
+            $ppdb = PPDB::create($validated);
 
-            $validated['password'] = Hash::make($validated['password']);
-
-            $user = User::create($validated);
             return response()->json([
                 'status' => true,
-                'message' => 'Success',
-                'data' => $user
-            ], 200);
+                'message' => 'Data berhasil disimpan',
+                'data' => $ppdb
+            ], 201);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -80,13 +83,13 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(User $user): JsonResponse
+    public function show(PPDB $ppdb): JsonResponse
     {
         try {
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-                'data' => $user
+                'data' => $ppdb
             ]);
         } catch (Exception $e) {
             return response()->json([
@@ -100,23 +103,30 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, User $user): JsonResponse
+    public function update(Request $request, PPDB $ppdb): JsonResponse
     {
         try {
             $validated = $request->validate([
-                'name' => 'sometimes|max:255',
-                'email' => 'sometimes|email|unique:users,email,' . $user->id,
-                'password' => 'sometimes|min:8'
+                'jenis_pendaftaran' => 'required|in:Peserta Didik Baru,Mutasi',
+                'jenjang' => 'required|in:TK,SD,SMP,SMA',
+                'nama_peserta_didik' => 'required|string|max:255',
+                'jenis_kelamin' => 'required|in:Laki-laki,Perempuan',
+                'tempat_lahir' => 'required|string|max:255',
+                'tanggal_lahir' => 'required|date',
+                'no_telp' => 'nullable|string|max:20',
+                'no_hp' => 'nullable|string|max:20',
+                'no_hp2' => 'nullable|string|max:20',
+                'email' => 'nullable|email|unique:ppdb,email,' . $ppdb->id,
             ]);
-            if (isset($validated['password'])) {
-                $validated['password'] = Hash::make($validated['password']);
-            }
-            $user->update($validated);
+
+            $ppdb->update($validated);
+
             return response()->json([
                 'status' => true,
-                'message' => 'Success',
-                'data' => $user->refresh()
+                'message' => 'Data berhasil diperbarui',
+                'data' => $ppdb
             ], 200);
+
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -129,14 +139,14 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(User $user): JsonResponse
+    public function destroy(PPDB $ppdb): JsonResponse
     {
         try {
-            $user->delete();
+            $ppdb->delete();
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-            ], 200);
+            ]);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
