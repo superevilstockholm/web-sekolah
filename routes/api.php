@@ -23,5 +23,5 @@ Route::middleware(['auth:sanctum'])->group(function () {
     ]);
     Route::apiResource('ppdb', PPDBController::class)->parameters([
         'ppdb' => 'ppdb'
-    ]);
+    ])->only(['index', 'show', 'update', 'destroy']);
 });
