@@ -10,6 +10,7 @@ use App\Http\Controllers\MasterData\UserController;
 use App\Http\Controllers\MasterData\PPDBController;
 use App\Http\Controllers\MasterData\NewsController;
 use App\Http\Controllers\MasterData\EventController;
+use App\Http\Controllers\MasterData\BlogsController;
 
 // Auth
 Route::post('login', [AuthController::class, 'login']);
@@ -17,6 +18,7 @@ Route::post('login', [AuthController::class, 'login']);
 // Public Routes
 Route::apiResource('news', NewsController::class)->only(['index', 'show']);
 Route::apiResource('events', EventController::class)->only(['index', 'show']);
+Route::apiResource('blogs', BlogsController::class)->only(['index', 'show']);
 Route::post('ppdb', [PPDBController::class, 'store']);
 
 // Protected Routes
@@ -36,5 +38,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     ])->only(['store', 'update', 'destroy']);
     Route::apiResource('events', EventController::class)->parameters([
         'events' => 'event'
+    ])->only(['store', 'update', 'destroy']);
+    Route::apiResource('blogs', BlogsController::class)->parameters([
+        'blogs' => 'blog'
     ])->only(['store', 'update', 'destroy']);
 });

@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 
 use App\Models\User;
 
-class Event extends Model
+class Events extends Model
 {
     use HasFactory;
 

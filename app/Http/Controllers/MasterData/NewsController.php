@@ -30,7 +30,14 @@ class NewsController extends Controller
                         $q->where('name', 'like', "%$query%")
                     );
                 } elseif ($type === 'category') {
-                    $news->where('category', $query);
+                    if (in_array($query, ['berita', 'acara', 'berita_acara'])) {
+                        $news->where('category', $query);
+                    } else {
+                        return response()->json([
+                            'status' => false,
+                            'message' => 'Invalid category'
+                        ], 400);
+                    }
                 } else {
                     $news->where($type, 'like', "%$query%");
                 }

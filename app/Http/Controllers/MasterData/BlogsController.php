@@ -3,15 +3,15 @@
 namespace App\Http\Controllers\MasterData;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Storage;
 use Exception;
 
-use App\Models\MasterData\Events;
+use App\Models\MasterData\Blogs;
 
-class EventController extends Controller
+class BlogsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,19 +19,19 @@ class EventController extends Controller
     public function index(Request $request): JsonResponse
     {
         try {
-            $events = Events::query();
+            $blogs = Blogs::query();
             // Search by allowed fields including author
             $allowed = ['title', 'slug', 'content', 'author', 'category'];
             $type  = $request->query('type');
             $query = $request->query('query');
             if ($type && $query && in_array($type, $allowed)) {
                 if ($type === 'author') {
-                    $events->whereHas('user', fn($q) =>
+                    $blogs->whereHas('user', fn($q) =>
                         $q->where('name', 'like', "%$query%")
                     );
                 } elseif ($type === 'category') {
-                    if (in_array($query, ['acara', 'acara_berita'])) {
-                        $events->where('category', $query);
+                    if (in_array($query, ['blog', 'artikel'])) {
+                        $blogs->where('category', $query);
                     } else {
                         return response()->json([
                             'status' => false,
@@ -39,18 +39,18 @@ class EventController extends Controller
                         ], 400);
                     }
                 } else {
-                    $events->where($type, 'like', "%$query%");
+                    $blogs->where($type, 'like', "%$query%");
                 }
             }
             // Limit / pagination
             $limit = $request->query('limit', 10);
-            $events = $limit === 'all'
-                ? $events->with('user:id,name')->get()
-                : $events->with('user:id,name')->paginate((int) $limit);
+            $blogs = $limit === 'all'
+                ? $blogs->with('user:id,name')->get()
+                : $blogs->with('user:id,name')->paginate((int) $limit);
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-                'data' => $events
+                'data' => $blogs
             ], 200);
         } catch (Exception $e) {
             return response()->json([
@@ -69,23 +69,23 @@ class EventController extends Controller
         try {
             $validated = $request->validate([
                 'title' => 'required|string|max:255',
-                'slug' => 'nullable|string|max:255|unique:events,slug',
+                'slug' => 'nullable|string|max:255|unique:blogs,slug',
                 'content' => 'required|string',
                 'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
-                'category' => 'required|in:acara,acara_berita',
+                'category' => 'required|in:blog,artikel',
                 'user_id' => 'required|exists:users,id'
             ]);
             $validated['slug'] = $validated['slug'] ?? Str::slug($validated['title']);
             if ($request->hasFile('image')) {
                 $file = $request->file('image');
-                $path = $file->store('uploads/events', 'public');
+                $path = $file->store('uploads/blogs', 'public');
                 $validated['image'] = $path;
             }
-            $event = Events::create($validated);
+            $blog = Blogs::create($validated);
             return response()->json([
                 'status' => true,
-                'message' => 'Event berhasil dibuat',
-                'data' => $event
+                'message' => 'Blog berhasil dibuat',
+                'data' => $blog
             ], 201);
 
         } catch (Exception $e) {
@@ -100,13 +100,13 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Events $event): JsonResponse
+    public function show(Blogs $blog): JsonResponse
     {
         try {
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-                'data' => $event->load('user')
+                'data' => $blog->load('user')
             ]);
         } catch (Exception $e) {
             return response()->json([
@@ -120,30 +120,30 @@ class EventController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Events $event): JsonResponse
+    public function update(Request $request, Blogs $blog): JsonResponse
     {
         try {
             $validated = $request->validate([
                 'title'   => 'sometimes|required|string|max:255',
-                'slug'    => 'sometimes|nullable|string|max:255|unique:events,slug,' . $event->id,
+                'slug'    => 'sometimes|nullable|string|max:255|unique:blogs,slug,' . $blog->id,
                 'content' => 'sometimes|required|string',
                 'image'   => 'sometimes|nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
-                'category' => 'sometimes|required|in:acara,acara_berita',
+                'category' => 'sometimes|required|in:blog,artikel',
             ]);
             if (!isset($validated['slug']) && isset($validated['title'])) {
                 $validated['slug'] = Str::slug($validated['title']);
             }
             if (isset($validated['image'])) {
-                if ($event->image && Storage::disk('public')->exists($event->image)) {
-                    Storage::disk('public')->delete($event->image);
+                if ($blog->image && Storage::disk('public')->exists($blog->image)) {
+                    Storage::disk('public')->delete($blog->image);
                 }
-                $validated['image'] = $request->file('image')->store('uploads/events', 'public');
+                $validated['image'] = $request->file('image')->store('uploads/blogs', 'public');
             }
-            $event->update($validated);
+            $blog->update($validated);
             return response()->json([
                 'status' => true,
-                'message' => 'Event berhasil diperbarui',
-                'data' => $event
+                'message' => 'Blog berhasil diperbarui',
+                'data' => $blog
             ], 200);
         } catch (Exception $e) {
             return response()->json([
@@ -157,16 +157,16 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Events $event): JsonResponse
+    public function destroy(Blogs $blog): JsonResponse
     {
         try {
-            if ($event->image && Storage::disk('public')->exists($event->image)) {
-                Storage::disk('public')->delete($event->image);
+            if ($blog->image && Storage::disk('public')->exists($blog->image)) {
+                Storage::disk('public')->delete($blog->image);
             }
-            $event->delete();
+            $blog->delete();
             return response()->json([
                 'status' => true,
-                'message' => 'Event berhasil dihapus',
+                'message' => 'Blog berhasil dihapus',
             ]);
         } catch (Exception $e) {
             return response()->json([
@@ -184,7 +184,7 @@ class EventController extends Controller
             if ($request->hasFile('upload')) {
                 $file = $request->file('upload');
                 $filename = time() . '_' . $file->getClientOriginalName();
-                $path = $file->storeAs('uploads/events', $filename, 'public');
+                $path = $file->storeAs('uploads/blogs', $filename, 'public');
                 $url = asset('storage/' . $path);
                 return response()->json(['url' => $url], 201);
             }
