@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
 use Database\Seeders\MasterData\NewsSeeder;
+use Database\Seeders\MasterData\EventsSeeder;
+use Database\Seeders\MasterData\BlogsSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,6 +28,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             NewsSeeder::class,
+            EventsSeeder::class,
+            BlogsSeeder::class
         ]);
     }
 }
