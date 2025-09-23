@@ -9,9 +9,9 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use Exception;
 
-use App\Models\MasterData\News;
+use App\Models\MasterData\Event;
 
-class NewsController extends Controller
+class EventController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,31 +19,31 @@ class NewsController extends Controller
     public function index(Request $request): JsonResponse
     {
         try {
-            $news = News::query();
+            $event = Event::query();
             // Search by allowed fields including author
             $allowed = ['title', 'slug', 'content', 'author', 'category'];
             $type  = $request->query('type');
             $query = $request->query('query');
             if ($type && $query && in_array($type, $allowed)) {
                 if ($type === 'author') {
-                    $news->whereHas('user', fn($q) =>
+                    $event->whereHas('user', fn($q) =>
                         $q->where('name', 'like', "%$query%")
                     );
                 } elseif ($type === 'category') {
-                    $news->where('category', $query);
+                    $event->where('category', $query);
                 } else {
-                    $news->where($type, 'like', "%$query%");
+                    $event->where($type, 'like', "%$query%");
                 }
             }
             // Limit / pagination
             $limit = $request->query('limit', 10);
-            $news = $limit === 'all'
-                ? $news->with('user:id,name')->get()
-                : $news->with('user:id,name')->paginate((int) $limit);
+            $event = $limit === 'all'
+                ? $event->with('user:id,name')->get()
+                : $event->with('user:id,name')->paginate((int) $limit);
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-                'data' => $news
+                'data' => $event
             ], 200);
         } catch (Exception $e) {
             return response()->json([
@@ -57,12 +57,12 @@ class NewsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request): JsonResponse
     {
         try {
             $validated = $request->validate([
                 'title' => 'required|string|max:255',
-                'slug' => 'nullable|string|max:255|unique:news,slug',
+                'slug' => 'nullable|string|max:255|unique:events,slug',
                 'content' => 'required|string',
                 'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
                 'category' => 'required|in:berita,acara,berita_acara',
@@ -71,14 +71,14 @@ class NewsController extends Controller
             $validated['slug'] = $validated['slug'] ?? Str::slug($validated['title']);
             if ($request->hasFile('image')) {
                 $file = $request->file('image');
-                $path = $file->store('uploads/news', 'public');
+                $path = $file->store('uploads/events', 'public');
                 $validated['image'] = $path;
             }
-            $news = News::create($validated);
+            $event = Event::create($validated);
             return response()->json([
                 'status' => true,
-                'message' => 'News berhasil dibuat',
-                'data' => $news
+                'message' => 'Event berhasil dibuat',
+                'data' => $event
             ], 201);
 
         } catch (Exception $e) {
@@ -93,13 +93,13 @@ class NewsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(News $news): JsonResponse
+    public function show(Event $event): JsonResponse
     {
         try {
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-                'data' => $news->load('user')
+                'data' => $event->load('user')
             ]);
         } catch (Exception $e) {
             return response()->json([
@@ -113,12 +113,12 @@ class NewsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, News $news)
+    public function update(Request $request, Event $event): JsonResponse
     {
         try {
             $validated = $request->validate([
                 'title'   => 'sometimes|required|string|max:255',
-                'slug'    => 'sometimes|nullable|string|max:255|unique:news,slug,' . $news->id,
+                'slug'    => 'sometimes|nullable|string|max:255|unique:events,slug,' . $event->id,
                 'content' => 'sometimes|required|string',
                 'image'   => 'sometimes|nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
                 'category' => 'sometimes|required|in:berita,acara,berita_acara',
@@ -127,16 +127,16 @@ class NewsController extends Controller
                 $validated['slug'] = Str::slug($validated['title']);
             }
             if (isset($validated['image'])) {
-                if ($news->image && Storage::disk('public')->exists($news->image)) {
-                    Storage::disk('public')->delete($news->image);
+                if ($event->image && Storage::disk('public')->exists($event->image)) {
+                    Storage::disk('public')->delete($event->image);
                 }
-                $validated['image'] = $request->file('image')->store('uploads/news', 'public');
+                $validated['image'] = $request->file('image')->store('uploads/events', 'public');
             }
-            $news->update($validated);
+            $event->update($validated);
             return response()->json([
                 'status' => true,
-                'message' => 'News berhasil diperbarui',
-                'data' => $news
+                'message' => 'Event berhasil diperbarui',
+                'data' => $event
             ], 200);
         } catch (Exception $e) {
             return response()->json([
@@ -150,17 +150,16 @@ class NewsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(News $news): JsonResponse
+    public function destroy(Event $event): JsonResponse
     {
         try {
-            // Hapus image jika ada
-            if ($news->image && Storage::disk('public')->exists($news->image)) {
-                Storage::disk('public')->delete($news->image);
+            if ($event->image && Storage::disk('public')->exists($event->image)) {
+                Storage::disk('public')->delete($event->image);
             }
-            $news->delete();
+            $event->delete();
             return response()->json([
                 'status' => true,
-                'message' => 'News berhasil dihapus',
+                'message' => 'Event berhasil dihapus',
             ]);
         } catch (Exception $e) {
             return response()->json([
@@ -178,7 +177,7 @@ class NewsController extends Controller
             if ($request->hasFile('upload')) {
                 $file = $request->file('upload');
                 $filename = time() . '_' . $file->getClientOriginalName();
-                $path = $file->storeAs('uploads/news', $filename, 'public');
+                $path = $file->storeAs('uploads/events', $filename, 'public');
                 $url = asset('storage/' . $path);
                 return response()->json(['url' => $url], 201);
             }

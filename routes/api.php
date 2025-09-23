@@ -9,18 +9,21 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MasterData\UserController;
 use App\Http\Controllers\MasterData\PPDBController;
 use App\Http\Controllers\MasterData\NewsController;
+use App\Http\Controllers\MasterData\EventController;
 
 // Auth
 Route::post('login', [AuthController::class, 'login']);
 
 // Public Routes
 Route::apiResource('news', NewsController::class)->only(['index', 'show']);
+Route::apiResource('events', EventController::class)->only(['index', 'show']);
 Route::post('ppdb', [PPDBController::class, 'store']);
 
 // Protected Routes
 Route::middleware(['auth:sanctum'])->group(function () {
     // upload image for ckeditor
     Route::post('news/upload-image', [NewsController::class, 'uploadImage']);
+    Route::post('events/upload-image', [EventController::class, 'uploadImage']);
     // Master data
     Route::apiResource('users', UserController::class)->parameters([
         'users' => 'user'
@@ -30,5 +33,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     ])->only(['index', 'show', 'update', 'destroy']);
     Route::apiResource('news', NewsController::class)->parameters([
         'news' => 'news'
+    ])->only(['store', 'update', 'destroy']);
+    Route::apiResource('events', EventController::class)->parameters([
+        'events' => 'event'
     ])->only(['store', 'update', 'destroy']);
 });
