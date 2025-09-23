@@ -87,7 +87,6 @@ class EventController extends Controller
                 'message' => 'Event berhasil dibuat',
                 'data' => $event
             ], 201);
-
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -107,7 +106,7 @@ class EventController extends Controller
                 'status' => true,
                 'message' => 'Success',
                 'data' => $event->load('user')
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -167,7 +166,7 @@ class EventController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Event berhasil dihapus',
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,

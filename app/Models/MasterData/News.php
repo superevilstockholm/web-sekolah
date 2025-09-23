@@ -13,6 +13,8 @@ class News extends Model
 {
     use HasFactory;
 
+    protected $table = 'news';
+
     protected $fillable = [
         'title',
         'slug',
@@ -23,6 +25,13 @@ class News extends Model
     ];
 
     public $timestamps = true;
+
+    protected $appends = ['image_url'];
+
+    public function getImageUrlAttribute(): ?string
+    {
+        return $this->image ? asset('storage/' . $this->image) : null;
+    }
 
     public function user()
     {

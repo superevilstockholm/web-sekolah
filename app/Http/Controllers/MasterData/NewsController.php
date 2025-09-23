@@ -87,7 +87,6 @@ class NewsController extends Controller
                 'message' => 'News berhasil dibuat',
                 'data' => $news
             ], 201);
-
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -107,7 +106,7 @@ class NewsController extends Controller
                 'status' => true,
                 'message' => 'Success',
                 'data' => $news->load('user')
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -168,7 +167,7 @@ class NewsController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'News berhasil dihapus',
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,

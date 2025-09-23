@@ -67,7 +67,6 @@ class PPDBController extends Controller
                 'email' => 'nullable|email|unique:ppdb,email'
             ]);
             $ppdb = PPDB::create($validated);
-
             return response()->json([
                 'status' => true,
                 'message' => 'Data berhasil disimpan',
@@ -92,7 +91,7 @@ class PPDBController extends Controller
                 'status' => true,
                 'message' => 'Success',
                 'data' => $ppdb
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -145,7 +144,7 @@ class PPDBController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,

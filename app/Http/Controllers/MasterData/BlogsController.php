@@ -107,7 +107,7 @@ class BlogsController extends Controller
                 'status' => true,
                 'message' => 'Success',
                 'data' => $blog->load('user')
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -167,7 +167,7 @@ class BlogsController extends Controller
             return response()->json([
                 'status' => true,
                 'message' => 'Blog berhasil dihapus',
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,

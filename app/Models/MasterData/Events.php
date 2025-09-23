@@ -12,6 +12,8 @@ class Events extends Model
 {
     use HasFactory;
 
+    protected $table = 'events';
+
     protected $fillable = [
         'title',
         'slug',
@@ -23,9 +25,16 @@ class Events extends Model
 
     public $timestamps = true;
 
+    protected $appends = ['image_url'];
+
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function getImageUrlAttribute()
+    {
+        return $this->image ? asset('storage/' . $this->image) : null;
     }
 
     // Otomatis generatte slug

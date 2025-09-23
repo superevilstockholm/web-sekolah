@@ -61,15 +61,13 @@ class UserController extends Controller
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:8'
             ]);
-
             $validated['password'] = Hash::make($validated['password']);
-
             $user = User::create($validated);
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
                 'data' => $user
-            ], 200);
+            ], 201);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
@@ -89,7 +87,7 @@ class UserController extends Controller
                 'status' => true,
                 'message' => 'Success',
                 'data' => $user
-            ]);
+            ], 200);
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,
