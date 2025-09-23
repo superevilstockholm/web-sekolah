@@ -26,6 +26,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     // upload image for ckeditor
     Route::post('news/upload-image', [NewsController::class, 'uploadImage']);
     Route::post('events/upload-image', [EventController::class, 'uploadImage']);
+    Route::post('blogs/upload-image', [BlogsController::class, 'uploadImage']);
     // Master data
     Route::apiResource('users', UserController::class)->parameters([
         'users' => 'user'
