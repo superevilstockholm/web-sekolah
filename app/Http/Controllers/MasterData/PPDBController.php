@@ -107,26 +107,23 @@ class PPDBController extends Controller
     {
         try {
             $validated = $request->validate([
-                'jenis_pendaftaran' => 'required|in:Peserta Didik Baru,Mutasi',
-                'jenjang' => 'required|in:TK,SD,SMP,SMA',
-                'nama_peserta_didik' => 'required|string|max:255',
-                'jenis_kelamin' => 'required|in:L,P',
-                'tempat_lahir' => 'required|string|max:255',
-                'tanggal_lahir' => 'required|date',
-                'no_telp' => 'nullable|string|max:20',
-                'no_hp' => 'nullable|string|max:20',
-                'no_hp2' => 'nullable|string|max:20',
-                'email' => 'nullable|email|unique:ppdb,email,' . $ppdb->id,
+                'jenis_pendaftaran' => 'sometimes|required|in:Peserta Didik Baru,Mutasi',
+                'jenjang' => 'sometimes|required|in:TK,SD,SMP,SMA',
+                'nama_peserta_didik' => 'sometimes|required|string|max:255',
+                'jenis_kelamin' => 'sometimes|required|in:L,P',
+                'tempat_lahir' => 'sometimes|required|string|max:255',
+                'tanggal_lahir' => 'sometimes|required|date',
+                'no_telp' => 'sometimes|nullable|string|max:20',
+                'no_hp' => 'sometimes|nullable|string|max:20',
+                'no_hp2' => 'sometimes|nullable|string|max:20',
+                'email' => 'sometimes|nullable|email|unique:ppdb,email,' . $ppdb->id,
             ]);
-
             $ppdb->update($validated);
-
             return response()->json([
-                'status' => true,
+                'status'  => true,
                 'message' => 'Data berhasil diperbarui',
-                'data' => $ppdb
+                'data'    => $ppdb
             ], 200);
-
         } catch (Exception $e) {
             return response()->json([
                 'status' => false,

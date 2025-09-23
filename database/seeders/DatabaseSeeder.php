@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Hash;
 
 use App\Models\User;
 
+use Database\Seeders\MasterData\NewsSeeder;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -20,6 +22,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Hillary Aimee',
             'email' => 'hillary.aimee@gmail.com',
             'password' => Hash::make('hillary_aimee123'),
+        ]);
+
+        $this->call([
+            NewsSeeder::class,
         ]);
     }
 }

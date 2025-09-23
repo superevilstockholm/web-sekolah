@@ -20,25 +20,26 @@ class NewsController extends Controller
     {
         try {
             $news = News::query();
-
             // Search by allowed fields including author
-            $allowed = ['title', 'slug', 'content', 'author'];
+            $allowed = ['title', 'slug', 'content', 'author', 'category'];
             if ($request->filled('type') && $request->filled('query') && in_array($request->type, $allowed)) {
                 if ($request->type === 'author') {
-                    $news->whereHas('user', fn($q) => $q->where('name', 'like', '%' . $request->query . '%'));
+                    $news->whereHas('user', fn($q) =>
+                        $q->where('name', 'like', '%' . $request->query . '%')
+                    );
                 } else {
                     $news->where($request->type, 'like', '%' . $request->query . '%');
                 }
             }
-
             // Limit / pagination
             $limit = $request->query('limit', 10);
-            $news = $limit === 'all' ? $news->get() : $news->paginate((int) $limit);
-
+            $news = $limit === 'all'
+                ? $news->with('user:id,name')->get()
+                : $news->with('user:id,name')->paginate((int) $limit);
             return response()->json([
                 'status' => true,
                 'message' => 'Success',
-                'data' => $news->load(['user:id,name'])
+                'data' => $news
             ], 200);
         } catch (Exception $e) {
             return response()->json([
@@ -60,6 +61,7 @@ class NewsController extends Controller
                 'slug' => 'nullable|string|max:255|unique:news,slug',
                 'content' => 'required|string',
                 'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+                'category' => 'required|in:berita,acara,berita_acara',
                 'user_id' => 'required|exists:users,id'
             ]);
             $validated['slug'] = $validated['slug'] ?? Str::slug($validated['title']);
@@ -68,9 +70,7 @@ class NewsController extends Controller
                 $path = $file->store('uploads/news', 'public');
                 $validated['image'] = $path;
             }
-
             $news = News::create($validated);
-
             return response()->json([
                 'status' => true,
                 'message' => 'News berhasil dibuat',
@@ -117,6 +117,7 @@ class NewsController extends Controller
                 'slug'    => 'sometimes|nullable|string|max:255|unique:news,slug,' . $news->id,
                 'content' => 'sometimes|required|string',
                 'image'   => 'sometimes|nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+                'category' => 'sometimes|required|in:berita,acara,berita_acara',
             ]);
             if (!isset($validated['slug']) && isset($validated['title'])) {
                 $validated['slug'] = Str::slug($validated['title']);
