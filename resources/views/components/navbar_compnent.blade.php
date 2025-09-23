@@ -1,7 +1,7 @@
-<div class="fixed-top navbar-container">
-    <header class="pt-2" style="font-size: 0.9rem;">
-        <div class="container">
-            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3"
+<div class="{{ request()->is('/') ? 'fixed-top' : 'sticky-top' }} navbar-container">
+    <header class="{{ request()->is('/') ? '' : 'bg-primary' }} py-0 my-0" style="font-size: 0.9rem;">
+        <div class="container my-0">
+            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3 py-md-2"
                 style="font-family: 'Roboto', sans-serif !important;">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -9,9 +9,9 @@
                         Berita dan Acara
                     </a>
                     <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3" style="font-size: 0.9rem;">
-                        <li><a class="dropdown-item" href="#">Berita</a></li>
-                        <li><a class="dropdown-item" href="#">Acara</a></li>
-                        <li><a class="dropdown-item" href="#">Publikasi</a></li>
+                        <li><a class="dropdown-item" href="{{ route('berita') }}">Berita</a></li>
+                        <li><a class="dropdown-item" href="{{ route('acara') }}">Acara</a></li>
+                        <li><a class="dropdown-item" href="{{ route('publikasi') }}">Publikasi</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -40,7 +40,8 @@
     </header>
     <nav class="navbar navbar-expand-lg pt-0">
         <div class="container">
-            <a class="navbar-brand fw-medium" href="#"><img style="height: 42px;"
+
+            <a class="navbar-brand fw-medium" href="/"><img style="height: 72px;"
                     src="{{ asset('static/img/logo.png') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,9 +62,9 @@
                             Tentang Kami
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Sejarah</a></li>
-                            <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
-                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sejarah') }}">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('visi_dan_misi') }}">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('faq') }}">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -72,11 +73,14 @@
                             Pembelajaran
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Jalur Pembelajaran</a></li>
-                            <li><a class="dropdown-item" href="#">Program</a></li>
-                            <li><a class="dropdown-item" href="#">Kurikulum</a></li>
-                            <li><a class="dropdown-item" href="#">Dukungan Pembelajaran</a></li>
-                            <li><a class="dropdown-item" href="#">Pembelajaran Pelayanan</a></li>
+                            <li><a class="dropdown-item" href="{{ route('jalur_pembelajaran') }}">Jalur Pembelajaran</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('program') }}">Program</a></li>
+                            <li><a class="dropdown-item" href="{{ route('kurikulum') }}">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="{{ route('dukungan_pembelajaran') }}">Dukungan
+                                    Pembelajaran</a></li>
+                            <li><a class="dropdown-item" href="{{ route('pembelajaran_pelayanan') }}">Pembelajaran
+                                    Pelayanan</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -85,9 +89,17 @@
                             Lembaga
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Al Layyinah</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem Ipsum</a></li>
-                            <li><a class="dropdown-item" href="#">Dolor Sit Amet</a></li>
+
+                            <li><a class="dropdown-item" href="{{ route('rauhatul_athfal') }}">Rauhatul Athfal</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('madrasah_ibtidaiyah') }}">Madrasah
+                                    Ibtidaiyah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('madrasah_tsanawiyah') }}">Madrasah
+                                    Tsanawiyah</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sma_islam') }}">Sekolah Menengah Atas
+                                    Islam</a></li>
+                            <li><a class="dropdown-item" href="{{ route('pondok_tahfidz') }}">Pondok Tahfidz Bayt
+                                    Al-Qur’an</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -96,9 +108,12 @@
                             Kehidupan Siswa
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Ekstrakurikuler</a></li>
-                            <li><a class="dropdown-item" href="#">Keagamaan</a></li>
-                            <li><a class="dropdown-item" href="#">Layanan Siswa</a></li>
+                            <li><a class="dropdown-item" href="{{ route('ekstreakurikuler') }}">Ekstrakurikuler</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('kehidupan_rohani') }}">Kehidupan Rohani</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('layanan_siswa') }}">Layanan Siswa</a></li>
+                            <li><a class="dropdown-item" href="{{ route('asrama_phh') }}">Asrama PHH</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -107,10 +122,20 @@
                             Jenjang
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">TK</a></li>
-                            <li><a class="dropdown-item" href="#">SD</a></li>
-                            <li><a class="dropdown-item" href="#">SMP</a></li>
-                            <li><a class="dropdown-item" href="#">SMA</a></li>
+                            <li><a class="dropdown-item" href="{{ route('tk') }}">TK</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sd') }}">SD</a></li>
+                            <li><a class="dropdown-item" href="{{ route('smp') }}">SMP</a></li>
+                            <li><a class="dropdown-item" href="{{ route('sma') }}">SMA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PPDB
+                        </a>
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                            <li><a class="dropdown-item" href="{{ route('pendaftaran') }}">Pendaftaran</a></li>
+                            <li><a class="dropdown-item" href="{{ route('persyaratan') }}">Persyaratan</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -122,9 +147,9 @@
                             Berita dan Acara
                         </a>
                         <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
-                            <li><a class="dropdown-item" href="#">Berita</a></li>
-                            <li><a class="dropdown-item" href="#">Acara</a></li>
-                            <li><a class="dropdown-item" href="#">Publikasi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('berita') }}">Berita</a></li>
+                            <li><a class="dropdown-item" href="{{ route('acara') }}">Acara</a></li>
+                            <li><a class="dropdown-item" href="{{ route('publikasi') }}">Publikasi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -155,21 +180,21 @@
 </div>
 {{-- Modal --}}
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-top">
-    <div class="modal-content border-0 shadow-lg rounded-3">
-      <div class="modal-header">
-        <h5 class="modal-title" id="searchModalLabel">Cari</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input type="text" class="form-control form-control-lg" placeholder="Ketik kata kunci...">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-        <button type="button" class="btn btn-primary">Cari</button>
-      </div>
+    <div class="modal-dialog modal-dialog-top">
+        <div class="modal-content border-0 shadow-lg rounded-3">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Cari</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control form-control-lg" placeholder="Ketik kata kunci...">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-primary">Cari</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <style>
     .navbar-container {
@@ -237,33 +262,61 @@
     }
 
     /* Navbar default */
-.navbar-container {
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: transparent;
-}
+    .navbar-container {
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        background-color: transparent;
+    }
 
-.navbar-container .nav-link,
-.navbar-container .navbar-brand,
-.navbar-container .btn {
-    color: #fff; /* Teks putih sebelum scroll */
-    transition: color 0.3s ease;
-}
+    .navbar-container .nav-link,
+    .navbar-container .navbar-brand,
+    .navbar-container .btn {
+        color: #fff;
+        /* Teks putih sebelum scroll */
+        transition: color 0.3s ease;
+    }
 
-/* Navbar saat di scroll */
-.navbar-container.scrolled {
-    background-color: #fff !important;
-}
+    /* Navbar saat di scroll */
+    .navbar-container .nav-link,
+    .navbar-container .navbar-brand,
+    .navbar-container .btn {
+        color: rgba(255, 255, 255, 0.75);
+        /* Teks putih sebelum scroll */
+        transition: color 0.3s ease;
+    }
 
-.navbar-container.scrolled .nav-link,
-.navbar-container.scrolled .navbar-brand {
-    color: #000 !important; /* Teks hitam setelah scroll */
-}
+    /* Navbar saat di scroll */
+    .navbar-container.scrolled {
+        background-color: #fff !important;
+    }
 
-/* Tombol Tanya Sekarang saat scroll */
-.navbar-container.scrolled .btn-primary {
-    color: #fff;           /* tetap putih meski navbar putih */
-    background-color: #0d6efd; /* atau bisa diganti warna lain jika mau */
-}
+    .navbar-container.scrolled nav .nav-link,
+    .navbar-container.scrolled nav .navbar-brand {
+        color: rgba(0, 0, 0, 0.75) !important;
+        /* Teks hitam setelah scroll */
+    }
+
+    /* Tombol Tanya Sekarang saat scroll */
+    .navbar-container.scrolled .btn-primary {
+        color: #fff;
+        /* tetap putih meski navbar putih */
+        background-color: #0d6efd;
+        /* atau bisa diganti warna lain jika mau */
+    }
+
+    .navbar-container.scrolled header .nav-link {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .navbar-container header .nav-link:hover,
+    .navbar-container header .nav-link:focus,
+    .navbar-container.scrolled header .nav-link:hover,
+    .navbar-container.scrolled header .nav-link:focus {
+        color: #fff !important;
+    }
+
+    .navbar-container.scrolled header {
+        background-color: var(--bs-primary) !important;
+    }
 </style>
 <script>
     if (window.innerWidth >= 992) {
@@ -289,12 +342,11 @@
         }
     });
     document.addEventListener("scroll", function() {
-    let navbar = document.querySelector(".navbar-container");
-    if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
-});
-
+        let navbar = document.querySelector(".navbar-container");
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
 </script>

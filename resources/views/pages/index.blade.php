@@ -1,11 +1,9 @@
 @extends('App')
-
 @section('content')
     <!-- Hero Section dengan Carousel -->
     <section id="hero">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
             <div class="carousel-inner">
-
                 <!-- Slide 1 -->
                 <div class="carousel-item active position-relative">
                     <img src="{{ asset('images/sph-3.png') }}" class="d-block w-100" alt="Slide 1">
@@ -23,7 +21,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Slide 2 -->
                 <div class="carousel-item position-relative">
                     <img src="{{ asset('images/sph-4.png') }}" class="d-block w-100" alt="Slide 2">
@@ -40,7 +37,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Slide 3 -->
                 <div class="carousel-item position-relative">
                     <img src="{{ asset('images/sph-5.png') }}" class="d-block w-100" alt="Slide 3">
@@ -57,9 +53,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <!-- Tombol Scroll untuk Menjelajahi -->
             <a href="#core-identity" class="scroll-btn">
                 <span>Gulir untuk Menjelajahi</span>
@@ -67,8 +61,6 @@
             </a>
         </div>
     </section>
-
-
     <!-- Section 2: Identitas Inti -->
     <section id="core-identity" class="py-5 bg-light">
         <div class="container">
@@ -92,15 +84,12 @@
             </div>
         </div>
     </section>
-
-
     <!-- Section 3: Angka SPH -->
     <section id="sph-numbers" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
                 <h3>Fakta Singkat <span class="text-primary">Tentang SPH</span></h3>
             </div>
-
             <!-- Baris 1 -->
             <div class="row text-center g-4 gy-5">
                 <div class="col-12 col-md-6 col-lg-3">
@@ -132,7 +121,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Baris 2 -->
             <div class="row text-center g-4 gy-5 justify-content-center mt-5">
                 <div class="col-12 col-md-6 col-lg-3">
@@ -152,9 +140,6 @@
             </div>
         </div>
     </section>
-
-
-
     <section id="our-legacy" class="py-5 bg-light">
         <div class="container position-relative">
             <div class="row">
@@ -175,10 +160,8 @@
                         di mana pun Tuhan memanggil mereka. Inti dari siapa kami adalah panggilan untuk melayani, dan kami
                         berdedikasi untuk mendukung pertumbuhan iman setiap siswa dalam perjalanan iman mereka.
                     </p>
-
                     <!-- Spacer biar ada jarak -->
                     <div class="my-5"></div>
-
                     <!-- Blok kedua -->
                     <h2 class="fw-bold mb-4">
                         <span>Warisan Keunggulan dalam <br> Pendidikan Internasional</span>
@@ -196,7 +179,6 @@
                         mempersiapkan mereka untuk sukses di dunia global yang selalu berubah.
                     </p>
                 </div>
-
                 <!-- Kanan: gambar sepanjang tinggi dua judul -->
                 <div class="col-lg-6 position-relative">
                     <img src="{{ asset('images/sph-1.jpg') }}" alt="Gambar Warisan"
@@ -206,7 +188,6 @@
             </div>
         </div>
     </section>
-
     <section>
         <div class="container-fluid  px-4 px-lg-5  position-relative">
             <div class="row">
@@ -229,9 +210,7 @@
                     membantu membentuk individu yang sadar budaya, adaptif, dan siap memberikan kontribusi di kancah dunia.
                 </p>
             </div>
-
             <div class="my-5"></div>
-
             <div class="row">
                 <h2 class="fw-bold mb-4">
                     <span>Komunitas yang Berkomitmen pada Pembelajaran Sepanjang Hayat</span>
@@ -257,53 +236,45 @@
             </div>
         </div>
     </section>
-
-
     <!-- Section terakhir: Full Image -->
     <section id="full-image" class="p-0 mt-5 mb-5"> <img src="{{ asset('images/sph-2.png') }}" alt="Full Width Image"
             class="img-fluid rounded w-100" style="display:block; object-fit:cover;">
     </section>
     @include('components.index_components.content_section')
-
+    {{-- Parenting Quesstion Component --}}
+    @include('components.pareting_question_component')
     <style>
         /* Default (HP) */
         #sph-numbers i {
             font-size: 3rem;
         }
-
         #sph-numbers h4 {
             font-size: 1.75rem;
         }
-
         /* Tablet */
         @media (min-width: 768px) {
             #sph-numbers i {
                 font-size: 4rem;
             }
-
             #sph-numbers h4 {
                 font-size: 2rem;
             }
         }
-
         /* Desktop */
         @media (min-width: 992px) {
             #sph-numbers i {
                 font-size: 5rem;
             }
-
             #sph-numbers h4 {
                 font-size: 2.5rem;
             }
         }
-
         /* Jarak vertikal antar kolom HP */
         @media (max-width: 767px) {
             #sph-numbers .row.gy-5>[class*="col-"] {
                 margin-bottom: 1rem;
             }
         }
-
         #hero {
             position: relative;
             width: 100%;
@@ -313,7 +284,6 @@
             background-size: cover;
             /* bikin selalu nutup layar */
         }
-
         #hero .carousel-caption {
             bottom: 25%;
             /* lebih rendah, beri jarak aman */
@@ -325,7 +295,6 @@
             text-align: center;
             padding: 0 15px;
         }
-
         #hero .carousel-caption .btn {
             border-radius: 30px;
             /* tombol bulat */
@@ -334,9 +303,6 @@
             padding: 0.6rem 1.5rem;
             /* jarak dalam tombol */
         }
-
-
-
         /* Mobile */
         @media (max-width: 767px) {
             #hero .carousel-caption {
@@ -344,16 +310,13 @@
                 /* beri jarak lebih ke atas dari tombol scroll */
                 padding: 0 10px;
             }
-
             #hero .carousel-caption h2 {
                 font-size: 1.8rem;
             }
-
             #hero .carousel-caption p {
                 font-size: 1rem;
             }
         }
-
         #hero .carousel-caption h2,
         #hero .carousel-caption p {
             white-space: normal;
@@ -361,67 +324,52 @@
             word-break: break-word;
             /* pecah kata panjang */
         }
-
         .carousel-inner {
             overflow: visible;
         }
-
         /* Carousel */
         #hero .carousel-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             filter: brightness(0.7);
-
         }
-
-
         #hero .carousel-item {
             height: 100vh;
             position: relative;
-
         }
-
         /* Caption responsif */
         #hero .carousel-caption h2 {
             font-size: 2rem;
             /* default kecil untuk HP */
         }
-
         #hero .carousel-caption p {
             font-size: 1rem;
         }
-
         @media (max-width: 767px) {
             #hero .carousel-caption h2 {
                 font-size: 1.8rem;
             }
-
             #hero .carousel-caption p {
                 font-size: 1rem;
             }
         }
-
         @media (min-width: 768px) and (max-width: 991px) {
             #hero .carousel-caption h2 {
                 font-size: 2.5rem;
             }
-
             #hero .carousel-caption p {
                 font-size: 1.2rem;
             }
         }
-
         @media (min-width: 992px) {
             #hero .carousel-caption h2 {
                 font-size: 3rem;
             }
-
             #hero .carousel-caption p {
                 font-size: 1.25rem;
             }
         }
-
         /* Section Legacy: gambar kanan jadi responsif */
         #our-legacy .col-lg-6.position-relative img {
             position: relative !important;
@@ -431,7 +379,6 @@
             object-fit: cover;
             border-radius: 8px;
         }
-
         @media (min-width: 992px) {
             #our-legacy .col-lg-6.position-relative img {
                 position: absolute;
@@ -446,20 +393,16 @@
                 border-radius: 8px;
             }
         }
-
-
         /* Animasi muncul dari bawah */
         .animate-caption {
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.8s ease-in-out;
         }
-
         .carousel-item.active .animate-caption {
             opacity: 1;
             transform: translateY(0);
         }
-
         /* Tombol Scroll */
         .scroll-btn {
             position: absolute;
@@ -476,17 +419,14 @@
             gap: 8px;
             transition: all 0.3s ease;
         }
-
         .scroll-btn:hover {
             background: rgba(255, 255, 255, 0.35);
             color: #fff;
         }
-
         .scroll-btn i {
             font-size: 1.2rem;
         }
     </style>
-
     <script>
         const heroCarousel = document.querySelector('#heroCarousel');
         const carousel = new bootstrap.Carousel(heroCarousel, {
@@ -496,7 +436,6 @@
             touch: false,
             wrap: true
         });
-
         heroCarousel.addEventListener('slide.bs.carousel', function(e) {
             let captions = e.target.querySelectorAll('.animate-caption');
             captions.forEach(caption => {
@@ -504,7 +443,6 @@
                 caption.style.transform = "translateY(40px)";
             });
         });
-
         heroCarousel.addEventListener('slid.bs.carousel', function(e) {
             let activeCaption = e.target.querySelector('.carousel-item.active .animate-caption');
             if (activeCaption) {
@@ -513,4 +451,15 @@
             }
         });
     </script>
+    <style>
+        /* Custom navbar style */
+        .navbar-container .nav-link:hover,
+        .navbar-container .nav-link:focus {
+            color: rgba(255, 255, 255, 1) !important;
+        }
+        .navbar-container.scrolled .nav-link:hover,
+        .navbar-container.scrolled .nav-link:focus {
+            color: rgba(0, 0, 0, 1) !important;
+        }
+    </style>
 @endsection
