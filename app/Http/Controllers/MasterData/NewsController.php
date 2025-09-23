@@ -22,13 +22,17 @@ class NewsController extends Controller
             $news = News::query();
             // Search by allowed fields including author
             $allowed = ['title', 'slug', 'content', 'author', 'category'];
-            if ($request->filled('type') && $request->filled('query') && in_array($request->type, $allowed)) {
-                if ($request->type === 'author') {
+            $type  = $request->query('type');
+            $query = $request->query('query');
+            if ($type && $query && in_array($type, $allowed)) {
+                if ($type === 'author') {
                     $news->whereHas('user', fn($q) =>
-                        $q->where('name', 'like', '%' . $request->query . '%')
+                        $q->where('name', 'like', "%$query%")
                     );
+                } elseif ($type === 'category') {
+                    $news->where('category', $query);
                 } else {
-                    $news->where($request->type, 'like', '%' . $request->query . '%');
+                    $news->where($type, 'like', "%$query%");
                 }
             }
             // Limit / pagination

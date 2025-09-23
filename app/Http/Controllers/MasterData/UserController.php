@@ -23,8 +23,10 @@ class UserController extends Controller
             $users = User::query();
             // Search
             $allowed = ['name', 'email'];
-            if ($request->filled('type') && $request->filled('query') && in_array($request->type, $allowed)) {
-                $users->where($request->type, 'like', '%' . $request->query . '%');
+            $type  = $request->query('type');
+            $query = $request->query('query');
+            if ($type && $query && in_array($type, $allowed)) {
+                $users->where($type, 'like', "%$query%");
             }
             // Limit
             $limit = $request->query('limit', 10);
