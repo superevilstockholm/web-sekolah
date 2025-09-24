@@ -29,8 +29,8 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Kurikulum Kami
                     </h5>
-                    <h3 class="d-flex align-items-center gap-2 fs-3">
-                        <span class="text-primary">Peta Jalan</span> Menuju Masa Depan
+                    <h3 class="d-flex align-items-center gap-2 fs-3 peta-jalan">
+                        <span class="text-primary peta-jalan">Peta Jalan</span> Menuju Masa Depan
                     </h3>
                     <p class="text-muted" style="font-size: 0.9rem;">
                         Kurikulum kami merupakan peta jalan yang berguna untuk memandu dan membentuk siswa menjadi
@@ -96,7 +96,7 @@
         <div class="row my-5">
             <div class="col-12">
                 <div class="d-flex flex-column align-items-center">
-                    <h2 class="text-center">Frequently Asked Question<br>Sekolah Pelita Harapan</h2>
+                    <h2 class="text-center pt-sans">Frequently Asked Question<br>Sekolah Pelita Harapan</h2>
                     <h3 class="text-primary text-center d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Pertanyaan Yang Sering Diajukan
@@ -235,7 +235,7 @@
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1">Rachel Ho</h5>
+                                <h5 class="fw-bold mb-1 pt-sans">Rachel Ho</h5>
                                 <p class="mb-3">— SPH LV Angkatan 2009</p>
                                 <p>
                                     SPH sangat membantu saya untuk mengajukan pertanyaan-pertanyaan penting yang di masa
@@ -265,7 +265,7 @@
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1">Jonathan Lee</h5>
+                                <h5 class="fw-bold mb-1 pt-sans">Jonathan Lee</h5>
                                 <p class="mb-3">— SPH LV Angkatan 2012</p>
                                 <p>
                                     SPH menjadi bagian tak terpisahkan dari hidup saya.
@@ -294,7 +294,7 @@
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1">Giovani Prayitno</h5>
+                                <h5 class="fw-bold mb-1 pt-sans">Giovani Prayitno</h5>
                                 <p class="mb-3">— Angkatan 2009</p>
                                 <p>
                                     Saya harus mengatakan bahwa lingkungan pembelajaran di SPH adalah salah satu yang
@@ -323,7 +323,7 @@
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1">Raindy Blessidio Lee</h5>
+                                <h5 class="fw-bold mb-1 pt-sans">Raindy Blessidio Lee</h5>
                                 <p class="mb-3">— Angkatan 2018</p>
                                 <p>
                                     Di SPH, saya mempelajari segala hal secara holistik. Pembelajaran tidak berfokus
@@ -399,7 +399,7 @@
     campuses.forEach((campus, index) => {
         tabList.innerHTML += `
         <li class="nav-item" role="presentation">
-            <button class="nav-link fw-medium ${index === 0 ? "active" : ""}"
+            <button class="nav-link fw-medium btn-name ${index === 0 ? "active" : ""}"
                     id="${campus.id}-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#${campus.id}"
@@ -416,7 +416,7 @@
                 <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                   <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt=""> ${campus.location}
                 </h5>
-                <h3 class="d-flex align-items-center gap-2 fs-3">
+                <h3 class="d-flex align-items-center gap-2 fs-3 campus-name">
                   <span class="text-primary">${campus.name.split(" ")[0]}</span> ${campus.name.split(" ").slice(1).join(" ")}
                 </h3>
                 <p class="text-muted" style="font-size: 0.9rem;">${campus.description}</p>
@@ -450,6 +450,27 @@
     });
 </script>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+    .campus-name,
+    .campus-name * {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+
+    .btn-name {
+        font-family: 'Roboto', sans-serif !important;
+    }
+
+    .peta-jalan {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+
+    .pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+
+
     .tab-pane {
         padding: 20px 0;
     }

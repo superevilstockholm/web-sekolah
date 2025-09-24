@@ -1,10 +1,9 @@
 <div class="{{ request()->is('/') ? 'fixed-top' : 'sticky-top' }} navbar-container">
-    <header class="{{ request()->is('/') ? '' : 'bg-primary' }} py-0 my-0" style="font-size: 0.9rem;">
+    <header class="header-top {{ request()->is('/') ? '' : 'bg-primary' }} py-0 my-0" style="font-size: 0.9rem;">
         <div class="container my-0">
-            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3 py-md-2"
-                >
+            <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3 py-md-2">
                 <li class="nav-item dropdown">
-                    <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Berita dan Acara
                     </a>
@@ -40,7 +39,6 @@
     </header>
     <nav class="navbar navbar-expand-lg pt-0">
         <div class="container">
-
             <a class="navbar-brand fw-medium" href="/"><img style="height: 72px;"
                     src="{{ asset('static/img/logo.png') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -170,7 +168,7 @@
                     </li>
                 </ul>
                 <div class="ms-lg-auto me-lg-0 d-none d-md-block">
-                    <button class="btn btn-primary rounded-pill" style="font-size: 0.9rem;">
+                    <button class="btn btn-primary rounded-pill py-2 px-3" style="font-size: 0.9rem;">
                         Tanya Sekarang
                     </button>
                 </div>
@@ -317,6 +315,23 @@
     .navbar-container.scrolled header {
         background-color: var(--bs-primary) !important;
     }
+
+    /* Hover tombol Tanya Sekarang */
+    .navbar-container .btn-primary {
+        transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    }
+
+    .navbar-container .btn-primary:hover {
+        background-color: transparent !important;
+        color: #0d6efd !important;
+        /* teks tetap terlihat */
+        border: 1px solid #0d6efd;
+        /* bisa ditambah border agar terlihat */
+        opacity: 0.8;
+        /* efek transparan */
+    }
+
+
 </style>
 <script>
     if (window.innerWidth >= 992) {

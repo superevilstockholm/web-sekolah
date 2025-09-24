@@ -49,12 +49,15 @@
             --bs-primary-rgb: 60, 152, 218;
         }
 
-        /* Navbar khusus pakai Roboto */
-        .navbar-container,
-        .navbar-container .nav-link,
-        .navbar-container .navbar-brand,
-        .navbar-container .btn,
-        .navbar-container .dropdown-item {
+
+        /* Dropdown navbar pakai Roboto */
+.navbar-container .dropdown-menu,
+.navbar-container .dropdown-menu .dropdown-item {
+    font-family: 'Roboto', sans-serif !important;
+}
+        /* Header-top tetap Roboto */
+        .header-top,
+        .header-top * {
             font-family: 'Roboto', sans-serif !important;
         }
     </style>

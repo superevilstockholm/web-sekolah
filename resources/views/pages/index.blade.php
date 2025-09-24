@@ -70,8 +70,8 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Identitas Inti Kami
                     </h5>
-                    <h2 class="fw-bold">
-                        <span class="text-primary">Sekolah Kristen Terdepan</span> Internasional <br>
+                    <h2 class="fw-bold title-pt-sans">
+                        <span class="text-primary title-pt-sans">Sekolah Kristen Terdepan</span> Internasional <br>
                         di Indonesia
                     </h2>
                 </div>
@@ -91,35 +91,35 @@
     <section id="sph-numbers" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h3>Fakta Singkat <span class="text-primary">Tentang SPH</span></h3>
+                <h3 class="title-pt-sans"><span class="text-primary title-pt-sans">Fakta Singkat</span> Tentang SPH </h3>
             </div>
             <!-- Baris 1 -->
             <div class="row text-center g-4 gy-5">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-people fs-1 text-primary"></i>
-                        <h4 class="mt-3">2,400+</h4>
+                        <h4 class="mt-3 title-auto-sans">2,400+</h4>
                         <p class="small mb-0">Siswa</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-mortarboard fs-1 text-primary"></i>
-                        <h4 class="mt-3">3,000+</h4>
+                        <h4 class="mt-3 title-auto-sans">3,000+</h4>
                         <p class="small mb-0">Alumni</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-star fs-1 text-primary"></i>
-                        <h4 class="mt-3">30+</h4>
+                        <h4 class="mt-3 title-auto-sans">30+</h4>
                         <p class="small mb-0">Tahun Keunggulan</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-globe fs-1 text-primary"></i>
-                        <h4 class="mt-3">35</h4>
+                        <h4 class="mt-3 title-auto-sans">35</h4>
                         <p class="small mb-0">Kebangsaan</p>
                     </div>
                 </div>
@@ -129,14 +129,14 @@
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-trophy fs-1 text-primary"></i>
-                        <h4 class="mt-3">1<sup>st</sup></h4>
+                        <h4 class="mt-3 title-auto-sans">1<sup>st</sup></h4>
                         <p class="small mb-0">Sekolah Kristen IB Continuum Pertama di Indonesia</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-person-badge fs-1 text-primary"></i>
-                        <h4 class="mt-3">52%</h4>
+                        <h4 class="mt-3 title-auto-sans">52%</h4>
                         <p class="small mb-0">Guru Ekspatriat</p>
                     </div>
                 </div>
@@ -153,9 +153,9 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Warisan Kami
                     </h5>
-                    <h2 class="fw-bold mb-4">
-                        <span>Mentransformasi Kehidupan melalui Pendidikan Kristen untuk</span> <br>
-                        <span class="text-primary">Lebih dari 30 Tahun</span>
+                    <h2 class="fw-bold mb-4 title-pt-sans">
+                        <span class="title-pt-sans">Mentransformasi Kehidupan melalui Pendidikan Kristen untuk</span> <br>
+                        <span class="text-primary title-pt-sans">Lebih dari 30 Tahun</span>
                     </h2>
                     <p>
                         Di Sekolah Pelita Harapan (SPH), kami berkomitmen memberkati setiap keluarga yang memilih SPH
@@ -169,8 +169,8 @@
                     <!-- Spacer biar ada jarak -->
                     <div class="my-5"></div>
                     <!-- Blok kedua -->
-                    <h2 class="fw-bold mb-4">
-                        <span>Warisan Keunggulan dalam <br> Pendidikan Internasional</span>
+                    <h2 class="fw-bold mb-4 title-pt-sans">
+                        <span class="title-pt-sans">Warisan Keunggulan dalam <br> Pendidikan Internasional</span>
                     </h2>
                     <p>
                         Dengan pengalaman lebih dari 30 tahun, SPH telah memperoleh reputasi sebagai salah satu sekolah
@@ -197,8 +197,8 @@
     <section>
         <div class="container-fluid  px-4 px-lg-5  position-relative">
             <div class="row">
-                <h2 class="fw-bold mb-4">
-                    <span>Mengadopsi Inovasi Teknologi dan Perspektif Global</span>
+                <h2 class="fw-bold mb-4 title-pt-sans">
+                    <span class="title-pt-sans">Mengadopsi Inovasi Teknologi dan Perspektif Global</span>
                 </h2>
                 <p>
                     Seiring pendidikan berkembang di abad ke-21, SPH tetap berada di garis depan dengan mengintegrasikan
@@ -218,8 +218,8 @@
             </div>
             <div class="my-5"></div>
             <div class="row">
-                <h2 class="fw-bold mb-4">
-                    <span>Komunitas yang Berkomitmen pada Pembelajaran Sepanjang Hayat</span>
+                <h2 class="fw-bold mb-4 title-pt-sans">
+                    <span class="title-pt-sans">Komunitas yang Berkomitmen pada Pembelajaran Sepanjang Hayat</span>
                 </h2>
                 <p>
                     Di SPH, kami percaya bahwa pendidikan lebih dari sekadar pencapaian akademik; pendidikan adalah tentang
@@ -473,7 +473,19 @@
             font-size: 1.2rem;
         }
 
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+        .title-pt-sans {
+            font-family: 'PT Sans', sans-serif !important;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+        .title-auto-sans {
+            font-family: 'Open Sans', sans-serif !important;
+            font-weight: 600 !important;
+        }
     </style>
     <script>
         const heroCarousel = document.querySelector('#heroCarousel');
