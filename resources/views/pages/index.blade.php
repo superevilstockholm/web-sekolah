@@ -66,7 +66,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <p class="text-muted small mb-4">◊ Identitas Inti Kami</p>
+                    <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                            alt=""> Identitas Inti Kami
+                    </h5>
                     <h2 class="fw-bold">
                         <span class="text-primary">Sekolah Kristen Terdepan</span> Internasional <br>
                         di Indonesia
@@ -146,7 +149,10 @@
                 <!-- Kiri: gabungan blok teks -->
                 <div class="col-lg-6">
                     <!-- Blok pertama -->
-                    <p class="text-muted small mb-4">◊ Warisan Kami</p>
+                    <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                        <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
+                            alt=""> Warisan Kami
+                    </h5>
                     <h2 class="fw-bold mb-4">
                         <span>Mentransformasi Kehidupan melalui Pendidikan Kristen untuk</span> <br>
                         <span class="text-primary">Lebih dari 30 Tahun</span>
