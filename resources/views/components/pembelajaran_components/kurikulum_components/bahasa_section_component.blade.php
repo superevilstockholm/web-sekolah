@@ -9,16 +9,16 @@
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
                     <h1 class="fw-normal p-0 m-0"><span class="text-primary">Bahasa</span></h1>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Di Sekolah Al-Layyinah, pembelajaran bahasa menjadi bagian penting untuk membekali siswa agar mampu berkomunikasi dan memahami dunia global.
                         Bahasa Arab diajarkan sebagai prioritas utama, agar siswa dapat membaca dan memahami Al-Qur’an secara langsung.
                         Selain itu, kami juga menawarkan bahasa Indonesia sebagai bahasa nasional, serta bahasa Inggris untuk mendukung komunikasi internasional.
                     </p>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Siswa dilatih untuk meningkatkan kemampuan membaca, menulis, meneliti, dan berbicara di setiap tingkat pendidikan.
                         Melalui pembelajaran sastra dan budaya, siswa juga diajak mengenal karya-karya penting baik dari khazanah Islam maupun literatur dunia.
                     </p>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Untuk siswa yang memerlukan dukungan tambahan, Sekolah Al-Layyinah menyediakan program pendampingan bahasa agar semua siswa dapat berkembang sesuai potensi mereka.
                     </p>
                     <button class="btn btn-sm px-4 py-2 btn-warning text-white rounded-pill ms-0 me-auto">

@@ -10,13 +10,13 @@
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
                     <h1 class="fw-normal p-0 m-0"><span class="text-primary">Olahraga</span></h1>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Untuk menjaga kesehatan jasmani sekaligus menyeimbangkan kegiatan akademik,
                         Al-Layyinah menyediakan berbagai program olahraga yang bermanfaat.
                         Kegiatan ini menjadi sarana siswa untuk melatih fisik, disiplin, kerja sama tim, serta sportivitas,
                         dengan tetap menjunjung tinggi adab Islami dalam setiap pertandingan.
                     </p>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Program olahraga kami mencakup beragam cabang, mulai dari permainan tradisional hingga modern.
                         Melalui latihan rutin dan kompetisi persahabatan, siswa tidak hanya mengasah keterampilan,
                         tetapi juga belajar mengendalikan emosi, menghormati lawan, dan menjaga ukhuwah Islamiyah.
@@ -35,11 +35,11 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Program Olahraga
                 </h5>
-                <h1 class="fw-normal p-0 m-0">Tim Olahraga <span class="text-primary">Al-Layyinah</span></h1>
+                <h1 class="fw-normal p-0 m-0 text-black">Tim Olahraga <span class="text-primary">Al-Layyinah</span></h1>
             </div>
             <div class="col-md-6 col-12">
-                <h4 class="fw-normal">Olahraga untuk Kesehatan, Kekuatan, dan Ukhuwah</h4>
-                <p class="text-muted" style="line-height: 1.9 !important;">
+                <h4 class="fw-normal text-black">Olahraga untuk Kesehatan, Kekuatan, dan Ukhuwah</h4>
+                <p style="line-height: 1.9 !important;">
                     Beberapa cabang olahraga yang tersedia di Al-Layyinah meliputi sepak bola, bola basket, bulu tangkis,
                     futsal, atletik, pencak silat, renang, hingga panahan sunnah.
                     Semua kegiatan ini diarahkan untuk membentuk jasmani yang sehat, jiwa yang kuat, serta semangat

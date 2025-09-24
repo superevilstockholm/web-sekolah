@@ -10,19 +10,19 @@
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
                     <h1 class="fw-normal p-0 m-0"><span class="text-primary">Matematika</span></h1>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Al-Layyinah menggunakan kurikulum matematika yang terintegrasi dengan pendekatan Islam dan
                         pembelajaran modern. Kurikulum ini memadukan metode pembelajaran berbasis konsep, praktik,
                         serta penguatan logika dan penalaran, sehingga siswa tidak hanya memahami rumus, tetapi juga
                         mengetahui makna dan penerapannya dalam kehidupan nyata.
                     </p>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Di setiap kelas, guru mendorong siswa untuk memahami "mengapa" di balik sebuah konsep,
                         lalu menghubungkannya dengan aplikasi praktis dalam kehidupan sehari-hari.
                         Diskusi pemecahan masalah dilakukan untuk menumbuhkan kemampuan berpikir kritis,
                         kerja sama, dan ketekunan.
                     </p>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Pembelajaran matematika juga menjadi sarana untuk memahami keagungan ciptaan Allah ﷻ
                         melalui keteraturan angka, pola, struktur, dan formula. Dengan demikian, matematika
                         tidak hanya menjadi ilmu hitung, tetapi juga jalan untuk meningkatkan iman dan rasa syukur.

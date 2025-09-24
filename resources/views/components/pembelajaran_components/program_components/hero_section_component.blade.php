@@ -8,13 +8,13 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-semibold mb-2 text-muted">Yayasan Al-Layyinah menghadirkan pendidikan Islami yang
+                <p>Yayasan Al-Layyinah menghadirkan pendidikan Islami yang
                     terintegrasi dengan
                     <a class="text-primary" style="text-decoration: none;" href="{{ route('kurikulum') }}">Kurikulum Nasional</a>
                     dan <a class="text-primary" style="text-decoration: none;" href="{{ route('kehidupan_rohani') }}">nilai-nilai Qur’ani</a>.
                     Program pembelajaran kami menekankan keseimbangan antara ilmu pengetahuan umum dan pendidikan agama.
-                </p>
-                <p class=" text-muted">Setiap jenjang pendidikan di Al-Layyinah disusun dengan memperhatikan
+                </p> <br>
+                <p>Setiap jenjang pendidikan di Al-Layyinah disusun dengan memperhatikan
                     perkembangan usia anak,
                     agar mereka tumbuh menjadi generasi berilmu, berakhlak mulia, dan berlandaskan ketakwaan kepada
                     Allah SWT.</p>

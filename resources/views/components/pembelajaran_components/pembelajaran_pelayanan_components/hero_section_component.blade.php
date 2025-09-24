@@ -9,8 +9,8 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-normal mb-2 text-muted mb-3">Melayani sesama adalah inti dari pendidikan Islami.</p>
-                <p class="fw-normal mb-2 text-muted mb-3">Siswa Al-Layyinah memiliki banyak kesempatan untuk berkhidmat
+                <p>Melayani sesama adalah inti dari pendidikan Islami.</p> <br>
+                <p>Siswa Al-Layyinah memiliki banyak kesempatan untuk berkhidmat
                     di lingkungan sekolah, masyarakat sekitar, hingga kegiatan sosial lebih luas. Misi kami adalah
                     memberikan pendidikan holistik yang menumbuhkan kepemimpinan dengan hati yang ikhlas melayani
                     umat dan bangsa.</p>

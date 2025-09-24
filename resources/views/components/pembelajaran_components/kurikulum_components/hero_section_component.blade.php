@@ -8,9 +8,9 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-normal mb-2 text-muted mb-3">Di Al-Layyinah, kami mengadopsi, menyesuaikan dan menggabungkan berbagai
+                <p class="fw-normal">Di Al-Layyinah, kami mengadopsi, menyesuaikan dan menggabungkan berbagai
                     kurikulum yang paling sesuai dengan program akademik yang kami tawarkan untuk meningkatkan
-                    kompetensi dan keterampilan siswa.</p>
+                    kompetensi dan keterampilan siswa.</p> <br>
                 <div class="row">
                     <div class="col-6">
                         <div class="d-flex flex-column gap-3">

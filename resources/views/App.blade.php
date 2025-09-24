@@ -27,7 +27,8 @@
     {{-- Global --}}
     <style>
         * {
-            font-family: 'Lato', sans-serif !important;
+            font-family: 'Lato' !important;
+            color: #797979;
         }
 
         .navbar-container {
