@@ -2,9 +2,9 @@
     <header class="{{ request()->is('/') ? '' : 'bg-primary' }} py-0 my-0" style="font-size: 0.9rem;">
         <div class="container my-0">
             <ul class="list-unstyled d-none d-md-flex justify-content-end gap-3 py-md-2"
-                style="font-family: 'Roboto', sans-serif !important;">
+                >
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Berita dan Acara
                     </a>
