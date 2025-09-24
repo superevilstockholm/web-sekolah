@@ -141,7 +141,7 @@
         </div>
     </section>
     <section id="our-legacy" class="py-5 bg-light">
-        <div class="container position-relative">
+        <div class="container-fluid  px-4 px-lg-5  position-relative">
             <div class="row">
                 <!-- Kiri: gabungan blok teks -->
                 <div class="col-lg-6">
@@ -248,33 +248,40 @@
         #sph-numbers i {
             font-size: 3rem;
         }
+
         #sph-numbers h4 {
             font-size: 1.75rem;
         }
+
         /* Tablet */
         @media (min-width: 768px) {
             #sph-numbers i {
                 font-size: 4rem;
             }
+
             #sph-numbers h4 {
                 font-size: 2rem;
             }
         }
+
         /* Desktop */
         @media (min-width: 992px) {
             #sph-numbers i {
                 font-size: 5rem;
             }
+
             #sph-numbers h4 {
                 font-size: 2.5rem;
             }
         }
+
         /* Jarak vertikal antar kolom HP */
         @media (max-width: 767px) {
             #sph-numbers .row.gy-5>[class*="col-"] {
                 margin-bottom: 1rem;
             }
         }
+
         #hero {
             position: relative;
             width: 100%;
@@ -284,6 +291,7 @@
             background-size: cover;
             /* bikin selalu nutup layar */
         }
+
         #hero .carousel-caption {
             bottom: 25%;
             /* lebih rendah, beri jarak aman */
@@ -295,6 +303,7 @@
             text-align: center;
             padding: 0 15px;
         }
+
         #hero .carousel-caption .btn {
             border-radius: 30px;
             /* tombol bulat */
@@ -303,6 +312,7 @@
             padding: 0.6rem 1.5rem;
             /* jarak dalam tombol */
         }
+
         /* Mobile */
         @media (max-width: 767px) {
             #hero .carousel-caption {
@@ -310,13 +320,16 @@
                 /* beri jarak lebih ke atas dari tombol scroll */
                 padding: 0 10px;
             }
+
             #hero .carousel-caption h2 {
                 font-size: 1.8rem;
             }
+
             #hero .carousel-caption p {
                 font-size: 1rem;
             }
         }
+
         #hero .carousel-caption h2,
         #hero .carousel-caption p {
             white-space: normal;
@@ -324,9 +337,11 @@
             word-break: break-word;
             /* pecah kata panjang */
         }
+
         .carousel-inner {
             overflow: visible;
         }
+
         /* Carousel */
         #hero .carousel-item img {
             width: 100%;
@@ -334,75 +349,98 @@
             object-fit: cover;
             filter: brightness(0.7);
         }
+
         #hero .carousel-item {
             height: 100vh;
+            min-height: 400px;
+            /* biar di HP tidak terlalu tipis */
             position: relative;
         }
+
+        @media (max-width: 767px) {
+            #hero .carousel-item {
+                height: 70vh;
+                /* lebih pas di HP */
+            }
+        }
+
         /* Caption responsif */
         #hero .carousel-caption h2 {
             font-size: 2rem;
             /* default kecil untuk HP */
         }
+
         #hero .carousel-caption p {
             font-size: 1rem;
         }
+
         @media (max-width: 767px) {
             #hero .carousel-caption h2 {
                 font-size: 1.8rem;
             }
+
             #hero .carousel-caption p {
                 font-size: 1rem;
             }
         }
+
         @media (min-width: 768px) and (max-width: 991px) {
             #hero .carousel-caption h2 {
                 font-size: 2.5rem;
             }
+
             #hero .carousel-caption p {
                 font-size: 1.2rem;
             }
         }
+
         @media (min-width: 992px) {
             #hero .carousel-caption h2 {
                 font-size: 3rem;
             }
+
             #hero .carousel-caption p {
                 font-size: 1.25rem;
             }
         }
+
         /* Section Legacy: gambar kanan jadi responsif */
         #our-legacy .col-lg-6.position-relative img {
             position: relative !important;
             /* hilangkan absolute di HP */
             width: 100%;
             height: auto;
-            object-fit: cover;
+
             border-radius: 8px;
+            margin-top: 1.5rem;
+            /* tambahin gap di HP */
         }
+
         @media (min-width: 992px) {
             #our-legacy .col-lg-6.position-relative img {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
-                height: auto;
-                /* biar tidak memaksa penuh */
-                max-height: 600px;
-                /* sesuaikan dengan tinggi konten kiri */
+                height: 100%;
                 object-fit: cover;
                 border-radius: 8px;
+                margin-top: 0;
+                /* hilangin gap di desktop */
             }
         }
+
         /* Animasi muncul dari bawah */
         .animate-caption {
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.8s ease-in-out;
         }
+
         .carousel-item.active .animate-caption {
             opacity: 1;
             transform: translateY(0);
         }
+
         /* Tombol Scroll */
         .scroll-btn {
             position: absolute;
@@ -419,13 +457,17 @@
             gap: 8px;
             transition: all 0.3s ease;
         }
+
         .scroll-btn:hover {
             background: rgba(255, 255, 255, 0.35);
             color: #fff;
         }
+
         .scroll-btn i {
             font-size: 1.2rem;
         }
+
+
     </style>
     <script>
         const heroCarousel = document.querySelector('#heroCarousel');
@@ -457,6 +499,7 @@
         .navbar-container .nav-link:focus {
             color: rgba(255, 255, 255, 1) !important;
         }
+
         .navbar-container.scrolled .nav-link:hover,
         .navbar-container.scrolled .nav-link:focus {
             color: rgba(0, 0, 0, 1) !important;
