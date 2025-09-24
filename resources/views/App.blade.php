@@ -39,7 +39,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         .container {
-            max-width: 1300px !important;
+            max-width: 1200px !important;
         }
         :root {
             --bs-primary: #3c98da;
