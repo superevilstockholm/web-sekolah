@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-normal text-muted mb-3">Telusuri berita terbaru untuk mendapatkan informasi terbaru tentang
+                <p class="fw-normal mb-3">Telusuri berita terbaru untuk mendapatkan informasi terbaru tentang
                     perkembangan terkini di lima kampus kami. Anda dapat menemukan semua yang Anda butuhkan di sini,
                     mulai dari acara kampus hingga prestasi internasional.</p>
             </div>

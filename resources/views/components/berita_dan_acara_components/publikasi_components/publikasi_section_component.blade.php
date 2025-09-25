@@ -98,7 +98,7 @@
                 </div>
                 <div class="card-overlay-0"></div>
                 <div class="card-overlay"></div>
-                <h4 class="card-title text-white text-center">${item.title}</h4>
+                <h4 class="card-title text-white text-center fw-semibold">${item.title}</h4>
             </div>
         </a>
         `;

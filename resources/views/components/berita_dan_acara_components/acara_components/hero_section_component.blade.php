@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-normal text-muted mb-3">Telusuri acara mendatang kami di 5 kampus. Dari Kelas Percobaan hingga Open House, temukan semua informasi terbaru yang Anda butuhkan tentang acara di Al-Layyinah.</p>
+                <p class="fw-normal mb-3">Telusuri acara mendatang kami di 5 kampus. Dari Kelas Percobaan hingga Open House, temukan semua informasi terbaru yang Anda butuhkan tentang acara di Al-Layyinah.</p>
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
         </div>
