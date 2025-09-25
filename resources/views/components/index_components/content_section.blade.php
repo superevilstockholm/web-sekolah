@@ -31,7 +31,7 @@
                     </h5>
                     <h3 class="d-flex align-items-center gap-2 fs-3 peta-jalan">
                         <span class="text-primary peta-jalan">Peta Jalan</span>
-                        <span class="text-black">Menuju Masa Depan</span>
+                        <span class="text-black peta-jalan">Menuju Masa Depan</span>
                     </h3>
                     <p style="font-size: 0.9rem;">
                         Kurikulum kami merupakan peta jalan yang berguna untuk memandu dan membentuk siswa menjadi
@@ -550,7 +550,6 @@
 
     .title {
         font-size: 1.6rem;
-        font-weight: bold;
         margin: 0;
     }
 

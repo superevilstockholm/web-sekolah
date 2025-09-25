@@ -11,7 +11,7 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Anda Memiliki Pertanyaan?
                     </h5>
-                    <h3 class="fs-2 fw-normal title-pt-sans text-white">Baca Pertanyaan yang Sering Diajukan oleh Orang Tua</h3>
+                    <h3 class="fs-2 pt-sans text-white">Baca Pertanyaan yang Sering Diajukan oleh Orang Tua</h3>
                     <p class="text-white">Untuk melayani Anda dengan lebih baik, kami telah menyusun daftar pertanyaan umum lengkap dengan
                         informasi khusus tentang masing-masing kampus. Jika pertanyaan Anda masih belum terjawab, jangan
                         ragu untuk menghubungi kami. Kami akan melakukan yang terbaik untuk membantu Anda.</p>
@@ -25,9 +25,9 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
-    .title-pt-sans * {
-    font-family: 'PT Sans', sans-serif !important;
-}
+    .pt-sans * {
+        font-family: 'PT Sans', sans-serif !important;
+    }
 
 </style>
 

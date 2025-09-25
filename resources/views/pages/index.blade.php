@@ -12,7 +12,7 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
                                     <h2 class="text-white">Melebihi Pendidikan</h2>
-                                    <p class="mb-4 text-white">Melebihi kurikulum melalui model holistik berbasis iman yang
+                                    <p class="mb-4 text-white" style="font-weight:300;">Melebihi kurikulum melalui model holistik berbasis iman yang
                                         membimbing pertumbuhan
                                         dan perkembangan setiap anak.</p>
                                     <a href="#" class="btn btn-lg btn-warning rounded-pill text-white">Pelajari Lebih Lanjut</a>
@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
                                     <h2 class="text-white">Memberdayakan Siswa</h2>
-                                    <p class="mb-4 text-white">Membantu siswa mencapai potensi penuh mereka secara akademik, sosial,
+                                    <p class="mb-4 text-white" style="font-weight:300;">Membantu siswa mencapai potensi penuh mereka secara akademik, sosial,
                                         dan spiritual.</p>
                                     <a href="#" class="btn btn-lg btn-warning rounded-pill text-white">Pelajari Lebih Lanjut</a>
                                 </div>
@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
                                     <h2 class="text-white">Pandangan Global</h2>
-                                    <p class="mb-4 text-white">Mempersiapkan siswa menjadi pemimpin masa depan dengan fondasi moral
+                                    <p class="mb-4 text-white" style="font-weight:300;">Mempersiapkan siswa menjadi pemimpin masa depan dengan fondasi moral
                                         yang kuat dan wawasan global.</p>
                                     <a href="#" class="btn btn-lg btn-warning rounded-pill text-white">Pelajari Lebih Lanjut</a>
                                 </div>
@@ -156,9 +156,9 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Warisan Kami
                     </h5>
-                    <h2 class="fw-bold mb-4 title-pt-sans">
-                        <span class="title-pt-sans">Mentransformasi Kehidupan melalui Pendidikan Kristen untuk</span> <br>
-                        <span class="text-primary title-pt-sans">Lebih dari 30 Tahun</span>
+                    <h2 class="fw-bold mb-4">
+                        <span>Mentransformasi Kehidupan melalui Pendidikan Kristen untuk</span> <br>
+                        <span class="text-primary">Lebih dari 30 Tahun</span>
                     </h2>
                     <p>
                         Di Sekolah Pelita Harapan (SPH), kami berkomitmen memberkati setiap keluarga yang memilih SPH
@@ -172,8 +172,8 @@
                     <!-- Spacer biar ada jarak -->
                     <div class="my-5"></div>
                     <!-- Blok kedua -->
-                    <h2 class="fw-bold mb-4 title-pt-sans">
-                        <span class="title-pt-sans">Warisan Keunggulan dalam <br> Pendidikan Internasional</span>
+                    <h2 class="fw-bold mb-4">
+                        <span>Warisan Keunggulan dalam <br> Pendidikan Internasional</span>
                     </h2>
                     <p>
                         Dengan pengalaman lebih dari 30 tahun, SPH telah memperoleh reputasi sebagai salah satu sekolah
@@ -201,8 +201,8 @@
     <section>
         <div class="container-fluid  px-4 px-lg-5  position-relative">
             <div class="row">
-                <h2 class="fw-bold mb-4 title-pt-sans">
-                    <span class="title-pt-sans">Mengadopsi Inovasi Teknologi dan Perspektif Global</span>
+                <h2 class="fw-bold mb-4">
+                    <span>Mengadopsi Inovasi Teknologi dan Perspektif Global</span>
                 </h2>
                 <p>
                     Seiring pendidikan berkembang di abad ke-21, SPH tetap berada di garis depan dengan mengintegrasikan
@@ -222,8 +222,8 @@
             </div>
             <div class="my-5"></div>
             <div class="row">
-                <h2 class="fw-bold mb-4 title-pt-sans">
-                    <span class="title-pt-sans">Komunitas yang Berkomitmen pada Pembelajaran Sepanjang Hayat</span>
+                <h2 class="fw-bold mb-4">
+                    <span>Komunitas yang Berkomitmen pada Pembelajaran Sepanjang Hayat</span>
                 </h2>
                 <p>
                     Di SPH, kami percaya bahwa pendidikan lebih dari sekadar pencapaian akademik; pendidikan adalah tentang
