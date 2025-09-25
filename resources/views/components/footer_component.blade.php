@@ -147,25 +147,25 @@
                 </div>
                 <!-- Sosmed -->
                 <div class="d-flex flex-row align-items-center gap-2">
-                    <a class="nav-link text-white"><i class="bi bi-youtube"></i></a>
-                    <a class="nav-link text-white"><i class="bi bi-facebook"></i></a>
-                    <a class="nav-link text-white"><i class="bi bi-instagram"></i></a>
-                    <a class="nav-link text-white"><i class="bi bi-linkedin"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-youtube text-white"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-facebook text-white"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-instagram text-white"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-linkedin text-white"></i></a>
                 </div>
             </div>
             <!-- Kontak dibuat row/col -->
             <div class="row text-white" style="font-size: 0.9rem;">
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-telephone-fill me-2"></i>${data.phone1}
+                    <i class="bi bi-telephone-fill me-2 text-white"></i> <span class="text-white">${data.phone1}</span>
                 </div>
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-whatsapp me-2"></i>${data.phone2}
+                    <i class="bi bi-whatsapp me-2 text-white"></i> <span class="text-white">${data.phone2}</span>
                 </div>
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-envelope-fill me-2"></i>${data.email}
+                    <i class="bi bi-envelope-fill me-2 text-white"></i><span class="text-white">${data.email}</span>
                 </div>
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-geo-alt-fill me-2"></i>
+                    <i class="bi bi-geo-alt-fill me-2 text-white"></i>
                     <a href="${data.mapLink}" class="nav-link d-inline p-0 text-white">Lihat di google maps</a>
                 </div>
             </div>

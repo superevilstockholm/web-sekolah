@@ -30,14 +30,15 @@
                             alt=""> Kurikulum Kami
                     </h5>
                     <h3 class="d-flex align-items-center gap-2 fs-3 peta-jalan">
-                        <span class="text-primary peta-jalan">Peta Jalan</span> Menuju Masa Depan
+                        <span class="text-primary peta-jalan">Peta Jalan</span>
+                        <span class="text-black">Menuju Masa Depan</span>
                     </h3>
-                    <p class="text-muted" style="font-size: 0.9rem;">
+                    <p style="font-size: 0.9rem;">
                         Kurikulum kami merupakan peta jalan yang berguna untuk memandu dan membentuk siswa menjadi
                         seorang
                         pembelajar seumur hidup.
                     </p>
-                    <p class="text-muted" style="font-size: 0.9rem;">
+                    <p style="font-size: 0.9rem;">
                         Program kami yang terdiri dari jenjang Pendidikan Anak Usia Dini (PAUD) atau Taman Kanak-Kanak,
                         Sekolah Dasar (SD), Sekolah Menengah Pertama (SMP), hingga Sekolah Menengah Atas (SMA) yang
                         disusun
@@ -60,7 +61,7 @@
                         <div class="title-box">
                             <h3 class="title">International Baccalaureate</h3>
                             <div class="desc">
-                                <p>Sebagian besar sekolah SPH terakreditasi sebagai International Baccalaureate (IB)
+                                <p class="text-white">Sebagian besar sekolah SPH terakreditasi sebagai International Baccalaureate (IB)
                                     World Schools sejak tahun 1998. Sebagai sekolah Kristen, program IB kami diterapkan
                                     dengan dasar-dasar Alkitabiah dan terus mengalami perkembangan dan penyempurnaan
                                     sebagai upaya untuk melayani siswa secara efektif dan berkelanjutan dalam
@@ -80,7 +81,7 @@
                         <div class="title-box">
                             <h3 class="title">Cambridge International</h3>
                             <div class="desc">
-                                <p>Tiga dari lima kampus kami menerapkan kurikulum Cambridge International hingga kelas
+                                <p class="text-white">Tiga dari lima kampus kami menerapkan kurikulum Cambridge International hingga kelas
                                     10. Kurikulum ini juga diimplementasikan berdasarkan dasar-dasar Alkitabiah, dan
                                     disesuaikan dengan konteks lokal dalam implementasinya. Hal ini menjadikan kurikulum
                                     Cambridge kami fleksibel, menantang, menginspirasi, dan sensitif secara budaya untuk
@@ -96,7 +97,7 @@
         <div class="row my-5">
             <div class="col-12">
                 <div class="d-flex flex-column align-items-center">
-                    <h2 class="text-center pt-sans">Frequently Asked Question<br>Sekolah Pelita Harapan</h2>
+                    <h2 class="text-center pt-sans text-black">Frequently Asked Question<br>Sekolah Pelita Harapan</h2>
                     <h3 class="text-primary text-center d-flex align-items-center gap-2" style="font-size: 0.9rem;">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Pertanyaan Yang Sering Diajukan
@@ -118,7 +119,7 @@
                                     Sekolah Pelita Harapan memiliki misi yang berpusat pada Kristus untuk membekali
                                     anak-anak melalui pendidikan holistik agar dapat berkontribusi dalam karya penebusan
                                     di dunia.</p>
-                                <p class="text-muted">Jadi dengan kata lain, kami menyediakan pendidikan internasional
+                                <p>Jadi dengan kata lain, kami menyediakan pendidikan internasional
                                     yang mempersiapkan dan menginspirasi setiap lulusan untuk memimpin dan melayani
                                     dimanapun Tuhan menempatkan mereka. Kami ada untuk memberkati setiap keluarga yang
                                     memilih SPH sebagai “rumah kedua” anak-anak mereka dengan mendukung setiap
@@ -230,18 +231,18 @@
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
                             <div class="col-md-6">
-                                <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                                <h5 class="d-flex align-items-center gap-2 text-white" style="font-size: 0.9rem;">
                                     <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1 pt-sans">Rachel Ho</h5>
-                                <p class="mb-3">— SPH LV Angkatan 2009</p>
-                                <p>
+                                <h5 class="fw-bold mb-1 pt-sans text-white">Rachel Ho</h5>
+                                <p class="mb-3 text-white">— SPH LV Angkatan 2009</p>
+                                <p class="text-white">
                                     SPH sangat membantu saya untuk mengajukan pertanyaan-pertanyaan penting yang di masa
                                     lalu guru-guru lain tidak mau menjawab atau terlalu takut saya bertanya.
                                 </p>
-                                <p class="small">
+                                <p class="small text-white">
                                     Itu benar-benar membantu saya menjadi orang yang berpikiran terbuka dan berani
                                     menjelajahi banyak hal berbeda dalam hidup saya. Setelah 10 tahun, saya masih sangat
                                     ingat semua guru saya dan saya ingat pelajaran-pelajaran hidup yang mereka ajarkan
@@ -260,17 +261,17 @@
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
                             <div class="col-md-6">
-                                <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                                <h5 class="d-flex align-items-center gap-2 text-white" style="font-size: 0.9rem;">
                                     <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1 pt-sans">Jonathan Lee</h5>
-                                <p class="mb-3">— SPH LV Angkatan 2012</p>
-                                <p>
+                                <h5 class="fw-bold mb-1 pt-sans text-white">Jonathan Lee</h5>
+                                <p class="mb-3 text-white">— SPH LV Angkatan 2012</p>
+                                <p class="text-white">
                                     SPH menjadi bagian tak terpisahkan dari hidup saya.
                                 </p>
-                                <p class="small">
+                                <p class="small text-white">
                                     SPH memiliki peran penting dalam membentuk saya sebagai pribadi, filosofi saya,
                                     nilai-nilai saya, dan impian saya. Saya sangat menikmati pengalaman belajar di SPH
                                     karena guru dan staf yang berkualitas, fasilitas sekolah terbaik, dan komunitas yang
@@ -289,18 +290,18 @@
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
                             <div class="col-md-6">
-                                <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                                <h5 class="d-flex align-items-center gap-2 text-white" style="font-size: 0.9rem;">
                                     <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1 pt-sans">Giovani Prayitno</h5>
-                                <p class="mb-3">— Angkatan 2009</p>
-                                <p>
+                                <h5 class="fw-bold mb-1 pt-sans text-white">Giovani Prayitno</h5>
+                                <p class="mb-3 text-white">— Angkatan 2009</p>
+                                <p class="text-white">
                                     Saya harus mengatakan bahwa lingkungan pembelajaran di SPH adalah salah satu yang
                                     terbaik.
                                 </p>
-                                <p class="small">
+                                <p class="small text-white">
                                     Jika Anda datang dan berkunjung sendiri, Anda tentunya dapat menyaksikan dan
                                     merasakan keasriannya, desain bangunannya dan segala sesuatu yang dibangun untuk
                                     mendukung dan membantu Anda fokus dalam pembelajaran. Hal kedua yang paling yang
@@ -318,19 +319,19 @@
                                     alt="Testimonial" class="img-fluid rounded-4 shadow">
                             </div>
                             <div class="col-md-6">
-                                <h5 class="d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                                <h5 class="d-flex align-items-center gap-2 text-white" style="font-size: 0.9rem;">
                                     <img height="20"
                                         src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                                         alt=""> Testimoni
                                 </h5>
-                                <h5 class="fw-bold mb-1 pt-sans">Raindy Blessidio Lee</h5>
-                                <p class="mb-3">— Angkatan 2018</p>
-                                <p>
+                                <h5 class="fw-bold mb-1 pt-sans text-white">Raindy Blessidio Lee</h5>
+                                <p class="mb-3 text-white">— Angkatan 2018</p>
+                                <p class="text-white">
                                     Di SPH, saya mempelajari segala hal secara holistik. Pembelajaran tidak berfokus
                                     hanya pada satu hasil, seperti hanya akademis atau spiritual, tapi kumpulan dari
                                     berbagai hal.
                                 </p>
-                                <p class="small">
+                                <p class="small text-white">
                                     Berada di SPH menjadi satu langkah untuk mencapai tujuan hidup saya, yang dalam hal
                                     ini merupakan kumpulan dari berbagai hal seperti pengalaman dengan teman-teman dan
                                     guru-guru saya. Pengalaman ini membantu saya memahami makna kehidupan dan memberi
@@ -344,13 +345,13 @@
                 <div class="d-flex justify-content-center justify-content-md-start gap-4 fs-2">
                     <div class="text-light bg-transparent border-0" type="button"
                         data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-left text-white"></i>
                     </div>
                     <div class="text-center mt-3 text-light" id="carouselIndicator">
                     </div>
                     <div class="text-light bg-transparent border-0" type="button"
                         data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                        <i class="bi bi-chevron-right"></i>
+                        <i class="bi bi-chevron-right text-white"></i>
                     </div>
                 </div>
             </div>
@@ -419,7 +420,7 @@
                 <h3 class="d-flex align-items-center gap-2 fs-3 campus-name">
                   <span class="text-primary">${campus.name.split(" ")[0]}</span> ${campus.name.split(" ").slice(1).join(" ")}
                 </h3>
-                <p class="text-muted" style="font-size: 0.9rem;">${campus.description}</p>
+                <p style="font-size: 0.9rem;">${campus.description}</p>
                 <div class="d-flex flex-column flex-md-row align-items-center gap-3">
                   <button class="btn btn-sm btn-secondary btn-custom d-flex align-items-center gap-1 px-4">
                     <i class="bi bi-headset-vr"></i> Tur Virtual
@@ -456,6 +457,7 @@
     .campus-name,
     .campus-name * {
         font-family: 'PT Sans', sans-serif !important;
+        color: #000
     }
 
     .btn-name {
