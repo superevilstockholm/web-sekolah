@@ -1,6 +1,6 @@
 <section class="mt-3">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Dukungan Pembelajaran</h1>
+        <h1 class="text-center mb-5 py-2 text-black fw-normal text-pt-sans">Dukungan Pembelajaran</h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"
@@ -42,7 +42,7 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 text-black">Bimbingan Pembelajaran <span class="text-primary">Tambahan</span></h1>
+                <h1 class="fw-normal p-0 m-0 text-black text-pt-sans">Bimbingan Pembelajaran <span class="text-primary text-pt-sans">Tambahan</span></h1>
             </div>
             <div class="col-md-6 col-12">
                 <p class="mb-3" style="line-height: 1.9 !important;">
@@ -75,7 +75,7 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt="">Dukungan Pembelajaran
                     </h5>
-                    <h1 class="fw-normal p-0 m-0 text-black">Program <span class="text-primary">Bahasa Arab & Tahfidz</span></h1>
+                    <h1 class="fw-normal p-0 m-0 text-black text-pt-sans">Program <span class="text-primary text-pt-sans">Bahasa Arab & Tahfidz</span></h1>
                     <div class="d-flex flex-column gap-2">
                         <h4 class="p-0 m-0 fw-normal text-black">Intensif Bahasa & Hafalan</h4>
                         <div class="d-flex flex-column gap-3">
@@ -102,3 +102,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

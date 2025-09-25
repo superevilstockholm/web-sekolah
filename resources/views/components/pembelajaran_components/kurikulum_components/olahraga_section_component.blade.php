@@ -9,7 +9,7 @@
         <div class="row mb-4 align-items-center">
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
-                    <h1 class="fw-normal p-0 m-0"><span class="text-primary">Olahraga</span></h1>
+                    <h1 class="fw-normal p-0 m-0 text-pt-sans"><span class="text-primary text-pt-sans">Olahraga</span></h1>
                     <p style="line-height: 1.9 !important;">
                         Untuk menjaga kesehatan jasmani sekaligus menyeimbangkan kegiatan akademik,
                         Al-Layyinah menyediakan berbagai program olahraga yang bermanfaat.
@@ -35,7 +35,7 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Program Olahraga
                 </h5>
-                <h1 class="fw-normal p-0 m-0 text-black">Tim Olahraga <span class="text-primary">Al-Layyinah</span></h1>
+                <h1 class="fw-normal p-0 m-0 text-black text-pt-sans">Tim Olahraga <span class="text-primary text-pt-sans">Al-Layyinah</span></h1>
             </div>
             <div class="col-md-6 col-12">
                 <h4 class="fw-normal text-black">Olahraga untuk Kesehatan, Kekuatan, dan Ukhuwah</h4>
@@ -49,3 +49,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

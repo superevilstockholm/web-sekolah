@@ -9,7 +9,7 @@
         <div class="row mb-4 align-items-center">
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
-                    <h1 class="fw-normal p-0 m-0"><span class="text-primary">Matematika</span></h1>
+                    <h1 class="fw-normal p-0 m-0 text-pt-sans"><span class="text-primary text-pt-sans">Matematika</span></h1>
                     <p style="line-height: 1.9 !important;">
                         Al-Layyinah menggunakan kurikulum matematika yang terintegrasi dengan pendekatan Islam dan
                         pembelajaran modern. Kurikulum ini memadukan metode pembelajaran berbasis konsep, praktik,
@@ -40,3 +40,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

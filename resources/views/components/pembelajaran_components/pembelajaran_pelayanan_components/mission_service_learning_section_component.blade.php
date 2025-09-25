@@ -8,7 +8,7 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3 text-black">Belajar dengan <span class="text-primary">Melayani</span></h1>
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Belajar dengan <span class="text-primary text-pt-sans">Melayani</span></h1>
                 <h5 class="fw-normal text-black">Program Layanan Umat merupakan bagian penting dalam kurikulum Islami di Al-Layyinah.</h5>
             </div>
             <div class="col-md-6 col-12">
@@ -45,3 +45,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

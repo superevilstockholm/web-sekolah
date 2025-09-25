@@ -10,7 +10,7 @@
         <div class="row mb-4 align-items-center">
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
-                    <h1 class="fw-normal p-0 m-0"><span class="text-primary">Sains</span></h1>
+                    <h1 class="fw-normal p-0 m-0 text-pt-sans"><span class="text-primary text-pt-sans">Sains</span></h1>
                     <p style="line-height: 1.9 !important;">
                         Di Al-Layyinah, pembelajaran sains diarahkan untuk menumbuhkan rasa kagum terhadap ciptaan Allah ﷻ,
                         sehingga siswa termotivasi untuk meneliti, mengeksplorasi, dan menemukan hikmah di balik fenomena alam.
@@ -36,7 +36,7 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Sains
                 </h5>
-                <h1 class="fw-normal p-0 m-0 text-black">Program Sains di <span class="text-primary">Al-Layyinah</span></h1>
+                <h1 class="fw-normal p-0 m-0 text-black text-pt-sans">Program Sains di <span class="text-primary text-pt-sans">Al-Layyinah</span></h1>
             </div>
             <div class="col-md-6 col-12">
                 <p style="line-height: 1.9 !important;">
@@ -64,7 +64,7 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Sains
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3 text-black"><span class="text-primary">Applied</span> Science Program</h1>
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans"><span class="text-primary text-pt-sans">Applied</span> Science Program</h1>
                 <p class="mb-2" style="line-height: 1.9 !important;">
                     Applied Science Program di Al-Layyinah dirancang sebagai kegiatan tambahan di luar pembelajaran utama,
                     yang ditujukan bagi siswa dengan minat tinggi dalam bidang sains. Program ini memberikan kesempatan
@@ -83,3 +83,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

@@ -1,6 +1,8 @@
 <section class="mt-3">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Program Belajar Yayasan Al-Layyinah</h1>
+        <h1 class="text-center mb-5 py-2 text-black fw-normal text-pt-sans">
+            Program Belajar Yayasan Al-Layyinah
+        </h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"
@@ -23,3 +25,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>
