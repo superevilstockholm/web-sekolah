@@ -14,28 +14,28 @@
                         alt="">Rumah Kedua untuk Pertumbuhan
                 </h5>
                 <h1 class="fw-normal p-0 m-0 mb-3"><span class="faq-title text-primary">Fasilitas</span></h1>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Pelita Harapan House (PHH) adalah rumah
+                <p class="mb-2" style="line-height: 1.9 !important;">Pelita Harapan House (PHH) adalah rumah
                     kedua bagi siswa kelas 7-12 kami. Asrama kami bukan hanya menjadi tempat tinggal, tetapi juga rumah
                     kedua yang mendukung setiap siswa untuk berprestasi dan membekali mereka dengan keterampilan hidup
                     yang tentunya sangat berguna ketika mereka memasuki bangku universitas dan bahkan seterusnya.
                     Fasilitas kami tidak hanya terbatas pada asrama, karena setiap fasilitas yang berada di lingkungan
                     SPH Sentul City dapat diakses oleh siswa asrama guna menambah pengalaman yang menyeluruh bagi setiap
                     siswa asrama.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Fasilitas kami menawarkan kehidupan yang
+                <p class="mb-2" style="line-height: 1.9 !important;">Fasilitas kami menawarkan kehidupan yang
                     seimbang bagi siswa. Siswa bebas menikmati 9 fasilitas unggulan: Kolam Renang, Lapangan Sepak Bola,
                     Lapangan Basket (indoor & outdoor), Lapangan Badminton, Gimnasium, Ruang Kebugaran, dan
                     Perpustakaan.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Staf kami paham bahwa remaja membutuhkan
+                <p class="mb-2" style="line-height: 1.9 !important;">Staf kami paham bahwa remaja membutuhkan
                     makanan sehat, bergizi, dan lezat untuk mendukung kehidupan mereka yang dinamis. Asrama selalu
                     mneyediakan makanan 3 kali sehari dengan mengakomodir setiap alergi dan kebutuhan diet lainnya.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Perpustakaan sekolah yang desain dengan
+                <p class="mb-2" style="line-height: 1.9 !important;">Perpustakaan sekolah yang desain dengan
                     baik memainkan peran penting dalam mendukung keseluruhan proses belajar mengajar. Perpustakaan SPH,
                     yang dibangun sebagai pusat pembelajaran yang kondusif, mendukung siswa dan pengajar untuk
                     memperoleh pengetahuan, berkolaborasi dan menginspirasi pembelajaran.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Staf kami paham bahwa remaja membutuhkan
+                <p class="mb-2" style="line-height: 1.9 !important;">Staf kami paham bahwa remaja membutuhkan
                     makanan sehat, bergizi, dan lezat untuk mendukung kehidupan mereka yang dinamis. Asrama selalu
                     mneyediakan makanan 3 kali sehari dengan mengakomodir setiap alergi dan kebutuhan diet lainnya.</p>
-                <p class="text-muted" style="line-height: 1.9 !important;">Tim keamanan kami selalu memastikan
+                <p style="line-height: 1.9 !important;">Tim keamanan kami selalu memastikan
                     keamanan asrama dan kampus 24/7. Mereka memantau semua akses dan hanya mengijinkan tamu yang
                     disetujui untuk masuk ke area asrama.</p>
             </div>

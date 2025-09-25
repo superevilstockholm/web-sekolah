@@ -13,8 +13,8 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Pesantren Kilat
                 </h5>
-                <h1 class="faq-title fw-normal p-0 m-0 mb-3" style="color: #3a3b3c;"><span class="faq-title text-primary">Menguatkan</span> Iman di Bulan Suci</h1>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Pesantren Kilat Ramadhan dilaksanakan dengan kegiatan seperti kajian tafsir, tadarus Al-Qur’an,
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3 text-black"><span class="faq-title text-primary">Menguatkan</span> Iman di Bulan Suci</h1>
+                <p class="mb-3" style="line-height: 1.9 !important;">Pesantren Kilat Ramadhan dilaksanakan dengan kegiatan seperti kajian tafsir, tadarus Al-Qur’an,
                 shalat tarawih, dan pelatihan kepemimpinan Islami. Siswa diajak untuk mendalami ilmu agama dan memperkuat akhlak mulia.</p>
             </div>
             <div class="col-md-6 col-12">
