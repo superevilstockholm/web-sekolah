@@ -27,13 +27,13 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-12">
                     <div class="d-flex flex-column text-center mb-5">
-                        <h1 class="fw-medium mb-2 pb-0">Pendaftaran <span class="text-primary">PPDB</span></h1>
-                        <p class="text-muted">Silahkan isi form registrasi awal berikut ini:</p>
+                        <h1 class="mb-2 pb-0 text-black text-pt-sans">Pendaftaran <span class="text-primary text-pt-sans">PPDB</span></h1>
+                        <p class="text-black text-pt-sans">Silahkan isi form registrasi awal berikut ini:</p>
                     </div>
                     <form>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="jenisPendaftaran" class="form-label text-muted">Jenis Pendaftaran</label>
+                                <label for="jenisPendaftaran" class="form-label">Jenis Pendaftaran</label>
                                 <select class="form-select text-dark border-0 rounded-0 border-bottom" id="jenisPendaftaran"
                                     required>
                                     <option selected disabled>-- Pilih Jenis Pendaftaran --</option>
@@ -42,7 +42,7 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="pendaftaranUnit" class="form-label text-muted">Pendaftaran Unit</label>
+                                <label for="pendaftaranUnit" class="form-label">Pendaftaran Unit</label>
                                 <select class="form-select text-dark border-0 rounded-0 border-bottom" id="pendaftaranUnit"
                                     required>
                                     <option selected disabled>-- Pilih Jenjang --</option>
@@ -54,13 +54,13 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="namaPeserta" class="form-label text-muted">Nama Peserta Didik</label>
+                            <label for="namaPeserta" class="form-label">Nama Peserta Didik</label>
                             <input type="text" class="form-control border-0 rounded-0 border-bottom" id="namaPeserta"
                                 placeholder="Masukkan nama lengkap" required>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="jenisKelamin" class="form-label text-muted">Jenis Kelamin</label>
+                                <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
                                 <select class="form-select text-dark border-0 rounded-0 border-bottom" id="jenisKelamin"
                                     required>
                                     <option selected disabled>-- Pilih Jenis Kelamin --</option>
@@ -69,35 +69,35 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label for="tempatLahir" class="form-label text-muted">Tempat Lahir</label>
+                                <label for="tempatLahir" class="form-label">Tempat Lahir</label>
                                 <input type="text" class="form-control border-0 rounded-0 border-bottom" id="tempatLahir"
                                     placeholder="Masukkan tempat lahir" required>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="tanggalLahir" class="form-label text-muted">Tanggal Lahir</label>
+                            <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
                             <input type="date" class="form-control text-dark border-0 rounded-0 border-bottom"
                                 id="tanggalLahir" required>
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-4">
-                                <label for="noTelp" class="form-label text-muted">No Telp</label>
+                                <label for="noTelp" class="form-label">No Telp</label>
                                 <input type="text" class="form-control border-0 rounded-0 border-bottom" id="noTelp"
                                     placeholder="Masukkan No Telp" required>
                             </div>
                             <div class="col-md-4">
-                                <label for="noHp1" class="form-label text-muted">No Hp</label>
+                                <label for="noHp1" class="form-label">No Hp</label>
                                 <input type="text" class="form-control border-0 rounded-0 border-bottom" id="noHp1"
                                     placeholder="Masukkan No Hp" required>
                             </div>
                             <div class="col-md-4">
-                                <label for="noHp2" class="form-label text-muted">No Hp 2</label>
+                                <label for="noHp2" class="form-label">No Hp 2</label>
                                 <input type="text" class="form-control border-0 rounded-0 border-bottom" id="noHp2"
                                     placeholder="Masukkan No Hp 2">
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label text-muted">Email</label>
+                            <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control border-0 rounded-0 border-bottom" id="email"
                                 placeholder="Masukkan email" required>
                         </div>
@@ -111,6 +111,10 @@
     @include('components.pareting_question_component')
     {{-- Custom NavBar --}}
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+        .text-pt-sans {
+            font-family: 'PT Sans', sans-serif !important;
+        }
         .navbar-container nav .nav-link,
         .navbar-container nav .navbar-brand {
             color: rgba(0, 0, 0, 0.75) !important;
