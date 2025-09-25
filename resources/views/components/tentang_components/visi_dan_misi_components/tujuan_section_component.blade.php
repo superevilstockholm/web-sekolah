@@ -12,7 +12,7 @@
                 </h1>
             </div>
             <div class="col-md-6 col-12">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">
+                <p class="mb-3" style="line-height: 1.9 !important;">
                     Tujuan kami adalah membentuk generasi yang bertakwa kepada Allah SWT, berilmu, mampu
                     mengamalkan ilmunya, serta memiliki akhlakul karimah. Dengan itu diharapkan lahir insan yang
                     cerdas, beriman, berkarakter, dan bermanfaat bagi masyarakat.
