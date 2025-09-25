@@ -31,7 +31,7 @@
                         <ul class="list-unstyled d-flex flex-column gap-3">
                             <li><a class="nav-link text-white" href="#">Program</a></li>
                             <li><a class="nav-link text-white" href="#">Kurikulum</a></li>
-                            <li><a class="nav-link text-white" href="#">jalur Pembelajaran</a></li>
+                            <li><a class="nav-link text-white" href="#">Jalur Pembelajaran</a></li>
                             <li><a class="nav-link text-white" href="#">Dukungan Pembelajaran</a></li>
                             <li><a class="nav-link text-white" href="#">Pembelajaran Pelayanan</a></li>
                         </ul>
@@ -39,7 +39,7 @@
                     <div class="col-4 d-none d-md-block">
                         <ul class="list-unstyled d-flex flex-column gap-3">
                             <li><a class="nav-link text-white" href="#">Hubungi Kami</a></li>
-                            <li><a class="nav-link text-white" href="#">Tur Virtuak</a></li>
+                            <li><a class="nav-link text-white" href="#">Tur Virtual</a></li>
                             <li><a class="nav-link text-white" href="#">Daftar Sekarang</a></li>
                             <li><a class="nav-link text-white" href="#">Biaya Sekolah</a></li>
                             <li><a class="nav-link text-white" href="#">FAQ</a></li>
@@ -74,6 +74,11 @@
     </div>
 </footer>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    ul.list-unstyled li a {
+        font-family: 'Roboto', sans-serif !important;
+    }
+    
     .form-select {
         color: white;
         background-color: transparent;
