@@ -9,8 +9,8 @@
                         alt="">Sentul City
                 </h5>
 
-                <h1 class="fw-normal p-0 m-0 mb-3">Rumah Kedua <span class="text-primary">Anak Anda</span></h1>
-                <p class="text-muted " style="line-height: 1.9 !important;">
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Rumah Kedua <span class="text-primary text-pt-sans">Anak Anda</span></h1>
+                <p style="line-height: 1.9 !important;">
                     Di SPH Sentul City, kami menciptakan lingkungan yang hangat dan ramah sehingga terasa seperti rumah
                     kedua bagi setiap siswa. Kampus kami tidak hanya luas dan indah, tetapi juga merupakan tempat yang
                     sempurna bagi siswa untuk berkembang dan menjalani kehidupan yang aktif dan seimbang. Dengan
@@ -19,7 +19,7 @@
                     global yang akan bermanfaat bagi mereka di masa depan.
                 </p>
                 <br>
-                <p class="text-muted" style="line-height: 1.9 !important;">
+                <p style="line-height: 1.9 !important;">
                     Kami memahami bahwa setiap siswa membutuhkan tempat yang aman dan mendukung untuk tinggal, itulah
                     mengapa kami menawarkan asrama siswa yang lengkap dan aman, diawasi oleh orang tua asrama dan
                     pengawas yang peduli dan penuh perhatian. Sebagai salah satu sekolah internasional pertama di Boor,
@@ -31,3 +31,9 @@
 
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>
