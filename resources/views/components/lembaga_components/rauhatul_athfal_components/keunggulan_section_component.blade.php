@@ -10,7 +10,7 @@
 
             <!-- Judul dan sub-judul -->
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3">Keunggulan <span class="text-primary">Kami</span></h1>
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Keunggulan <span class="text-primary text-pt-sans">Kami</span></h1>
 
             </div>
 
@@ -19,7 +19,7 @@
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0">
+                    <p class="mb-0">
                         <strong>Pengalaman belajar yang disesuaikan dengan kebutuhan tiap siswa</strong>
                         , bukan sebaliknya, dan ruang kelas yang didesain secara khusus untuk mendukung perkembangan
                         siswa.
@@ -29,7 +29,7 @@
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Tim dan program </strong> <em> Student Support </em> <strong>yang
+                    <p class="mb-0"><strong>Tim dan program </strong> <em> Student Support </em> <strong>yang
                             inklusif
                         </strong>
                         yang mengapresiasi dan membina setiap siswa berdasarkan talenta dan keterampilan mereka</p>
@@ -38,14 +38,14 @@
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Visi global yang mempersiapkan siswa di luar kelas; </strong>
+                    <p class="mb-0"><strong>Visi global yang mempersiapkan siswa di luar kelas; </strong>
                         bentuk dari komitmen kami untuk membekali siswa dalam menjalani kehidupan.</p>
                 </div>
 
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"> <strong>Ruang belajar inovatif dan imajinatifx
+                    <p class="mb-0"> <strong>Ruang belajar inovatif dan imajinatifx
                         </strong>
                         yang mendorong kecerdasan dan ide baru, serta memupuk kreativitas.
                     </p>
@@ -54,21 +54,21 @@
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Komunitas berbasis iman Kristen</strong>
+                    <p class="mb-0"><strong>Komunitas berbasis iman Kristen</strong>
                         yang berdedikasi untuk membentuk individu yang penuh kasih</p>
                 </div>
 
                 <div class="mb-4 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Komunitas siswa, orang tua, dan guru yang terhubung erat</strong>
+                    <p class="mb-0"><strong>Komunitas siswa, orang tua, dan guru yang terhubung erat</strong>
                         dan saling mendukung.</p>
                 </div>
 
 
 
                 <h6 class="fw-semibold">Program & Jalur Pembelajaran</h6>
-                <p class="text-muted mb-2"><a
+                <p class="mb-2"><a
                         href="https://sph.edu/id/pembelajaran/program/cambridge-international/">Cambridge
                         International</a> (untuk TK – kelas 10) & <a
                         href="https://sph.edu/id/pembelajaran/program/international-baccalaureate/">International
@@ -105,3 +105,9 @@
     </div>
 
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

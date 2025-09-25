@@ -8,7 +8,7 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3 text-black">Kolaborasi <span class="text-primary">Kebaikan</span></h1>
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Kolaborasi <span class="text-primary text-pt-sans">Kebaikan</span></h1>
             </div>
             <div class="col-md-6 col-12">
                 <p class="mb-3" style="line-height: 1.9 !important;">Selama bertahun-tahun, Al-Layyinah
@@ -60,3 +60,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

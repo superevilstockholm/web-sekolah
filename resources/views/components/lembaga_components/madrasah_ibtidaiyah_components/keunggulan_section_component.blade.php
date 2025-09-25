@@ -10,8 +10,8 @@
 
             <!-- Judul dan sub-judul -->
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3">Keunggulan <span class="text-primary">Kami</span></h1>
-                <h5 class="fw-normal text-muted">Sekolah kami menghadirkan lingkungan belajar yang mendukung
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Keunggulan <span class="text-primary text-pt-sans">Kami</span></h1>
+                <h5 class="fw-normal" >Sekolah kami menghadirkan lingkungan belajar yang mendukung
                     perkembangan
                     siswa secara akademis, sosial, dan spiritual.</h5>
             </div>
@@ -21,7 +21,7 @@
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0">
+                    <p class="mb-0">
                         Sekolah dengan pengalaman selama <strong>30 tahun sebagai sekolah Kristen berkurikulum
                             IB</strong></p>
                 </div>
@@ -29,14 +29,14 @@
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Pengalaman asrama internasional yang unik </strong> di Pelita
+                    <p class="mb-0"><strong>Pengalaman asrama internasional yang unik </strong> di Pelita
                         Harapan House (PHH), sebuah rumah kedua bagi siswa Kelas 7-12 dari seluruh dunia</p>
                 </div>
 
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Tim </strong> <i>Learning Support</i> <strong>yang
+                    <p class="mb-0"><strong>Tim </strong> <i>Learning Support</i> <strong>yang
                             inklusif</strong> menawarkan dukungan akademis dan sosio-emosional yang dirancang secara
                         personal untuk menyesuaikan kebutuhan setiap siswa, dan juga program bimbingan pre-universitas
                         yang komprehensif</p>
@@ -45,7 +45,7 @@
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0">Tim pendidik yang merupakan pemimpin dan pionir dalam pendidikan Kristen
+                    <p class="mb-0">Tim pendidik yang merupakan pemimpin dan pionir dalam pendidikan Kristen
                         dengan kurikulum IB di Indonesia yang berkomitmen untuk memberikan <strong> pendidikan IB yang
                             visioner </strong></p>
                 </div>
@@ -53,21 +53,21 @@
                 <div class="mb-4 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Komunitas berbasis iman Kristen</strong>
+                    <p class="mb-0"><strong>Komunitas berbasis iman Kristen</strong>
                         yang berdedikasi untuk membentuk individu yang penuh kasih</p>
                 </div>
 
                 <div class="mb-4 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
                         alt="">
-                    <p class="text-muted mb-0"><strong>Komunitas siswa, orang tua, dan guru yang terhubung erat</strong>
+                    <p class="mb-0"><strong>Komunitas siswa, orang tua, dan guru yang terhubung erat</strong>
                         dan saling mendukung.</p>
                 </div>
 
 
 
                 <h6 class="fw-semibold">Program & Jalur Pembelajaran</h6>
-                <p class="text-muted mb-2">International Baccalaureate</p>
+                <p class="mb-2">International Baccalaureate</p>
 
                 <div class="mb-2 d-flex align-items-start gap-2">
                     <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" height="12"
@@ -93,3 +93,9 @@
 
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

@@ -9,8 +9,8 @@
                         alt="">Lippo Cikarang
                 </h5>
 
-                <h1 class="fw-normal p-0 m-0 mb-3">Kampus yang <span class="text-primary">Penuh Energi</span></h1>
-                <p class="text-muted " style="line-height: 1.9 !important;">
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Kampus yang <span class="text-primary text-pt-sans">Penuh Energi</span></h1>
+                <p style="line-height: 1.9 !important;">
                     Di SPH Lippo Cikarang, Bekasi tidak ada hari yang tidak menyenangkan! Di kampus kami, kegiatan
                     belajar mengajar dilakukan di lingkungan yang dinamis dan menarik. Kampus kami yang luas dan asri
                     menjadi tempat yang ideal bagi siswa untuk melakukan berbagai aktivitas, baik di dalam maupun di
@@ -18,7 +18,7 @@
                     berbagai aktivitas kelas dan program yang melibatkan kreativitas, ilmu multidisipliner, dan
                     keterampilan berpikir kritis.
                 </p>
-                <p class="text-muted" style="line-height: 1.9 !important;">
+                <p style="line-height: 1.9 !important;">
                     Program kami dirancang untuk menumbuhkan rasa kebersamaan, koneksi dan komunitas yang erat, serta
                     relasi yang suportif antara siswa, guru, dan staf. Mulai dari acara <em>Spirit Week</em> hingga
                     <em>Loving and Caring Week</em>, selalu ada kegiatan yang mewarnai kampus kami!
@@ -28,6 +28,9 @@
 
     </div>
 </section>
-
-
-
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

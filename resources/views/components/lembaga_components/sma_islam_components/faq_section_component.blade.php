@@ -1,10 +1,10 @@
 <section id="faq" class="py-5">
     <div class="container">
-        <h2 class="text-center fw-bold mb-2">FAQ</h2>
+        <h2 class="text-center mb-2 text-black text-pt-sans">FAQ</h2>
         <h5 class="text-center mb-5">
             <img src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png" alt="icon"
                 style="height:20px; margin-right:8px;">
-            Pertanyaan yang Sering Diajukan
+            <span class="text-primary">Pertanyaan yang Sering Diajukan</span>
         </h5>
 
         <div class="accordion" id="faqAccordion">
@@ -125,3 +125,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

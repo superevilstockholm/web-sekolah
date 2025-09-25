@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row mb-4">
             <div class="col-md-6 col-12">
-                <h1 class="fw-normal text-black">Pembelajaran <span class="text-primary">Al-Qur’an & Hadits</span></h1>
+                <h1 class="fw-normal text-black text-pt-sans">Pembelajaran <span class="text-primary text-pt-sans">Al-Qur’an & Hadits</span></h1>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
@@ -49,3 +49,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

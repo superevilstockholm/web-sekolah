@@ -1,6 +1,6 @@
 <section class="mt-3 mb-5 faq-section">
     <div class="container">
-        <h1 class="faq-title text-center mb-5 py-2 text-muted fw-normal">Visi & Misi</h1>
+        <h1 class="faq-title text-center mb-5 py-2 text-black fw-normal">Visi & Misi</h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded" src="https://sph.edu/wp-content/uploads/2022/02/header-sph-visionMission-v1-1.jpg"

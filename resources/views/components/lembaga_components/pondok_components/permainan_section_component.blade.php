@@ -11,12 +11,12 @@
 
                 <h1 class="fw-normal p-0 m-0 mb-3">Permainan Proyek<span class="text-primary">Di Setiap Sudut
                         Kelas</span></h1>
-                <p class="text-muted " style="line-height: 1.9 !important;">
+                <p style="line-height: 1.9 !important;">
                     Kehidupan di kampus kami sangatlah unik; komunitas kami yang akrab dan suportif membuat setiap hari
                     menyenangkan bagi siswa, guru, dan staf kami!
                 </p>
                 <br>
-                <p class="text-muted" style="line-height: 1.9 !important;">
+                <p style="line-height: 1.9 !important;">
                     Sebagai sekolah internasional di Pluit Village yang menggunakan Pendekatan Pembelajaran Berbasis
                     Bermain dan Proyek, kehidupan di kampus kami selalu diwarnai oleh siswa yang mengerjakan berbagai
                     proyek. Kelas-kelas kami selalu dipenuhi semangat, permainan, dan antusiasme. Siswa-siswa kami
