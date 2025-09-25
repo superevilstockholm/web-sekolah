@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 mb-3">
-                <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                <h5 class="text-primary d-flex align-items-center gap-2" style="font-size: 0.9rem; color: #3a3b3c;">
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Visi & Misi
                 </h5>

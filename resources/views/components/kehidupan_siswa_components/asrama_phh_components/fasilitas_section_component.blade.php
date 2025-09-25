@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -13,7 +13,7 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Rumah Kedua untuk Pertumbuhan
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Fasilitas</span></h1>
+                <h1 class="fw-normal p-0 m-0 mb-3"><span class="faq-title text-primary">Fasilitas</span></h1>
                 <p class="text-muted mb-2" style="line-height: 1.9 !important;">Pelita Harapan House (PHH) adalah rumah
                     kedua bagi siswa kelas 7-12 kami. Asrama kami bukan hanya menjadi tempat tinggal, tetapi juga rumah
                     kedua yang mendukung setiap siswa untuk berprestasi dan membekali mereka dengan keterampilan hidup

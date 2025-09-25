@@ -1,4 +1,4 @@
-<section class="mb-5">
+<section class="mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -15,7 +15,7 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3">Klub <span class="text-primary">Siswa</span></h1>
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3" style="color: black"><span class="faq-title text-primary">Klub </span>Siswa</h1>
             </div>
             <div class="col-md-6 col-12">
                 <p class="text-muted mb-3" style="line-height: 1.9 !important;">Kami memastikan siswa kami menggunakan

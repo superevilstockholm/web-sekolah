@@ -1,7 +1,8 @@
 <section class="mt-3 mb-5">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Asrama Sekolah Pelita Harapan: Boarding School Terbaik di
-            Jakarta</h1>
+        <h1 class="text-center mb-5 py-2 fw-bold" style="color: black; font-size: 2.4rem;">
+            Asrama Sekolah Pelita Harapan: Boarding School Terbaik di Jakarta
+          </h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"

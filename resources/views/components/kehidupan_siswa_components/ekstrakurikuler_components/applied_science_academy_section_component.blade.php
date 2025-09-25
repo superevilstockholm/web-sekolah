@@ -1,4 +1,4 @@
-<section class="mb-5">
+<section class="mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -13,7 +13,7 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Applied Science Academy (ASA)
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Pengalaman Penelitian</span> bersama Ahli
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3" style="color: black"><span class="text-primary">Pengalaman Penelitian</span> bersama Ahli
                 </h1>
                 <p class="text-muted" style="line-height: 1.9 !important;">Applied Science Academy (ASA) adalah
                     bagian dari SPH Center of Excellence, sebuah program pengayaan yang memberikan siswa pembelajaran

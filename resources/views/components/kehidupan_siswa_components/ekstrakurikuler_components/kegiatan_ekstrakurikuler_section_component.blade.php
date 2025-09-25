@@ -1,4 +1,4 @@
-<section class="mb-5">
+<section class="mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -13,7 +13,7 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Kegiatan Ekstrakurikuler
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Discovery </span> Academy</h1>
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3" style="color: black;">Discovery <span class="text-primary faq-title">Academy</span></h1>
                 <p class="text-muted mb-2" style="line-height: 1.9 !important;">Pilihan kegiatan ekstrakurikuler
                     Discovery Academy beragam di setiap kampus. Di SPH, siswa dapat mengikuti kegiatan ekstrakurikuler
                     di sekolah internasional yang memperkaya pengalaman dan kemampuan mereka dengan lebih mendalam,

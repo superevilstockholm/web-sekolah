@@ -1,6 +1,6 @@
 <section class="mt-3 mb-5 faq-section">
     <div class="container">
-        <h1 class="faq-title text-center mb-5 py-2 text-muted fw-normal">Sejarah Singkat Al-Layyinah</h1>
+        <h1 class="faq-title text-center mb-5 py-2 fw-normal" style="color: #3a3b3c;">Sejarah Singkat Al-Layyinah</h1>
 
         <div class="timeline">
             <!-- 1992 -->

@@ -1,10 +1,10 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row my-5">
             <div class="col-12">
                 <div class="d-flex flex-column align-items-center">
-                    <h2 class="text-center">FAQ Pelita Harapan House SPH Sentul City</h2>
-                    <h3 class="text-primary text-center d-flex align-items-center gap-2" style="font-size: 0.9rem;">
+                    <h2 class="faq-title text-center" style="color: #3a3b3c;">FAQ Pelita Harapan House SPH Sentul City</h2>
+                    <h3 class="text-primary text-center d-flex align-items-center gap-2 mt-4" style="font-size: 0.9rem;">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Pertanyaan Yang Sering Diajukan
                     </h3>
