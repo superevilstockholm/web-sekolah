@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-7 col-12">
