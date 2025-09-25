@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-12 mb-4 mb-lg-0">
@@ -6,7 +6,7 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Acara Al-Layyinah
                 </h5>
-                <h3><span class="text-primary">Acara</span> Masa Lalu</h3>
+                <h3 class="faq-title text-black"><span class="faq-title text-primary">Acara</span> Masa Lalu</h3>
             </div>
             <div class="col-lg-8 col-12">
                 <div class="row" id="acara-container"></div>

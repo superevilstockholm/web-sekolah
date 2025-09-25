@@ -59,7 +59,7 @@
                             aria-expanded="false">
                             Tentang Kami
                         </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3 mt-0">
                             <li><a class="dropdown-item" href="{{ route('sejarah') }}">Sejarah</a></li>
                             <li><a class="dropdown-item" href="{{ route('visi_dan_misi') }}">Visi & Misi</a></li>
                             <li><a class="dropdown-item" href="{{ route('faq') }}">FAQ</a></li>
@@ -70,7 +70,7 @@
                             aria-expanded="false">
                             Pembelajaran
                         </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3 mt-0">
                             <li><a class="dropdown-item" href="{{ route('jalur_pembelajaran') }}">Jalur Pembelajaran</a>
                             </li>
                             <li><a class="dropdown-item" href="{{ route('program') }}">Program</a></li>
@@ -86,7 +86,7 @@
                             aria-expanded="false">
                             Lembaga
                         </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3 mt-0">
 
                             <li><a class="dropdown-item" href="{{ route('rauhatul_athfal') }}">Rauhatul Athfal</a>
                             </li>
@@ -105,7 +105,7 @@
                             aria-expanded="false">
                             Kehidupan Siswa
                         </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3 mt-0">
                             <li><a class="dropdown-item" href="{{ route('ekstreakurikuler') }}">Ekstrakurikuler</a>
                             </li>
                             <li><a class="dropdown-item" href="{{ route('kehidupan_rohani') }}">Kehidupan Rohani</a>
@@ -119,7 +119,7 @@
                             aria-expanded="false">
                             Jenjang
                         </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3 mt-0">
                             <li><a class="dropdown-item" href="{{ route('tk') }}">TK</a></li>
                             <li><a class="dropdown-item" href="{{ route('sd') }}">SD</a></li>
                             <li><a class="dropdown-item" href="{{ route('smp') }}">SMP</a></li>
@@ -131,7 +131,7 @@
                             aria-expanded="false">
                             PPDB
                         </a>
-                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3">
+                        <ul class="dropdown-menu rounded-0 border-0 shadow-sm p-3 mt-0">
                             <li><a class="dropdown-item" href="{{ route('pendaftaran') }}">Pendaftaran</a></li>
                             <li><a class="dropdown-item" href="{{ route('persyaratan') }}">Persyaratan</a></li>
                         </ul>

@@ -1,6 +1,6 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Acara</h1>
+        <h1 class="faq-title text-center mb-5 py-2 text-black fw-normal">Acara</h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"
