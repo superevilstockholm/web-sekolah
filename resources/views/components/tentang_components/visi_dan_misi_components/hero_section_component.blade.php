@@ -8,11 +8,11 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <h5 style="color: #3a3b3c;">Visi</h5>
-                <p class="text-muted mb-4"> Menjadikan Al-Layyinah Unggul dalam prestasi teladan dalam bersikap dan
+                <h5 class="text-black">Visi</h5>
+                <p class="mb-4"> Menjadikan Al-Layyinah Unggul dalam prestasi teladan dalam bersikap dan
                     bertindak, pelopor dalam bermashlahat umat.</p>
-                <h5 style="color: #3a3b3c;">Misi</h5>
-                <ul class="list-unstyled text-muted d-flex flex-column gap-3">
+                <h5 class="text-black">Misi</h5>
+                <ul class="list-unstyled d-flex flex-column gap-3">
                     <li class="d-flex align-items-center gap-2">
                         <img height="20px" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
                         Membentuk generasi yang bertaqwa, berilmu serta berakhlakul karimah

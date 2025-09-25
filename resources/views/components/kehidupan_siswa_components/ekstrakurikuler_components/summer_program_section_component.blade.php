@@ -14,21 +14,21 @@
                         alt="">Kamp & Aktivitas Liburan
                 </h5>
                 <h1 class="faq-title fw-normal p-0 m-0 mb-3" style="color: black"><span class="faq-title text-primary">SPH</span> Summer Program</h1>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Setiap liburan sekolah, SPH mengadakan
+                <p class="mb-3" style="line-height: 1.9 !important;">Setiap liburan sekolah, SPH mengadakan
                     Summer Program untuk meningkatkan keterlibatan antara siswa dan keluarga.</p>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">SPH merancang program musim panas untuk
+                <p class="mb-3" style="line-height: 1.9 !important;">SPH merancang program musim panas untuk
                     membuat liburan sekolah siswa menyenangkan, tak terlupakan, dan bermakna dengan memfasilitasi siswa
                     untuk mengembangkan keterampilan baru.</p>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Program musim panas SPH menawarkan
+                <p class="mb-3" style="line-height: 1.9 !important;">Program musim panas SPH menawarkan
                     pilihan
                     kegiatan yang ekstensif, termasuk program memasak atau membuat roti atau kue, seni dan kerajinan,
                     sains, olahraga, public speaking, nature tracking, dan kepemimpinan untuk siswa di segala usia.</p>
                 <button class="btn btn-sm py-2 btn-warning text-white btn-custom rounded-pill px-4 mb-3">Pelajari Lebih
                     Lanjut</button>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Jika Anda merupakan mahasiswa expat yang
+                <p class="mb-3" style="line-height: 1.9 !important;">Jika Anda merupakan mahasiswa expat yang
                     tengah berada di tahun ke-tiga atau empat di universitas Kristen pada musim panas tahun 2023, Anda
                     dapat bergabung dalam program magang musim panas di SPH tahun depan!</p>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Unduh form pendaftaran dan semua detail
+                <p class="mb-3" style="line-height: 1.9 !important;">Unduh form pendaftaran dan semua detail
                     yang Anda butuhkan di sini:</p>
                 <button class="btn btn-sm py-2 btn-warning text-white btn-custom rounded-pill px-4">Unduh Sekarang</button>
             </div>

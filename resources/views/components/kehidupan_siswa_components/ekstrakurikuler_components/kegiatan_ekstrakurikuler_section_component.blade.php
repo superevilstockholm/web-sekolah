@@ -14,7 +14,7 @@
                         alt="">Kegiatan Ekstrakurikuler
                 </h5>
                 <h1 class="faq-title fw-normal p-0 m-0 mb-3" style="color: black;">Discovery <span class="text-primary faq-title">Academy</span></h1>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Pilihan kegiatan ekstrakurikuler
+                <p class="mb-2" style="line-height: 1.9 !important;">Pilihan kegiatan ekstrakurikuler
                     Discovery Academy beragam di setiap kampus. Di SPH, siswa dapat mengikuti kegiatan ekstrakurikuler
                     di sekolah internasional yang memperkaya pengalaman dan kemampuan mereka dengan lebih mendalam,
                     tidak terbatas pada akademik saja.</p>

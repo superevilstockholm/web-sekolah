@@ -9,7 +9,7 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-semibold mb-4 text-muted">Kegiatan ekstrakurikuler SPH mencakup pilihan program yang beragam dan pengalaman pembelajaran yang melengkapi pembelajaran sehari-hari di sekolah.</p>
+                <p class="mb-4">Kegiatan ekstrakurikuler SPH mencakup pilihan program yang beragam dan pengalaman pembelajaran yang melengkapi pembelajaran sehari-hari di sekolah.</p>
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
         </div>

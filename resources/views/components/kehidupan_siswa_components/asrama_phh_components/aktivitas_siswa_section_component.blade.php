@@ -14,28 +14,28 @@
                         alt="">Kegiatan di PHH
                 </h5>
                 <h1 class="fw-normal p-0 m-0 mb-3"><span class="faq-title text-primary">Aktivitas Siswa Asrama</span></h1>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">PHH adalah fokus dari relasi komunitas
+                <p class="mb-2" style="line-height: 1.9 !important;">PHH adalah fokus dari relasi komunitas
                     kami. Asrama SPH Sentul City menawarkan program Senin-Jumat (Weekday) dan Senin-Minggu (Full-Week)
                     untuk siswa. Program Senin-Minggu memberikan lebih banyak kesempatan bagi siswa untuk mendapatkan
                     berbagai pengalaman. Jadwal akhir pekan yang diperpanjang memberikan lebih banyak kesempatan bagi
                     siswa untuk berpartisipasi dalam kompetisi olahraga, kegiatan di luar ruangan, atau bahkan fieldtrip
                     singkat dengan keluarga asrama mereka.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">PHH adalah fokus dari relasi komunitas
+                <p class="mb-2" style="line-height: 1.9 !important;">PHH adalah fokus dari relasi komunitas
                     kami. Asrama SPH Sentul City menawarkan program Senin-Jumat (Weekday) dan Senin-Minggu (Full-Week)
                     untuk siswa. Program Senin-Minggu memberikan lebih banyak kesempatan bagi siswa untuk mendapatkan
                     berbagai pengalaman. Jadwal akhir pekan yang diperpanjang memberikan lebih banyak kesempatan bagi
                     siswa untuk berpartisipasi dalam kompetisi olahraga, kegiatan di luar ruangan, atau bahkan fieldtrip
                     singkat dengan keluarga asrama mereka.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Untuk kegiatan sehari-hari, seminggu
+                <p class="mb-2" style="line-height: 1.9 !important;">Untuk kegiatan sehari-hari, seminggu
                     sekali, siswa harus mengikuti kebaktian. Mereka dibagi menjadi kelompok-kelompok kecil dan dipimpin
                     oleh pengawas asrama, di mana mereka dapat berbagi cerita tentang kehidupan mereka bersama. Setiap
                     Rabu adalah Malam Keluarga! Malam di mana semua anggota asrama berkumpul untuk makan malam spesial,
                     permainan menyenangkan, dan persekutuan kelompok.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">PHH juga menawarkan dukungan bahasa
+                <p class="mb-2" style="line-height: 1.9 !important;">PHH juga menawarkan dukungan bahasa
                     Inggris tambahan untuk siswa. Beberapa siswa mungkin mengalami kesulitan dalam menguasai bahasa
                     Inggris, dan dukungan ini merupakan layanan tambahan yang dapat membantu mereka menyesuaikan diri
                     dengan lingkungan berbahasa Inggris di SPH.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Sebagai salah satu boarding school
+                <p class="mb-2" style="line-height: 1.9 !important;">Sebagai salah satu boarding school
                     terbaik di area Jabodetabek, Pelita Harapan House (PHH) menawarkan program dan fasilitas berstandar
                     internasional yang mendukung pembelajaran holistik siswa di sekolah. Hal ini tentu membantu mereka
                     mempersiapkan diri untuk tantangan yang lebih kompleks dalam kehidupan mereka di masa depan.</p>
