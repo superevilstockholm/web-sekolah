@@ -31,7 +31,7 @@
                         <ul class="list-unstyled d-flex flex-column gap-3">
                             <li><a class="nav-link text-white" href="#">Program</a></li>
                             <li><a class="nav-link text-white" href="#">Kurikulum</a></li>
-                            <li><a class="nav-link text-white" href="#">jalur Pembelajaran</a></li>
+                            <li><a class="nav-link text-white" href="#">Jalur Pembelajaran</a></li>
                             <li><a class="nav-link text-white" href="#">Dukungan Pembelajaran</a></li>
                             <li><a class="nav-link text-white" href="#">Pembelajaran Pelayanan</a></li>
                         </ul>
@@ -39,7 +39,7 @@
                     <div class="col-4 d-none d-md-block">
                         <ul class="list-unstyled d-flex flex-column gap-3">
                             <li><a class="nav-link text-white" href="#">Hubungi Kami</a></li>
-                            <li><a class="nav-link text-white" href="#">Tur Virtuak</a></li>
+                            <li><a class="nav-link text-white" href="#">Tur Virtual</a></li>
                             <li><a class="nav-link text-white" href="#">Daftar Sekarang</a></li>
                             <li><a class="nav-link text-white" href="#">Biaya Sekolah</a></li>
                             <li><a class="nav-link text-white" href="#">FAQ</a></li>
@@ -74,6 +74,11 @@
     </div>
 </footer>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    ul.list-unstyled li a {
+        font-family: 'Roboto', sans-serif !important;
+    }
+    
     .form-select {
         color: white;
         background-color: transparent;
@@ -147,25 +152,25 @@
                 </div>
                 <!-- Sosmed -->
                 <div class="d-flex flex-row align-items-center gap-2">
-                    <a class="nav-link text-white"><i class="bi bi-youtube"></i></a>
-                    <a class="nav-link text-white"><i class="bi bi-facebook"></i></a>
-                    <a class="nav-link text-white"><i class="bi bi-instagram"></i></a>
-                    <a class="nav-link text-white"><i class="bi bi-linkedin"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-youtube text-white"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-facebook text-white"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-instagram text-white"></i></a>
+                    <a class="nav-link text-white"><i class="bi bi-linkedin text-white"></i></a>
                 </div>
             </div>
             <!-- Kontak dibuat row/col -->
             <div class="row text-white" style="font-size: 0.9rem;">
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-telephone-fill me-2"></i>${data.phone1}
+                    <i class="bi bi-telephone-fill me-2 text-white"></i> <span class="text-white">${data.phone1}</span>
                 </div>
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-whatsapp me-2"></i>${data.phone2}
+                    <i class="bi bi-whatsapp me-2 text-white"></i> <span class="text-white">${data.phone2}</span>
                 </div>
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-envelope-fill me-2"></i>${data.email}
+                    <i class="bi bi-envelope-fill me-2 text-white"></i><span class="text-white">${data.email}</span>
                 </div>
                 <div class="col-12 col-md-6 mb-2">
-                    <i class="bi bi-geo-alt-fill me-2"></i>
+                    <i class="bi bi-geo-alt-fill me-2 text-white"></i>
                     <a href="${data.mapLink}" class="nav-link d-inline p-0 text-white">Lihat di google maps</a>
                 </div>
             </div>

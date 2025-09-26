@@ -9,14 +9,14 @@
         <div class="row mb-4 align-items-center">
             <div class="col-md-6 col-12 mb-4 mb-md-0">
                 <div class="d-flex flex-column gap-3">
-                    <h1 class="fw-normal p-0 m-0"><span class="text-primary">Musik dan Seni</span></h1>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <h1 class="fw-normal p-0 m-0 text-pt-sans"><span class="text-primary text-pt-sans">Musik dan Seni</span></h1>
+                    <p style="line-height: 1.9 !important;">
                         Untuk menyeimbangkan pembelajaran akademik yang ketat, Al-Layyinah menghadirkan pelajaran musik dan seni,
                         yang meliputi musik, seni visual, hingga seni pertunjukan Islami. Program ini menjadi ruang bagi siswa untuk mengekspresikan diri
                         serta mengembangkan bakat artistik dengan pemahaman bahwa setiap kreativitas adalah karunia Allah ﷻ yang harus dimanfaatkan
                         untuk kemaslahatan umat.
                     </p>
-                    <p class="text-muted" style="line-height: 1.9 !important;">
+                    <p style="line-height: 1.9 !important;">
                         Seni rupa juga diajarkan mulai dari jenjang dasar hingga menengah. Proses berkarya tidak hanya menuntut kreativitas dan imajinasi,
                         tetapi juga penelitian serta pemikiran kritis. Di tingkat lanjutan, siswa berkesempatan menciptakan karya seni yang penuh makna,
                         mulai dari kritik sosial yang membangun hingga ekspresi personal. Setiap akhir tahun, karya-karya tersebut dipamerkan dalam
@@ -38,7 +38,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6 col-12">
-                <h4 class="mb-4">Program Musik & Seni</h4>
+                <h4 class="mb-4 text-black fw-bold">Program Musik & Seni</h4>
                 <ul class="list-unstyled d-flex flex-column gap-2">
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
@@ -77,3 +77,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

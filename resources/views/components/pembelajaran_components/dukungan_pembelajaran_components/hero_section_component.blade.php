@@ -1,6 +1,6 @@
 <section class="mt-3">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Dukungan Pembelajaran</h1>
+        <h1 class="text-center mb-5 py-2 text-black fw-normal text-pt-sans">Dukungan Pembelajaran</h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"
@@ -9,11 +9,11 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-semibold mb-4 text-muted">
+                <p>
                     Para ustadz dan ustadzah Al-Layyinah berusaha memberikan perhatian lebih kepada para santri
                     dengan menyediakan program dukungan belajar tambahan, baik akademik maupun diniyah.
                     Tujuannya adalah agar setiap santri mampu berkembang sesuai potensi masing-masing.
-                </p>
+                </p> <br>
                 <ul class="list-unstyled d-flex flex-column gap-2">
                     <li class="d-flex align-items-center gap-1 text-muted">
                         <img height="20" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png"
@@ -42,19 +42,19 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 ">Bimbingan Pembelajaran <span class="text-primary">Tambahan</span></h1>
+                <h1 class="fw-normal p-0 m-0 text-black text-pt-sans">Bimbingan Pembelajaran <span class="text-primary text-pt-sans">Tambahan</span></h1>
             </div>
             <div class="col-md-6 col-12">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">
+                <p class="mb-3" style="line-height: 1.9 !important;">
                     <span class="fw-bold">Tim Pembimbing Al-Layyinah</span> bekerja sama dengan wali kelas dan orangtua
                     untuk memastikan kebutuhan belajar setiap santri terpenuhi.
                 </p>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">
+                <p class="mb-3" style="line-height: 1.9 !important;">
                     Pendekatan kolaboratif dilakukan agar santri yang membutuhkan bantuan lebih dapat
                     segera diberikan intervensi, baik dalam bidang akademik, hafalan Qur’an, maupun
                     penguasaan bahasa Arab.
                 </p>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">
+                <p class="mb-3" style="line-height: 1.9 !important;">
                     Dukungan ini mencakup pemantapan pelajaran sekolah,
                     pembinaan akhlak, serta pengembangan keterampilan santri
                     agar dapat belajar dengan efektif di kelas dan lingkungan pesantren.
@@ -75,20 +75,20 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt="">Dukungan Pembelajaran
                     </h5>
-                    <h1 class="fw-normal p-0 m-0 ">Program <span class="text-primary">Bahasa Arab & Tahfidz</span></h1>
+                    <h1 class="fw-normal p-0 m-0 text-black text-pt-sans">Program <span class="text-primary text-pt-sans">Bahasa Arab & Tahfidz</span></h1>
                     <div class="d-flex flex-column gap-2">
-                        <h4 class="p-0 m-0 fw-normal">Intensif Bahasa & Hafalan</h4>
+                        <h4 class="p-0 m-0 fw-normal text-black">Intensif Bahasa & Hafalan</h4>
                         <div class="d-flex flex-column gap-3">
-                            <p class="text-muted" style="line-height: 1.9 !important;">
+                            <p style="line-height: 1.9 !important;">
                                 Al-Layyinah menyediakan program khusus untuk mendukung kemampuan
                                 Bahasa Arab dan Tahfidzul Qur’an santri, mulai dari tingkat dasar hingga mahir.
                             </p>
-                            <p class="text-muted" style="line-height: 1.9 !important;">
+                            <p style="line-height: 1.9 !important;">
                                 <span class="fw-medium text-primary">Program Bahasa Arab</span>
                                 dirancang untuk memperkuat kemampuan berbicara, mendengar, membaca, dan menulis
                                 dalam bahasa Al-Qur’an. Santri juga diajak untuk memahami kitab turats dan hadits secara langsung.
                             </p>
-                            <p class="text-muted" style="line-height: 1.9 !important;">
+                            <p style="line-height: 1.9 !important;">
                                 <span class="fw-medium text-primary">Program Tahfidz</span>
                                 memberikan pendampingan khusus bagi santri yang sedang menghafal Qur’an,
                                 termasuk muraja’ah harian, target hafalan, serta penguatan tajwid.
@@ -102,3 +102,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

@@ -8,10 +8,10 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3">Kolaborasi <span class="text-primary">Kebaikan</span></h1>
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Kolaborasi <span class="text-primary text-pt-sans">Kebaikan</span></h1>
             </div>
             <div class="col-md-6 col-12">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Selama bertahun-tahun, Al-Layyinah
+                <p class="mb-3" style="line-height: 1.9 !important;">Selama bertahun-tahun, Al-Layyinah
                     telah menjalin kerja sama dengan berbagai pihak seperti yayasan yatim piatu, lembaga sosial,
                     komunitas pecinta lingkungan, dan majelis taklim untuk memperluas manfaat bagi masyarakat.</p>
             </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="row mb-4 align-items-center">
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">
+                <p class="mb-3" style="line-height: 1.9 !important;">
                     Al-Layyinah bekerja sama dengan berbagai mitra untuk mendukung kegiatan sosial,
                     pendidikan, dan keagamaan. Beberapa di antaranya adalah:
                 </p>
@@ -60,3 +60,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

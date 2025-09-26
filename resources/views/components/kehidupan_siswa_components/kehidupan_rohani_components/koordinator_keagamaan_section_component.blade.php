@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -13,8 +13,8 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Koordinator Keagamaan
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Bimbingan</span> menuju Akhlak Mulia</h1>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;"><span class="fs-5 text-medium">Setiap
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3 text-black"><span class="faq-title text-primary">Bimbingan</span> menuju Akhlak Mulia</h1>
+                <p class="mb-3" style="line-height: 1.9 !important;"><span class="fs-5 text-medium" style="color: #3a3b3c;">Setiap
                     kampus memiliki Koordinator Keagamaan,</span> yang bertugas mendampingi seluruh kegiatan kerohanian.
                     Dengan arahan ustadz pembimbing, siswa didorong untuk meneladani akhlak Rasulullah SAW serta
                     memperkuat iman dan takwa di setiap aspek kehidupan.</p>

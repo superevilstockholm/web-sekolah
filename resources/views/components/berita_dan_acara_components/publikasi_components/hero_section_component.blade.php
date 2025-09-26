@@ -1,6 +1,6 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Publikasi</h1>
+        <h1 class="faq-title text-center mb-5 py-2 text-black fw-normal">Publikasi</h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"
@@ -8,8 +8,8 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <h4 class="fw-normal mb-3">Thriving in Hard Times</h4>
-                <p class="fw-normal text-muted mb-3">The Light Edisi ke-44 2020</p>
+                <h4 class="faq-title fw-normal text-black mb-3">Thriving in Hard Times</h4>
+                <p class="fw-normal text-black mb-3">The Light Edisi ke-44 2020</p>
                 <button class="btn btn-sm btn-warning text-white btn-custom px-4 rounded-pill">Baca Sekarang</button>
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>

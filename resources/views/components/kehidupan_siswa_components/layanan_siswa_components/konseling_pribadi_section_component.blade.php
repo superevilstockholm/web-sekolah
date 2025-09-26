@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -14,12 +14,12 @@
                         alt="">
                     Konseling Pribadi
                 </div>
-                <h2 class="fw-normal p-0 m-0 mb-4"><span class="text-primary">Bimbingan</span> bagi Mereka yang
+                <h2 class="faq-title fw-normal p-0 m-0 mb-4 text-black"><span class="faq-title text-primary">Bimbingan</span> bagi Mereka yang
                     Membutuhkan
                 </h2>
-                <p class="text-muted mb-3">Konseling pribadi di Al-Layyinah ditujukan untuk memenuhi kebutuhan emosional, sosial dan
+                <p class="mb-3">Konseling pribadi di Al-Layyinah ditujukan untuk memenuhi kebutuhan emosional, sosial dan
                     perilaku siswa.</p>
-                <p class="text-muted">Konselor pribadi menyediakan sesi konseling yang didasarkan pada prinsip-prinsip
+                <p>Konselor pribadi menyediakan sesi konseling yang didasarkan pada prinsip-prinsip
                     Islam bagi semua siswa.</p>
             </div>
         </div>

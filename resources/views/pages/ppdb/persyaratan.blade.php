@@ -25,8 +25,8 @@
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-medium mb-2">Persyaratan Pendaftaran</h2>
-                <p class="text-muted">Pastikan Anda memenuhi syarat berikut sebelum mendaftar:</p>
+                <h2 class="mb-2 text-black text-pt-sans">Persyaratan Pendaftaran</h2>
+                <p class="text-black text-pt-sans">Pastikan Anda memenuhi syarat berikut sebelum mendaftar:</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-12">
@@ -39,7 +39,7 @@
                         <li class="list-group-item">Formulir pendaftaran yang telah diisi lengkap.</li>
                         <li class="list-group-item">Dokumen pendukung lainnya sesuai ketentuan sekolah.</li>
                     </ul>
-                    <p class="text-muted mt-3 small">
+                    <p class="mt-3 small">
                         <em>Catatan: Semua dokumen harus dibawa saat verifikasi pendaftaran di sekolah.</em>
                     </p>
                 </div>
@@ -50,6 +50,10 @@
     @include('components.pareting_question_component')
     {{-- Custom NavBar --}}
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+        .text-pt-sans {
+            font-family: 'PT Sans', sans-serif !important;
+        }
         .navbar-container nav .nav-link,
         .navbar-container nav .navbar-brand {
             color: rgba(0, 0, 0, 0.75) !important;

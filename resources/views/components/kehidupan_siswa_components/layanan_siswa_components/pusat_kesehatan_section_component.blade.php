@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -13,9 +13,9 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Pusat Kesehatan
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3">Pertolongan Medis dari <span class="text-primary">Profesional</span>
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3 text-black">Pertolongan Medis dari <span class="faq-title text-primary">Profesional</span>
                 </h1>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Setiap kampus Al-Layyinah dilengkapi dengan
+                <p class="mb-2" style="line-height: 1.9 !important;">Setiap kampus Al-Layyinah dilengkapi dengan
                     pusat kesehatan berkualitas dan berdedikasi. Pusat kesehatan kami dilengkapi dengan tenaga medis
                     profesional yang siap melayani siswa setiap hari.</p>
             </div>

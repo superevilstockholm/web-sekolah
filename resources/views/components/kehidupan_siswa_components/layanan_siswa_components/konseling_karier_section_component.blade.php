@@ -1,4 +1,4 @@
-<section class="mb-5">
+<section class="mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 mb-3">
@@ -8,13 +8,13 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Bimbingan</span> menuju Pendidikan Tinggi
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3 text-black"><span class="faq-title text-primary">Bimbingan</span> menuju Pendidikan Tinggi
                 </h1>
             </div>
             <div class="col-md-6 col-12">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Program Konseling Karier Al-Layyinah
+                <p class="mb-3" style="line-height: 1.9 !important;">Program Konseling Karier Al-Layyinah
                     mempersiapkan dan membimbing siswa dari Kelas 9 untuk kehidupan universitas dengan:</p>
-                <ul class="list-unstyled d-flex flex-column gap-2 text-muted">
+                <ul class="list-unstyled d-flex flex-column gap-2">
                     <li class="d-flex align-items-start gap-2">
                         <img height="20px" class="mt-1" src="https://sph.edu/wp-content/uploads/2022/02/SPH-Rectangle-black.png" alt="">
                         memilih dan menentukan jurusan universitas yang paling sesuai dengan kemampuan serta profil akademik siswa; dan
@@ -24,7 +24,7 @@
                         memilih dan mendaftar di universitas tertentu, terutama berkaitan dengan navigasi proses pendaftaran yang menantang.
                     </li>
                 </ul>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">University Fair tahunan merupakan salah
+                <p class="mb-3" style="line-height: 1.9 !important;">University Fair tahunan merupakan salah
                     satu acara yang paling dinanti dari Program Konseling Karier. Pameran ini membantu siswa dan orang
                     tua mendapatkan informasi yang rinci mengenai universitas dan kehidupan kampus, proses pendaftaran,
                     program studi, dan peluang beasiswa. Meskipun banyak siswa yang sebelumnya telah memilih dan mencari

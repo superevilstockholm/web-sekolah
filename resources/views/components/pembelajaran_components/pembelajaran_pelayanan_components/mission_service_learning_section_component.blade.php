@@ -8,14 +8,14 @@
                 </h5>
             </div>
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <h1 class="fw-normal p-0 m-0 mb-3">Belajar dengan <span class="text-primary">Melayani</span></h1>
-                <h5 class="fw-normal">Program Layanan Umat merupakan bagian penting dalam kurikulum Islami di Al-Layyinah.</h5>
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Belajar dengan <span class="text-primary text-pt-sans">Melayani</span></h1>
+                <h5 class="fw-normal text-black">Program Layanan Umat merupakan bagian penting dalam kurikulum Islami di Al-Layyinah.</h5>
             </div>
             <div class="col-md-6 col-12">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Program ini menanamkan sikap peduli,
+                <p class="mb-3" style="line-height: 1.9 !important;">Program ini menanamkan sikap peduli,
                     empati, dan tanggung jawab sosial. Siswa didorong untuk berpikir dan bertindak nyata melalui
                     kegiatan amal, bakti sosial, membantu fakir miskin, serta peduli lingkungan.</p>
-                <p class="text-muted" style="line-height: 1.9 !important;">Kegiatan meliputi kunjungan ke panti asuhan,
+                <p style="line-height: 1.9 !important;">Kegiatan meliputi kunjungan ke panti asuhan,
                     membantu anak-anak yatim, kerja bakti di masjid, program kebersihan lingkungan, hingga bakti sosial
                     ke daerah-daerah yang membutuhkan. Semua itu menjadi pengalaman berharga yang membentuk akhlak
                     mulia siswa.</p>
@@ -30,11 +30,11 @@
         </div>
         <div class="row mb-4 align-items-center">
             <div class="col-md-6 col-12 mb-4 mb-md-0">
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Sejak dini, siswa Al-Layyinah
+                <p class="mb-3" style="line-height: 1.9 !important;">Sejak dini, siswa Al-Layyinah
                     diperkenalkan pada kegiatan khidmat sosial, mulai dari anak TK yang diajarkan berbagi makanan,
                     siswa SD yang dilibatkan dalam kegiatan sosial di lingkungan sekolah, hingga siswa SMP dan SMA
                     yang ikut serta dalam program pengabdian masyarakat skala lebih besar.</p>
-                <p class="text-muted" style="line-height: 1.9 !important;">Hal ini diintegrasikan ke dalam pembelajaran
+                <p style="line-height: 1.9 !important;">Hal ini diintegrasikan ke dalam pembelajaran
                     sehingga anak-anak memahami bahwa ilmu yang dimiliki harus bermanfaat bagi orang lain.</p>
             </div>
             <div class="col-md-6 col-12">
@@ -45,3 +45,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

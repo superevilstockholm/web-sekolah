@@ -1,4 +1,4 @@
-<section class="mb-5">
+<section class="mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -13,9 +13,9 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Bimbingan Rohani
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3"><span class="text-primary">Pendampingan</span> Keagamaan</h1>
-                <h5 class="fw-normal text-muted mb-3">Ustadz dan ustadzah mendampingi siswa dalam menghadapi persoalan iman dan akhlak.</h5>
-                <p class="text-muted mb-3" style="line-height: 1.9 !important;">Melalui bimbingan rohani Islami, siswa dapat berdiskusi, bertanya, dan mendapatkan arahan yang tepat.
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3 text-black"><span class="faq-title text-primary">Pendampingan</span> Keagamaan</h1>
+                <h5 class="fw-normal mb-3" style="color: #3a3b3c;">Ustadz dan ustadzah mendampingi siswa dalam menghadapi persoalan iman dan akhlak.</h5>
+                <p class="mb-3" style="line-height: 1.9 !important;">Melalui bimbingan rohani Islami, siswa dapat berdiskusi, bertanya, dan mendapatkan arahan yang tepat.
                 Sekolah juga mengadakan doa bersama, kajian rutin, dan nasihat keislaman untuk memperkuat mental dan spiritual siswa.</p>
             </div>
             <div class="col-md-6 col-12">

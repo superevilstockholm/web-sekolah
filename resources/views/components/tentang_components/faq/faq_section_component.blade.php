@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-7 col-12">
@@ -11,7 +11,7 @@
                             </button>
                         </h2>
                         <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Yayasan Pendidikan Islam Al-Layyinah adalah lembaga pendidikan Islam
                                     yang berdiri
                                     sejak tahun 1996 di Kp. Cijengir, Curug, Tangerang. Yayasan ini menaungi pendidikan
@@ -27,7 +27,7 @@
                             </button>
                         </h2>
                         <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Visi: Menjadikan Al-Layyinah unggul dalam prestasi, teladan dalam
                                     bersikap, dan
                                     pelopor dalam bermashlahat umat.</p>
@@ -45,7 +45,7 @@
                             </button>
                         </h2>
                         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Jenjang pendidikan yang tersedia meliputi:</p>
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li class="d-flex align-items-center gap-2">
@@ -81,7 +81,7 @@
                             </button>
                         </h2>
                         <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Ya, salah satunya adalah Pondok Tahfizh Al-Qur’an yang berfokus pada
                                     pembinaan
                                     hafalan Al-Qur’an, pemahaman makna, dan pengamalan nilai-nilai Al-Qur’an dalam
@@ -97,7 +97,7 @@
                             </button>
                         </h2>
                         <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Motto sekolah adalah BIRU MUDA yang bermakna: Bersih, Indah, Ramah,
                                     Ukhuwah, Maju,
                                     Unggul, Disiplin, dan Agamis.</p>
@@ -112,7 +112,7 @@
                             </button>
                         </h2>
                         <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Ekstrakurikuler berbeda di tiap jenjang, namun secara umum meliputi:
                                 </p>
                                 <ul class="list-unstyled d-flex flex-column gap-2">
@@ -149,7 +149,7 @@
                             </button>
                         </h2>
                         <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Beberapa prestasi di antaranya:</p>
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li class="d-flex align-items-center gap-2">
@@ -184,7 +184,7 @@
                             </button>
                         </h2>
                         <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Seluruh sekolah di bawah naungan yayasan telah terakreditasi “A” oleh
                                     BAN S/M.</p>
                             </div>
@@ -198,7 +198,7 @@
                             </button>
                         </h2>
                         <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Fasilitas meliputi:</p>
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li class="d-flex align-items-center gap-2">
@@ -238,7 +238,7 @@
                             </button>
                         </h2>
                         <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-muted" style="font-size: 0.9rem;">
+                            <div class="accordion-body" style="font-size: 0.9rem;">
                                 <p class="mb-2">Kontak sekolah:</p>
                                 <ul class="list-unstyled d-flex flex-column gap-2">
                                     <li class="d-flex align-items-center gap-2">

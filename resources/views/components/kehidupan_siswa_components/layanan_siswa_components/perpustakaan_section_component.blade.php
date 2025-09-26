@@ -1,4 +1,4 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -13,12 +13,12 @@
                     <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                         alt="">Perpustakaan
                 </h5>
-                <h1 class="fw-normal p-0 m-0 mb-3">Memupuk <span class="text-primary">Pengetahuan</span></h1>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Setiap perpustakaan merupakan hub untuk
+                <h1 class="faq-title fw-normal p-0 m-0 mb-3 text-black">Memupuk <span class="faq-title text-primary">Pengetahuan</span></h1>
+                <p class="mb-2" style="line-height: 1.9 !important;">Setiap perpustakaan merupakan hub untuk
                     sumber daya belajar mengajar.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Setiap perpustakaan merupakan hub untuk
+                <p class="mb-2" style="line-height: 1.9 !important;">Setiap perpustakaan merupakan hub untuk
                     sumber daya belajar mengajar.</p>
-                <p class="text-muted mb-2" style="line-height: 1.9 !important;">Perpustakaan sekolah yang desain dengan
+                <p class="mb-2" style="line-height: 1.9 !important;">Perpustakaan sekolah yang desain dengan
                     baik memainkan peran penting dalam mendukung keseluruhan proses belajar mengajar. Perpustakaan Al-Layyinah,
                     yang dibangun sebagai pusat pembelajaran yang kondusif, mendukung siswa dan pengajar untuk
                     memperoleh pengetahuan, berkolaborasi dan menginspirasi pembelajaran.</p>

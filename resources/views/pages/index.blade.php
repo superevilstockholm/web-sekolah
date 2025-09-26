@@ -11,11 +11,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
-                                    <h2>Melebihi Pendidikan</h2>
-                                    <p class="mb-4">Melebihi kurikulum melalui model holistik berbasis iman yang
+                                    <h2 class="text-white">Melebihi Pendidikan</h2>
+                                    <p class="mb-4 text-white" style="font-weight:300;">Melebihi kurikulum melalui model holistik berbasis iman yang
                                         membimbing pertumbuhan
                                         dan perkembangan setiap anak.</p>
-                                    <a href="#" class="btn btn-lg btn-warning rounded-pill">Pelajari Lebih Lanjut</a>
+                                    <a href="#" class="btn btn-lg btn-warning rounded-pill text-white">Pelajari Lebih Lanjut</a>
                                 </div>
                             </div>
                         </div>
@@ -28,10 +28,10 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
-                                    <h2>Memberdayakan Siswa</h2>
-                                    <p class="mb-4">Membantu siswa mencapai potensi penuh mereka secara akademik, sosial,
+                                    <h2 class="text-white">Memberdayakan Siswa</h2>
+                                    <p class="mb-4 text-white" style="font-weight:300;">Membantu siswa mencapai potensi penuh mereka secara akademik, sosial,
                                         dan spiritual.</p>
-                                    <a href="#" class="btn btn-lg btn-warning rounded-pill">Pelajari Lebih Lanjut</a>
+                                    <a href="#" class="btn btn-lg btn-warning rounded-pill text-white">Pelajari Lebih Lanjut</a>
                                 </div>
                             </div>
                         </div>
@@ -44,10 +44,10 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 col-md-10">
-                                    <h2>Pandangan Global</h2>
-                                    <p class="mb-4">Mempersiapkan siswa menjadi pemimpin masa depan dengan fondasi moral
+                                    <h2 class="text-white">Pandangan Global</h2>
+                                    <p class="mb-4 text-white" style="font-weight:300;">Mempersiapkan siswa menjadi pemimpin masa depan dengan fondasi moral
                                         yang kuat dan wawasan global.</p>
-                                    <a href="#" class="btn btn-lg btn-warning rounded-pill ">Pelajari Lebih Lanjut</a>
+                                    <a href="#" class="btn btn-lg btn-warning rounded-pill text-white">Pelajari Lebih Lanjut</a>
                                 </div>
                             </div>
                         </div>
@@ -55,9 +55,9 @@
                 </div>
             </div>
             <!-- Tombol Scroll untuk Menjelajahi -->
-            <a href="#core-identity" class="scroll-btn">
-                <span>Gulir untuk Menjelajahi</span>
-                <i class="bi bi-arrow-down"></i>
+            <a href="#core-identity" class="scroll-btn ">
+                <span class="text-white">Gulir untuk Menjelajahi</span>
+                <i class="bi bi-arrow-down text-white"></i>
             </a>
         </div>
     </section>
@@ -70,9 +70,9 @@
                         <img height="20" src="https://sph.edu/wp-content/uploads/2021/08/SPH-Rectangle.png"
                             alt=""> Identitas Inti Kami
                     </h5>
-                    <h2 class="fw-bold">
-                        <span class="text-primary">Sekolah Kristen Terdepan</span> Internasional <br>
-                        di Indonesia
+                    <h2 class="title-pt-sans">
+                        <span class="text-primary title-pt-sans">Sekolah Kristen Terdepan</span>
+                        <span class="text-black">Internasional <br> di Indonesia</span>
                     </h2>
                 </div>
                 <div class="col-lg-6">
@@ -91,36 +91,39 @@
     <section id="sph-numbers" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h3>Fakta Singkat <span class="text-primary">Tentang SPH</span></h3>
+                <h3 class="title-pt-sans">
+                    <span class="text-primary title-pt-sans">Fakta Singkat</span>
+                    <span class="text-black">Tentang SPH</span>
+                </h3>
             </div>
             <!-- Baris 1 -->
             <div class="row text-center g-4 gy-5">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-people fs-1 text-primary"></i>
-                        <h4 class="mt-3">2,400+</h4>
-                        <p class="small mb-0">Siswa</p>
+                        <h4 class="mt-3 title-auto-sans text-black">2,400+</h4>
+                        <p class="small mb-0" style="color:#3C3E41;">Siswa</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-mortarboard fs-1 text-primary"></i>
-                        <h4 class="mt-3">3,000+</h4>
-                        <p class="small mb-0">Alumni</p>
+                        <h4 class="mt-3 title-auto-sans text-black">3,000+</h4>
+                        <p class="small mb-0" style="color:#3C3E41;">Alumni</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-star fs-1 text-primary"></i>
-                        <h4 class="mt-3">30+</h4>
-                        <p class="small mb-0">Tahun Keunggulan</p>
+                        <h4 class="mt-3 title-auto-sans text-black">30+</h4>
+                        <p class="small mb-0" style="color:#3C3E41;">Tahun Keunggulan</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-globe fs-1 text-primary"></i>
-                        <h4 class="mt-3">35</h4>
-                        <p class="small mb-0">Kebangsaan</p>
+                        <h4 class="mt-3 title-auto-sans text-black">35</h4>
+                        <p class="small mb-0" style="color:#3C3E41;">Kebangsaan</p>
                     </div>
                 </div>
             </div>
@@ -129,15 +132,15 @@
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-trophy fs-1 text-primary"></i>
-                        <h4 class="mt-3">1<sup>st</sup></h4>
-                        <p class="small mb-0">Sekolah Kristen IB Continuum Pertama di Indonesia</p>
+                        <h4 class="mt-3 title-auto-sans text-black">1<sup>st</sup></h4>
+                        <p class="small mb-0" style="color:#3C3E41;">Sekolah Kristen IB Continuum Pertama di Indonesia</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div>
                         <i class="bi bi-person-badge fs-1 text-primary"></i>
-                        <h4 class="mt-3">52%</h4>
-                        <p class="small mb-0">Guru Ekspatriat</p>
+                        <h4 class="mt-3 title-auto-sans text-black">52%</h4>
+                        <p class="small mb-0" style="color:#3C3E41;">Guru Ekspatriat</p>
                     </div>
                 </div>
             </div>
@@ -178,6 +181,7 @@
                         internasional
                         pertama di Indonesia yang menawarkan ketiga program International Baccalaureate (IB).
                     </p>
+                    <br>
                     <p>
                         Jaringan sekolah kami tersebar di lima lokasi utama di Jakarta dan sekitarnya, memberikan keluarga
                         akses ke pendidikan kelas dunia dalam lingkungan Kristen yang mendukung. Komitmen kami terhadap
@@ -473,7 +477,19 @@
             font-size: 1.2rem;
         }
 
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+        .title-pt-sans {
+            font-family: 'PT Sans', sans-serif !important;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+        .title-auto-sans {
+            font-family: 'Open Sans', sans-serif !important;
+            font-weight: 600 !important;
+        }
     </style>
     <script>
         const heroCarousel = document.querySelector('#heroCarousel');

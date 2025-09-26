@@ -1,6 +1,8 @@
 <section class="mt-3">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Program Belajar Yayasan Al-Layyinah</h1>
+        <h1 class="text-center mb-5 py-2 text-black fw-normal text-pt-sans">
+            Program Belajar Yayasan Al-Layyinah
+        </h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"
@@ -8,13 +10,13 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-semibold mb-2 text-muted">Yayasan Al-Layyinah menghadirkan pendidikan Islami yang
+                <p>Yayasan Al-Layyinah menghadirkan pendidikan Islami yang
                     terintegrasi dengan
                     <a class="text-primary" style="text-decoration: none;" href="{{ route('kurikulum') }}">Kurikulum Nasional</a>
                     dan <a class="text-primary" style="text-decoration: none;" href="{{ route('kehidupan_rohani') }}">nilai-nilai Qur’ani</a>.
                     Program pembelajaran kami menekankan keseimbangan antara ilmu pengetahuan umum dan pendidikan agama.
-                </p>
-                <p class=" text-muted">Setiap jenjang pendidikan di Al-Layyinah disusun dengan memperhatikan
+                </p> <br>
+                <p>Setiap jenjang pendidikan di Al-Layyinah disusun dengan memperhatikan
                     perkembangan usia anak,
                     agar mereka tumbuh menjadi generasi berilmu, berakhlak mulia, dan berlandaskan ketakwaan kepada
                     Allah SWT.</p>
@@ -23,3 +25,9 @@
         </div>
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

@@ -37,13 +37,20 @@
     @include('components.pareting_question_component')
     {{-- Custom NavBar --}}
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
         .navbar-container nav .nav-link,
         .navbar-container nav .navbar-brand {
             color: rgba(0, 0, 0, 0.75) !important;
             /* Teks hitam setelah scroll */
         }
+        
         .navbar-container nav .nav-link:hover {
             color: rgba(0, 0, 0, 1) !important;
+        }
+
+        .faq-section .faq-title {
+            font-family: 'PT Sans', sans-serif !important;
         }
     </style>
 @endsection

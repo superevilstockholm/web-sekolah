@@ -9,16 +9,16 @@
                         alt="">Lippo Village
                 </h5>
 
-                <h1 class="fw-normal p-0 m-0 mb-3">Komunitas Dimana <span class="text-primary">Setiap Orang
+                <h1 class="fw-normal p-0 m-0 mb-3 text-black text-pt-sans">Komunitas Dimana <span class="text-primary text-pt-sans">Setiap Orang
                         Berkembang</span></h1>
-                <p class="text-muted " style="line-height: 1.9 !important;">
+                <p style="line-height: 1.9 !important;">
                     Kampus Lippo Village didirikan di atas sejarah panjang selama 30 tahun. Sebagai kampus yang
                     didirikan pertama kali, SPH Lippo Village memiliki begitu banyak tradisi yang menjadikannya begitu
                     spesial. Komunitas kami yang erat juga menjadi salah satu ciri khas dan keunikan kami serta menjadi
                     hal yang paling dirindukan oleh setiap siswa, alumni, guru dan staf.
                 </p>
                 <br>
-                <p class="text-muted" style="line-height: 1.9 !important;">
+                <p style="line-height: 1.9 !important;">
                     Komunitas kami – murid, orangtua, guru, dan staf – yang inklusif dan suportif adalah inti yang tidak
                     akan tergantikan dari sekolah kami. Di kampus kami, budaya saling melayani tumbuh dan tercermin
                     dalam keseluruhan komunitas sekolah, mulai dari klub siswa, hingga Parent Advisory Group (PAG). Kami
@@ -27,7 +27,7 @@
                     keras untuk memastikan bahwa fasilitas kami modern, nyaman, dan mendukung pembelajaran.
                 </p>
                 <br>
-                <p class="text-muted" style="line-height: 1.9 !important;">
+                <p style="line-height: 1.9 !important;">
                     Komitmen untuk menciptakan lingkungan belajar yang inklusif, suportif, kolaboratif, dan yang terus
                     bertumbuh menjadikan SPH Lippo Village tempat terbaik bagi anak Anda untuk belajar dan berkembang.
                 </p>
@@ -36,3 +36,9 @@
 
     </div>
 </section>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    .text-pt-sans {
+        font-family: 'PT Sans', sans-serif !important;
+    }
+</style>

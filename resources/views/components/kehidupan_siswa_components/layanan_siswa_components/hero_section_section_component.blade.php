@@ -1,6 +1,6 @@
-<section class="mt-3 mb-5">
+<section class="mt-3 mb-5 faq-section">
     <div class="container">
-        <h1 class="text-center mb-5 py-2 text-muted fw-normal">Layanan Siswa</h1>
+        <h1 class="faq-title text-center mb-5 py-2 fw-normal text-black">Layanan Siswa</h1>
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-6 mb-4 mb-md-0">
                 <img class="img-fluid rounded"
@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p class="fw-normal text-muted">Di Al-Layyinah, kami menjadikan penyediaan dukungan sebagai salah satu cara kami melampaui
+                <p class="fw-normal">Di Al-Layyinah, kami menjadikan penyediaan dukungan sebagai salah satu cara kami melampaui
                     pendidikan. Kami menyediakan layanan pendukung bagi siswa yang mencakup area yang lebih luas. Area
                     dukungan kami meliputi layanan konseling, penyediaan fasilitas pendukung pembelajaran, serta
                     kesehatan dan kebugaran.</p>
