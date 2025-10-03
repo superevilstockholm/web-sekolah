@@ -33,6 +33,8 @@ Route::post('ppdb', [PPDBController::class, 'store']);
 
 // Protected Routes
 Route::middleware(['auth:sanctum'])->group(function () {
+    // Auth
+    Route::get('is-logged-in', [AuthController::class, 'isLoggedIn']);
     // upload image for ckeditor
     Route::post('news/upload-image', [NewsController::class, 'uploadImage']);
     Route::post('events/upload-image', [EventController::class, 'uploadImage']);

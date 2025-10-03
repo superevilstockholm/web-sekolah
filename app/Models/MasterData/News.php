@@ -30,7 +30,8 @@ class News extends Model
 
     public function getImageUrlAttribute(): ?string
     {
-        return $this->image ? asset('storage/' . $this->image) : null;
+        return $this->image ? asset('storage/' . $this->image)
+            : asset('static/img/no-image-placeholder.svg');
     }
 
     public function user()

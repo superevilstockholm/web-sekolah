@@ -34,7 +34,8 @@ class Events extends Model
 
     public function getImageUrlAttribute()
     {
-        return $this->image ? asset('storage/' . $this->image) : null;
+        return $this->image ? asset('storage/' . $this->image)
+            : asset('static/img/no-image-placeholder.svg');
     }
 
     // Otomatis generatte slug

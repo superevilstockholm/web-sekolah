@@ -23,11 +23,13 @@ class Publication extends Model
 
     public function getCoverUrlAttribute(): ?string
     {
-        return $this->cover ? asset('storage/' . $this->cover) : null;
+        return $this->cover ? asset('storage/' . $this->cover)
+            : asset('static/img/no-image-placeholder.svg');
     }
 
     public function getFileUrlAttribute(): ?string
     {
-        return $this->file_path ? asset('storage/' . $this->file_path) : null;
+        return $this->file_path ? asset('storage/' . $this->file_path)
+            : asset('static/img/no-image-placeholder.svg');
     }
 }
