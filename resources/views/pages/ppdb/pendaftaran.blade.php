@@ -128,7 +128,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.querySelector('form');
-
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const data = {
@@ -158,28 +157,16 @@
                             Swal.fire({
                                 icon: 'error',
                                 title: 'Gagal',
-                                text: response.data.message || 'Terjadi kesalahan',
+                                text: error.response.data.error || error.response.data.message || 'Terjadi kesalahan',
                                 confirmButtonText: 'OK'
                             });
                         }
                     })
                     .catch(error => {
-                        let message = 'Terjadi kesalahan';
-                        if (error.response && error.response.data) {
-                            if (error.response.data.errors) {
-                                message = Object.values(error.response.data.errors).flat().join('\n');
-                            } else if (error.response.data.message) {
-                                message = error.response.data.message;
-                            } else if (error.response.data.error) {
-                                message = error.response.data.error;
-                            }
-                        } else {
-                            message = error.message;
-                        }
                         Swal.fire({
                             icon: 'error',
                             title: 'Error',
-                            text: message,
+                            text: error.response.data.error || error.response.data.message || 'Terjadi kesalahan',
                             confirmButtonText: 'OK'
                         });
                     });
