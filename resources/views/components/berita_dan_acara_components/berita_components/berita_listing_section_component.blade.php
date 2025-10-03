@@ -17,150 +17,82 @@
     </div>
 </section>
 <script>
-    // Dummy data berita
-    const newsData = [{
-            title: "Berita 1",
-            img: "https://sph.edu/wp-content/uploads/2025/04/SPH-KV-High-School-Musical-2025-800x628.png"
-        },
-        {
-            title: "Berita 2",
-            img: "https://sph.edu/wp-content/uploads/2024/12/SPH-KV-SABI-2024-1-800x628.png"
-        },
-        {
-            title: "Berita 3",
-            img: "https://sph.edu/wp-content/uploads/2024/11/SPH-KV-Lucs-Book-Debut-2024-1-800x628.png"
-        },
-        {
-            title: "Berita 4",
-            img: "https://sph.edu/wp-content/uploads/2024/11/SPH-KV-JAAC-2024-Winners-800x628.jpg"
-        },
-        {
-            title: "Berita 5",
-            img: "https://sph.edu/wp-content/uploads/2024/09/News-SPH-KV-Free-Medical-Checkup-1-800x628.png"
-        },
-        {
-            title: "Berita 6",
-            img: "https://sph.edu/wp-content/uploads/2024/05/News-KV-Achievement-News-Ms.-Jami-Zara-Featured-Image.png"
-        },
-        {
-            title: "Berita 7",
-            img: "https://sph.edu/wp-content/uploads/2024/04/News-KV-Achievement-News-Hillary-.png"
-        },
-        {
-            title: "Berita 8",
-            img: "https://sph.edu/wp-content/uploads/2024/02/Featured-Image-LC-Scholarship-Alumni-Testimonials.png"
-        },
-        {
-            title: "Berita 9",
-            img: "https://sph.edu/wp-content/uploads/2024/01/SPH-KV-News-Inspiring-Activities-Achievements.png"
-        },
-        {
-            title: "Berita 10",
-            img: "https://sph.edu/wp-content/uploads/2023/08/SPH-KV-Alumni-Story-Irene-Chung.png"
-        },
-        {
-            title: "Berita 11",
-            img: "https://sph.edu/wp-content/uploads/2022/09/Website-News-Blog-Featured-Image-1200-x-628.png"
-        },
-        {
-            title: "Berita 12",
-            img: "https://sph.edu/wp-content/uploads/2022/09/c2a19e75-514f-410e-a1be-ca1d3c4cf50f-1.jpeg"
-        },
-    ];
     let currentPage = 1;
-    function getPerPage() {
-        return 6;
+    const limit = 6;
+
+    async function fetchNews(page = 1) {
+        try {
+            const res = await fetch(`/api/news?limit=${limit}&page=${page}`);
+            const json = await res.json();
+
+            if (json.status) {
+                renderNews(json.data.data);
+                renderPagination(json.data);
+            }
+        } catch (err) {
+            console.error("Gagal fetch news:", err);
+        }
     }
-    function renderNews(page) {
+
+    function renderNews(newsData) {
         const container = document.getElementById("news-container");
         container.innerHTML = "";
-        const perPage = getPerPage();
-        const start = (page - 1) * perPage;
-        const end = start + perPage;
-        const paginatedNews = newsData.slice(start, end);
-        paginatedNews.forEach(news => {
+        newsData.forEach(news => {
             const col = document.createElement("div");
             col.className = "col-md-4 col-12 mb-3";
             col.innerHTML = `
-            <a href="/berita/${news.title.replace(/\s+/g, '-').toLowerCase()}"
-               class="text-decoration-none">
-                <div class="card h-100 shadow-sm border-0 position-relative rounded">
-                    <div class="ratio ratio-4x3">
-                        <img src="${news.img}"
-                            class="w-100 h-100 rounded"
-                            style="object-fit: cover; object-position: center;"
-                            alt="${news.title}">
+                <a href="/berita/${news.slug}" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm border-0 position-relative rounded">
+                        <div class="ratio ratio-4x3">
+                            <img src="${news.image_url}"
+                                class="w-100 h-100 rounded"
+                                style="object-fit: cover; object-position: center;"
+                                alt="${news.title}">
+                        </div>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end p-2"
+                            style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
+                            <span class="mb-1 text-uppercase text-light" style="font-size:0.7rem;">${news.category}</span>
+                            <h6 class="card-title text-white mb-0">${news.title}</h6>
+                        </div>
                     </div>
-                    <div class="card-img-overlay d-flex align-items-end p-2"
-                        style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
-                        <h6 class="card-title text-white mb-0">${news.title}</h6>
-                    </div>
-                </div>
-            </a>
-        `;
+                </a>
+            `;
             container.appendChild(col);
         });
-        renderPagination();
     }
-    function renderPagination() {
-        const perPage = getPerPage();
-        const totalPages = Math.ceil(newsData.length / perPage);
+
+    function renderPagination(paginationData) {
         const pagination = document.getElementById("pagination");
         pagination.innerHTML = "";
-        function createButton(label, page, disabled = false, active = false) {
-            const btn = document.createElement("button");
-            btn.type = "button";
-            btn.innerText = label;
-            btn.disabled = disabled;
-            btn.className = `btn btn-sm ${active ? "btn-primary" : "btn-outline-primary"}`;
-            btn.onclick = function() {
-                if (!disabled) {
-                    currentPage = page;
-                    renderNews(currentPage);
-                }
-            };
-            return btn;
-        }
+
         // Tombol Prev
-        pagination.appendChild(
-            createButton("← Prev", currentPage - 1, currentPage === 1)
-        );
-        // Logic angka halaman
-        let pages = [];
-        if (totalPages <= 5) {
-            // Kalau total halaman sedikit tampilkan semua
-            for (let i = 1; i <= totalPages; i++) pages.push(i);
-        } else {
-            if (currentPage <= 3) {
-                pages = [1, 2, 3, "...", totalPages];
-            } else if (currentPage >= totalPages - 2) {
-                pages = [1, "...", totalPages - 2, totalPages - 1, totalPages];
-            } else {
-                pages = [1, "...", currentPage, "...", totalPages];
-            }
-        }
-        // Render tombol angka
-        pages.forEach(p => {
-            if (p === "...") {
-                const span = document.createElement("span");
-                span.innerText = "...";
-                span.className = "btn btn-sm btn-light disabled";
-                pagination.appendChild(span);
-            } else {
-                pagination.appendChild(
-                    createButton(p, p, false, p === currentPage)
-                );
-            }
+        const prevBtn = document.createElement("button");
+        prevBtn.className = "btn btn-sm btn-outline-primary";
+        prevBtn.innerText = "← Prev";
+        prevBtn.disabled = !paginationData.prev_page_url;
+        prevBtn.onclick = () => fetchNews(paginationData.current_page - 1);
+        pagination.appendChild(prevBtn);
+
+        // Tombol angka (Laravel sudah kasih links di JSON)
+        paginationData.links.forEach(link => {
+            if (link.label.includes("Previous") || link.label.includes("Next")) return;
+            const btn = document.createElement("button");
+            btn.className = `btn btn-sm ${link.active ? "btn-primary" : "btn-outline-primary"}`;
+            btn.innerHTML = link.label;
+            btn.disabled = !link.url;
+            btn.onclick = () => fetchNews(link.page);
+            pagination.appendChild(btn);
         });
+
         // Tombol Next
-        pagination.appendChild(
-            createButton("Next →", currentPage + 1, currentPage === totalPages)
-        );
+        const nextBtn = document.createElement("button");
+        nextBtn.className = "btn btn-sm btn-outline-primary";
+        nextBtn.innerText = "Next →";
+        nextBtn.disabled = !paginationData.next_page_url;
+        nextBtn.onclick = () => fetchNews(paginationData.current_page + 1);
+        pagination.appendChild(nextBtn);
     }
+
     // Render awal
-    renderNews(currentPage);
-    // Re-render saat resize (supaya perPage berubah otomatis)
-    window.addEventListener("resize", () => {
-        renderNews(currentPage);
-    });
+    fetchNews(currentPage);
 </script>
