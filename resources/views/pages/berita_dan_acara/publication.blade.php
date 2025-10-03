@@ -1,5 +1,5 @@
 @extends('App')
-@section('title', 'Acara')
+@section('title', 'Publikasi')
 @section('content')
     {{-- Breadcrumb --}}
     <div class="container">

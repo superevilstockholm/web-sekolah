@@ -10,98 +10,101 @@
             </div>
         </div>
         <div class="row" id="publication-container"></div>
+        <div class="d-flex justify-content-center mt-3 gap-2" id="pagination"></div>
     </div>
 </section>
+
+<script>
+    let currentPage = 1;
+
+    async function fetchPublications(page = 1) {
+        const res = await fetch(`/api/publikasi?limit=6&page=${page}`);
+        const json = await res.json();
+        return json.data;
+    }
+
+    function renderPublicationCard(pub) {
+        const col = document.createElement("div");
+        col.className = "col-md-4 col-12 mb-4";
+        col.innerHTML = `
+            <a href="${pub.file_url}" target="_blank" class="text-decoration-none">
+                <div class="card h-100 shadow-sm border-0 position-relative rounded overflow-hidden">
+                    <div class="ratio ratio-4x3">
+                        <img src="${pub.cover_url}" class="w-100 h-100 rounded"
+                            style="object-fit: cover; object-position: center;"
+                            alt="${pub.title}">
+                    </div>
+                    <div class="card-overlay"></div>
+                    <h4 class="card-title">${pub.title}</h4>
+                </div>
+            </a>
+        `;
+        return col;
+    }
+
+    async function renderPublications(page = 1) {
+        const container = document.getElementById("publication-container");
+        const pagination = document.getElementById("pagination");
+        container.innerHTML = "";
+        pagination.innerHTML = "";
+
+        const data = await fetchPublications(page);
+
+        data.data.forEach(pub => {
+            container.appendChild(renderPublicationCard(pub));
+        });
+
+        // Pagination
+        const totalPages = data.last_page;
+
+        function createButton(label, page, disabled = false, active = false) {
+            const btn = document.createElement("button");
+            btn.type = "button";
+            btn.innerText = label;
+            btn.disabled = disabled;
+            btn.className = `btn btn-sm ${active ? "btn-primary" : "btn-outline-primary"}`;
+            btn.onclick = () => {
+                if (!disabled) {
+                    currentPage = page;
+                    renderPublications(currentPage);
+                }
+            };
+            return btn;
+        }
+
+        // Prev
+        pagination.appendChild(
+            createButton("← Prev", currentPage - 1, currentPage === 1)
+        );
+
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            pagination.appendChild(createButton(i, i, false, i === currentPage));
+        }
+
+        // Next
+        pagination.appendChild(
+            createButton("Next →", currentPage + 1, currentPage === totalPages)
+        );
+    }
+
+        // Initial render
+    renderPublications(currentPage);
+</script>
 <style>
     .card-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
+        background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
         z-index: 1;
-    }
-    .card-overlay-0 {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-        opacity: 0.7;
-        transition: opacity 0.3s ease-in-out;
-        z-index: 1;
-    }
-    .card:hover .card-overlay {
-        opacity: 1;
     }
     .card-title {
         position: absolute;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 0.5rem;  /* di bawah */
+        left: 0.5rem;    /* di kiri */
         z-index: 2;
+        color: #fff;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* opsional biar lebih jelas */
     }
 </style>
-<script>
-    const items = [{
-        title: "The Light Ed. 1",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.53-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-43.pdf"
-    }, {
-        title: "The Light Ed. 2",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.43-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-42.pdf"
-    }, {
-        title: "The Light Ed. 3",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.31-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-41.pdf"
-    }, {
-        title: "The Light Ed. 4",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.21-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-40-1.pdf"
-    }, {
-        title: "The Light Ed. 5",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.31-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-41.pdf"
-    }, {
-        title: "The Light Ed. 6",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.53-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-43.pdf"
-    }, {
-        title: "The Light Ed. 7",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.43-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-42.pdf"
-    }, {
-        title: "The Light Ed. 8",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.31-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-41.pdf"
-    }, {
-        title: "The Light Ed. 9",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.31-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-41.pdf"
-    }, {
-        title: "The Light Ed. 10",
-        cover: "https://sph.edu/wp-content/uploads/2022/01/Screenshot-2022-01-21-at-10.46.21-AM-min.png",
-        url: "https://sph.edu/wp-content/uploads/2022/02/The-Light-Ed.-40-1.pdf"
-    }, ];
-    const container = document.getElementById("publication-container");
-
-    items.forEach(item => {
-        const col = document.createElement("div");
-        col.className = "col-md-4 col-12 mb-4";
-
-        col.innerHTML = `
-        <a href="${item.url}" target="_blank" class="text-decoration-none">
-            <div class="card h-100 shadow-sm border-0 position-relative rounded overflow-hidden">
-                <div class="ratio ratio-4x3">
-                    <img src="${item.cover}" class="w-100 h-100 rounded"
-                        style="object-fit: cover; object-position: center;"
-                        alt="${item.title}">
-                </div>
-                <div class="card-overlay-0"></div>
-                <div class="card-overlay"></div>
-                <h4 class="card-title text-white text-center fw-semibold">${item.title}</h4>
-            </div>
-        </a>
-        `;
-        container.appendChild(col);
-    });
-</script>
