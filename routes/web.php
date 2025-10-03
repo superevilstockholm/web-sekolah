@@ -5,7 +5,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.index');
 })->name('index');
-
+Route::get('login', function () {
+    return view('pages.auth.login', [
+        'meta' => [
+            'showNavbar' => false,
+            'showFooter' => false
+        ]
+    ]);
+})->name('login');
 
 Route::prefix('pembelajaran')->group(function() {
     // Jalur Pembelajaran
@@ -34,23 +41,18 @@ Route::group(['prefix' => 'jenjang'], function () {
     Route::get('/tk', function () {
         return view('pages.jenjang.tk');
     })->name('tk');
-
     Route::get('/sd', function () {
         return view('pages.jenjang.sd');
     })->name('sd');
-
     Route::get('/smp', function () {
         return view('pages.jenjang.smp');
     })->name('smp');
-
     Route::get('/sma', function () {
         return view('pages.jenjang.sma');
     })->name('sma');
-
     Route::get('/sd2', function () {
         return view('pages.jenjang.sd2');
     })->name('sd2');
-
     Route::get('/smp2', function () {
         return view('pages.jenjang.smp2');
     })->name('smp2');
@@ -58,27 +60,21 @@ Route::group(['prefix' => 'jenjang'], function () {
 });
 
 Route::group(['prefix' => 'lembaga'], function () {
-
     Route::get('/sma-islam', function () {
         return view('pages.lembaga.sma');
     })->name('sma_islam');
-
     Route::get('/madrasah-ibtidaiyah', function () {
         return view('pages.lembaga.madrasah_ibtidaiyah');
     })->name('madrasah_ibtidaiyah');
-
     Route::get('/madrasah-tsanawiyah', function () {
         return view('pages.lembaga.madrasah_tsanawiyah');
     })->name('madrasah_tsanawiyah');
-
     Route::get('/rauhatul-athfal', function () {
         return view('pages.lembaga.rauhatul_athfal');
     })->name('rauhatul_athfal');
-
     Route::get('/pondok-tahfidz', function () {
         return view('pages.lembaga.pondok_tahfiz');
     })->name('pondok_tahfidz');
-
 });
 
 Route::prefix('kehidupan-siswa')->group(function () {

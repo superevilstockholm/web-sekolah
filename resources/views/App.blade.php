@@ -52,10 +52,11 @@
 
 
         /* Dropdown navbar pakai Roboto */
-.navbar-container .dropdown-menu,
-.navbar-container .dropdown-menu .dropdown-item {
-    font-family: 'Roboto', sans-serif !important;
-}
+        .navbar-container .dropdown-menu,
+        .navbar-container .dropdown-menu .dropdown-item {
+            font-family: 'Roboto', sans-serif !important;
+        }
+
         /* Header-top tetap Roboto */
         .header-top,
         .header-top * {
@@ -71,11 +72,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     {{-- SweetAlert2 --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    @include('components.navbar_compnent')
+    @if ($meta['showNavbar'] ?? true)
+        @include('components.navbar_compnent')
+    @endif
     <main>
         @yield('content')
     </main>
-    @include('components.footer_component')
+    @if ($meta['showFooter'] ?? true)
+        @include('components.footer_component')
+    @endif
     {{-- Bootstrap --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     {{-- Axios --}}
