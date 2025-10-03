@@ -16,151 +16,100 @@
         </div>
     </div>
 </section>
+
 <script>
-    // Dummy data acara
-    const acaraData = [{
-            title: "Acara 1",
-            img: "https://sph.edu/wp-content/uploads/2022/08/FB-IG-Ads_Open-Day.jpg"
-        },
-        {
-            title: "Acara 2",
-            img: "https://sph.edu/wp-content/uploads/2024/12/SPH-KV-SABI-2024-1-800x628.png"
-        },
-        {
-            title: "Acara 3",
-            img: "https://sph.edu/wp-content/uploads/2024/11/SPH-KV-Lucs-Book-Debut-2024-1-800x628.png"
-        },
-        {
-            title: "Acara 4",
-            img: "https://sph.edu/wp-content/uploads/2024/11/SPH-KV-JAAC-2024-Winners-800x628.jpg"
-        },
-        {
-            title: "Acara 5",
-            img: "https://sph.edu/wp-content/uploads/2024/09/News-SPH-KV-Free-Medical-Checkup-1-800x628.png"
-        },
-        {
-            title: "Acara 6",
-            img: "https://sph.edu/wp-content/uploads/2024/05/News-KV-Achievement-News-Ms.-Jami-Zara-Featured-Image.png"
-        },
-        {
-            title: "Acara 7",
-            img: "https://sph.edu/wp-content/uploads/2024/04/News-KV-Achievement-News-Hillary-.png"
-        },
-        {
-            title: "Acara 8",
-            img: "https://sph.edu/wp-content/uploads/2024/02/Featured-Image-LC-Scholarship-Alumni-Testimonials.png"
-        },
-        {
-            title: "Acara 9",
-            img: "https://sph.edu/wp-content/uploads/2024/01/SPH-KV-News-Inspiring-Activities-Achievements.png"
-        },
-        {
-            title: "Acara 10",
-            img: "https://sph.edu/wp-content/uploads/2023/08/SPH-KV-Alumni-Story-Irene-Chung.png"
-        },
-        {
-            title: "Acara 11",
-            img: "https://sph.edu/wp-content/uploads/2022/09/Website-News-Blog-Featured-Image-1200-x-628.png"
-        },
-        {
-            title: "Acara 12",
-            img: "https://sph.edu/wp-content/uploads/2022/09/c2a19e75-514f-410e-a1be-ca1d3c4cf50f-1.jpeg"
-        },
-    ];
-    let currentPage = 1;
-    function getPerPage() {
-        return 6;
+let currentPage = 1;
+const perPage = 6; // jumlah item per page
+
+async function fetchAcara(page = 1) {
+    try {
+        const res = await fetch(`/api/events?limit=${perPage}&page=${page}`);
+        const json = await res.json();
+        if (!json.status) throw new Error(json.message || 'Error fetching events');
+
+        return json.data; // sesuai response API
+    } catch (err) {
+        console.error(err);
+        return null;
     }
-    function renderAcara(page) {
-        const container = document.getElementById("acara-container");
-        container.innerHTML = "";
-        const perPage = getPerPage();
-        const start = (page - 1) * perPage;
-        const end = start + perPage;
-        const paginatedAcara = acaraData.slice(start, end);
-        paginatedAcara.forEach(acara => {
-            const col = document.createElement("div");
-            col.className = "col-md-4 col-12 mb-3";
-            col.innerHTML = `
-            <a href="/acara/${acara.title.replace(/\s+/g, '-').toLowerCase()}"
-               class="text-decoration-none">
+}
+
+async function renderAcara(page = 1) {
+    const container = document.getElementById("acara-container");
+    const pagination = document.getElementById("pagination");
+    container.innerHTML = "Loading...";
+    pagination.innerHTML = "";
+
+    const data = await fetchAcara(page);
+    if (!data) {
+        container.innerHTML = "<p class='text-danger'>Gagal memuat acara</p>";
+        return;
+    }
+
+    container.innerHTML = "";
+    data.data.forEach(acara => {
+        const col = document.createElement("div");
+        col.className = "col-md-4 col-12 mb-3";
+        col.innerHTML = `
+            <a href="/acara/${acara.slug}" class="text-decoration-none">
                 <div class="card h-100 shadow-sm border-0 position-relative rounded">
                     <div class="ratio ratio-4x3">
-                        <img src="${acara.img}"
+                        <img src="${acara.image_url}"
                             class="w-100 h-100 rounded"
                             style="object-fit: cover; object-position: center;"
                             alt="${acara.title}">
                     </div>
-                    <div class="card-img-overlay d-flex align-items-end p-2"
+                    <div class="card-img-overlay d-flex flex-column justify-content-end p-2"
                         style="background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);">
+                        <span class="mb-1 text-uppercase text-light" style="font-size:0.7rem;">${acara.category}</span>
                         <h6 class="card-title text-white mb-0">${acara.title}</h6>
                     </div>
                 </div>
             </a>
         `;
-            container.appendChild(col);
-        });
-        renderPagination();
-    }
-    function renderPagination() {
-        const perPage = getPerPage();
-        const totalPages = Math.ceil(acaraData.length / perPage);
-        const pagination = document.getElementById("pagination");
-        pagination.innerHTML = "";
-        function createButton(label, page, disabled = false, active = false) {
-            const btn = document.createElement("button");
-            btn.type = "button";
-            btn.innerText = label;
-            btn.disabled = disabled;
-            btn.className = `btn btn-sm ${active ? "btn-primary" : "btn-outline-primary"}`;
-            btn.onclick = function() {
-                if (!disabled) {
-                    currentPage = page;
-                    renderAcara(currentPage);
-                }
-            };
-            return btn;
-        }
-        // Tombol Prev
-        pagination.appendChild(
-            createButton("← Prev", currentPage - 1, currentPage === 1)
-        );
-        // Logic angka halaman
-        let pages = [];
-        if (totalPages <= 5) {
-            // Kalau total halaman sedikit tampilkan semua
-            for (let i = 1; i <= totalPages; i++) pages.push(i);
-        } else {
-            if (currentPage <= 3) {
-                pages = [1, 2, 3, "...", totalPages];
-            } else if (currentPage >= totalPages - 2) {
-                pages = [1, "...", totalPages - 2, totalPages - 1, totalPages];
-            } else {
-                pages = [1, "...", currentPage, "...", totalPages];
-            }
-        }
-        // Render tombol angka
-        pages.forEach(p => {
-            if (p === "...") {
-                const span = document.createElement("span");
-                span.innerText = "...";
-                span.className = "btn btn-sm btn-light disabled";
-                pagination.appendChild(span);
-            } else {
-                pagination.appendChild(
-                    createButton(p, p, false, p === currentPage)
-                );
-            }
-        });
-        // Tombol Next
-        pagination.appendChild(
-            createButton("Next →", currentPage + 1, currentPage === totalPages)
-        );
-    }
-    // Render awal
-    renderAcara(currentPage);
-    // Re-render saat resize (supaya perPage berubah otomatis)
-    window.addEventListener("resize", () => {
-        renderAcara(currentPage);
+        container.appendChild(col);
     });
+
+    renderPagination(data);
+}
+
+function renderPagination(data) {
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    function createButton(label, page, disabled = false, active = false) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.innerText = label;
+        btn.disabled = disabled;
+        btn.className = `btn btn-sm ${active ? "btn-primary" : "btn-outline-primary"}`;
+        btn.onclick = () => {
+            if (!disabled) {
+                currentPage = page;
+                renderAcara(currentPage);
+            }
+        };
+        return btn;
+    }
+
+    // Prev
+    pagination.appendChild(
+        createButton("← Prev", currentPage - 1, !data.prev_page_url)
+    );
+
+    // Angka halaman
+    for (let i = 1; i <= data.last_page; i++) {
+        pagination.appendChild(
+            createButton(i, i, false, i === currentPage)
+        );
+    }
+
+    // Next
+    pagination.appendChild(
+        createButton("Next →", currentPage + 1, !data.next_page_url)
+    );
+}
+
+// Render awal
+renderAcara(currentPage);
 </script>
